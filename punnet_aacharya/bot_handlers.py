@@ -67,12 +67,15 @@ class AstrologyBot:
             'session_start': datetime.now().isoformat()
         }
         logger.info("User data initialized for new session")
-        
-        # Send welcome message from Puneet Guruji
-        welcome_message = """🙏 नमस्ते! मैं हूँ Punnet Aacharya, आपका व्यक्तिगत वैदिक ज्योतिष सलाहकार।\n\nयहाँ आप मुझसे शादी, करियर, धन, शिक्षा, स्वास्थ्य, या जीवन के किसी भी पहलू पर मार्गदर्शन ले सकते हैं — वो भी आपकी जन्म कुंडली के आधार पर, पूरी तरह गोपनीय और निशुल्क।\n\nमुझे आपकी जन्म संबंधी जानकारी (नाम, जन्म तिथि, समय, स्थान) चाहिए ताकि मैं सटीक ज्योतिषीय सलाह दे सकूं।\n\n💡 आप मुझसे पूछ सकते हैं:\n• शादी कब होगी? जीवनसाथी कैसा होगा?\n• करियर में सफलता के योग\n• धन, स्वास्थ्य, शिक्षा, विदेश यात्रा, और बहुत कुछ!\n\nकृपया सबसे पहले अपना नाम बताएं — मैं आपकी पूरी मदद करूंगा। आप निश्चिंत रहें, सब अच्छा होगा! 📿\n\n\n---\n\n🙏 Hello! I am Punnet Aacharya, your personal Vedic astrology advisor.\n\nHere, you can ask me about marriage, career, money, education, health, or any aspect of life — all based on your birth chart, confidentially and for free.\n\nI need your birth details (name, date, time, place) to give you accurate astrological guidance.\n\n💡 You can ask me things like:\n• When will I get married? What will my partner be like?\n• Career success possibilities\n• Money, health, education, foreign travel, and much more!\n\nPlease tell me your name first — I am here to help you. Everything will be fine! 📿\n\n\nकृपया बताएं, आप किस भाषा में बात करना पसंद करेंगे? (Please tell me, which language do you prefer to speak in?)\n\nType 'Hindi' or 'English'.\n"""
-        
-        await update.message.reply_text(welcome_message)
-        # Save that we are waiting for language preference
+
+        # Prompt for language selection
+        language_keyboard = ReplyKeyboardMarkup([
+            ["हिंदी में बात करें (Hindi)"],
+            ["Talk in English"],
+            ["Mix Hindi & English"]
+        ], one_time_keyboard=True, resize_keyboard=True)
+        language_prompt = "कृपया अपनी पसंदीदा भाषा चुनें / Please select your preferred language:\n\n1️⃣ हिंदी में बात करें (Hindi)\n2️⃣ Talk in English\n3️⃣ Mix Hindi & English"
+        await update.message.reply_text(language_prompt, reply_markup=language_keyboard)
         context.user_data['awaiting_language_preference'] = True
         context.user_data['language_preference'] = None
         
@@ -80,11 +83,11 @@ class AstrologyBot:
         self.chat_logger.log_bot_response(
             user.id,
             user.username or "unknown",
-            welcome_message,
-            "welcome"
+            language_prompt,
+            "language_prompt"
         )
         
-        logger.info("Sent welcome message from Puneet Guruji")
+        logger.info("Sent language selection prompt")
         return ONBOARDING
     
     async def handle_onboarding(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -100,6 +103,32 @@ class AstrologyBot:
             user_message,
             "onboarding"
         )
+        
+        # Handle language selection if awaiting
+        if context.user_data.get('awaiting_language_preference', False):
+            if "हिंदी" in user_message or "Hindi" in user_message:
+                context.user_data['language_preference'] = 'hindi'
+            elif "English" in user_message:
+                context.user_data['language_preference'] = 'english'
+            else:
+                context.user_data['language_preference'] = 'mix'
+            context.user_data['awaiting_language_preference'] = False
+            # Confirm language selection
+            lang = context.user_data['language_preference']
+            if lang == 'hindi':
+                confirm = "आपने हिंदी चुना है। अब कृपया अपनी जन्म जानकारी दें।"
+            elif lang == 'english':
+                confirm = "You have selected English. Please provide your birth details."
+            else:
+                confirm = "You have selected Hindi-English mix. Please provide your birth details."
+            await update.message.reply_text(confirm, reply_markup=ReplyKeyboardRemove())
+            self.chat_logger.log_bot_response(
+                user.id,
+                user.username or "unknown",
+                confirm,
+                "language_confirm"
+            )
+            return ONBOARDING
         
         # Show typing indicator
         await update.message.chat.send_action(action="typing")
@@ -333,6 +362,9 @@ Aap ye sab details ek saath ya ek-ek karke share kar sakte hain."""
         try:
             # Get birth details
             birth_details = context.user_data.get('birth_details', {})
+            
+            # Get language preference safely
+            language = context.user_data.get('language_preference', 'hindi')
             
             # Check if we have all required details
             required_fields = ['name', 'birth_date', 'birth_time', 'birth_place']
