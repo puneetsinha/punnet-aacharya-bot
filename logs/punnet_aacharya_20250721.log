@@ -1309,3 +1309,164 @@ Samay: 05:00 PM...
 2025-07-21 08:52:32,536 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
 2025-07-21 08:52:42,776 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
 2025-07-21 08:52:53,019 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:44:12,577 - database - INFO - <module>:12 - Initializing database with URL: sqlite:///punnet_aacharya.db
+2025-07-21 18:44:12,602 - database - INFO - <module>:16 - Database engine created successfully
+2025-07-21 18:44:12,602 - database - INFO - <module>:22 - Database session maker configured
+2025-07-21 18:44:12,693 - database - INFO - <module>:52 - Creating database tables
+2025-07-21 18:44:12,702 - database - INFO - <module>:55 - Database tables created successfully
+2025-07-21 18:44:16,675 - __main__ - INFO - main:24 - Starting Punnet Aacharya Vedic Astrology Bot
+2025-07-21 18:44:16,675 - __main__ - INFO - main:25 - ==================================================
+2025-07-21 18:44:16,675 - __main__ - INFO - main:31 - Bot token found, proceeding with initialization
+2025-07-21 18:44:16,675 - __main__ - INFO - main:35 - Creating Telegram Application
+2025-07-21 18:44:16,733 - __main__ - INFO - main:37 - Telegram Application created successfully
+2025-07-21 18:44:16,733 - __main__ - INFO - main:40 - Initializing AstrologyBot
+2025-07-21 18:44:16,733 - bot_handlers - INFO - __init__:33 - Initializing AstrologyBot
+2025-07-21 18:44:16,733 - astro_calculator - INFO - __init__:14 - Initializing AstroCalculator
+2025-07-21 18:44:17,416 - astro_calculator - INFO - __init__:18 - AstroCalculator initialized successfully
+2025-07-21 18:44:17,416 - vector_store - INFO - __init__:13 - Initializing AstrologyKnowledgeBase
+2025-07-21 18:44:17,416 - vector_store - INFO - __init__:14 - Vector DB path: chromadb_storage
+2025-07-21 18:44:17,416 - vector_store - INFO - __init__:15 - Collection name: astrology_knowledge
+2025-07-21 18:44:17,603 - chromadb.telemetry.product.posthog - ERROR - _direct_capture:59 - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-07-21 18:44:17,604 - vector_store - INFO - __init__:22 - ChromaDB client created successfully
+2025-07-21 18:44:17,604 - vector_store - INFO - _get_or_create_collection:36 - Getting or creating collection
+2025-07-21 18:44:17,605 - vector_store - INFO - _get_or_create_collection:39 - Found existing collection: astrology_knowledge
+2025-07-21 18:44:17,605 - vector_store - INFO - __init__:25 - Collection ready
+2025-07-21 18:44:17,605 - vector_store - INFO - _load_knowledge_base:111 - Loading astrological rules into vector database
+2025-07-21 18:44:17,605 - vector_store - WARNING - _load_knowledge_files:56 - Knowledge directory not found
+2025-07-21 18:44:17,605 - vector_store - INFO - _load_knowledge_base:264 - Total rules to load: 19
+2025-07-21 18:44:17,613 - chromadb.telemetry.product.posthog - ERROR - _direct_capture:59 - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2025-07-21 18:44:17,613 - vector_store - INFO - _load_knowledge_base:269 - Existing rules in database: 19
+2025-07-21 18:44:17,613 - vector_store - INFO - _load_knowledge_base:307 - No new rules to add
+2025-07-21 18:44:17,613 - vector_store - INFO - __init__:28 - Knowledge base loaded successfully
+2025-07-21 18:44:17,613 - gemini_service - INFO - __init__:12 - Initializing GeminiAstrologer
+2025-07-21 18:44:17,613 - gemini_service - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 18:44:17,613 - gemini_service - INFO - __init__:53 - GeminiAstrologer initialized successfully
+2025-07-21 18:44:17,613 - context_manager - INFO - __init__:12 - Initializing ConversationContextManager
+2025-07-21 18:44:17,613 - context_manager - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 18:44:17,613 - context_manager - INFO - __init__:25 - ConversationContextManager initialized successfully
+2025-07-21 18:44:17,613 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 18:44:17,613 - bot_handlers - INFO - __init__:41 - AstrologyBot initialized successfully
+2025-07-21 18:44:17,613 - __main__ - INFO - main:42 - AstrologyBot initialized successfully
+2025-07-21 18:44:17,613 - __main__ - INFO - main:45 - Setting up conversation handler for onboarding and consultation
+2025-07-21 18:44:17,614 - __main__ - INFO - main:60 - Conversation handler added successfully
+2025-07-21 18:44:17,614 - __main__ - INFO - main:63 - Setting up error handler
+2025-07-21 18:44:17,614 - __main__ - INFO - main:65 - Error handler added successfully
+2025-07-21 18:44:17,614 - __main__ - INFO - main:68 - Starting Punnet Aacharya bot with Puneet Guruji...
+2025-07-21 18:44:17,614 - __main__ - INFO - main:69 - Bot is now running and listening for messages...
+2025-07-21 18:44:17,614 - __main__ - INFO - main:70 - ==================================================
+2025-07-21 18:44:18,179 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getMe "HTTP/1.1 200 OK"
+2025-07-21 18:44:18,345 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/deleteWebhook "HTTP/1.1 200 OK"
+2025-07-21 18:44:18,349 - telegram.ext.Application - INFO - start:620 - Application started
+2025-07-21 18:44:28,495 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:44:28,501 - bot_handlers - INFO - start:49 - Start command received from user 1177573677 (@puneetsinh)
+2025-07-21 18:44:28,504 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: /start...
+2025-07-21 18:44:28,504 - bot_handlers - INFO - start:69 - User data initialized for new session
+2025-07-21 18:44:29,196 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 18:44:29,199 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: 🙏 Namaste Beta! 
+
+Main hoon Punnet Guruji, aapke personal Vedic astrology guide. 
+
+Aapko apne janam ...
+2025-07-21 18:44:29,199 - bot_handlers - INFO - start:90 - Sent welcome message from Puneet Guruji
+2025-07-21 18:44:38,693 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:44:48,880 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:44:59,161 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:45:09,403 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:45:19,628 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:45:29,782 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:45:40,006 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:45:50,248 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:46:00,418 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:46:10,627 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:46:20,866 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:46:31,068 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:46:41,237 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:46:51,481 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:47:01,635 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:47:11,860 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:47:22,156 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:47:32,332 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:47:42,580 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:47:52,823 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:48:03,016 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:48:13,165 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:48:23,322 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:48:33,477 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:48:43,757 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:48:53,908 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:49:04,066 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:49:14,361 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:49:24,584 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:49:34,737 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:49:44,895 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:49:55,101 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:50:05,337 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:50:15,577 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:50:25,819 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:50:35,984 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:50:46,196 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:50:56,461 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:51:06,681 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:51:16,839 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:51:26,998 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:51:37,157 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:51:47,503 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:51:57,775 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:52:08,018 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:52:18,261 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:52:28,513 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:52:38,666 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:52:48,889 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:52:59,046 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:53:09,202 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:53:19,359 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:53:29,513 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:53:39,669 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:53:49,835 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:53:59,993 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:54:10,197 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:54:20,442 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:54:30,680 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:54:40,848 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:54:51,063 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:55:01,295 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:55:11,451 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:55:21,675 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:55:31,918 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:55:42,152 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:55:52,394 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:56:02,584 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:56:12,763 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:56:22,916 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:56:33,163 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:56:43,336 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:56:53,525 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:57:03,695 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:57:13,864 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:57:24,151 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:57:34,394 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:57:44,838 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:57:54,991 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:58:05,162 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:58:15,346 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:58:25,605 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:58:36,207 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:58:46,447 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:58:56,628 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:59:06,891 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:59:17,157 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:59:27,319 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:59:37,490 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:59:47,685 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 18:59:57,862 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:00:08,103 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:00:18,341 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:00:28,559 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:00:38,712 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:00:48,962 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:00:59,205 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:01:09,452 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:01:19,691 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:01:30,233 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:01:40,396 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:01:50,567 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"

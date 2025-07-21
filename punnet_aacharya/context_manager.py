@@ -54,7 +54,8 @@ class ConversationContextManager:
                                           user_message: str, 
                                           chart_data: Optional[Dict], 
                                           user_name: str,
-                                          conversation_history: List[Dict]) -> Dict:
+                                          conversation_history: List[Dict],
+                                          language_preference: str = 'hindi') -> Dict:
         """
         First LLM call: Analyze context and prepare response structure
         Returns a JSON with context analysis and response guidelines
@@ -140,6 +141,15 @@ Analyze the conversation and provide a JSON response with the following structur
 
 CRITICAL: Return ONLY the JSON object above, no explanations, no markdown formatting, no additional text. If you find any birth details in the conversation, fill them in the 'extracted_birth_details' field."""
 
+        # Add language instruction to prompt
+        if language_preference == 'english':
+            lang_instruction = '\nRespond ONLY in English.'
+        elif language_preference == 'hindi':
+            lang_instruction = '\nRespond ONLY in Hindi.'
+        else:
+            lang_instruction = '\nRespond in a natural Hindi-English mix.'
+        analysis_prompt += lang_instruction
+
         try:
             logger.info("Sending context analysis request to Gemini")
             start_time = datetime.now()
@@ -206,7 +216,8 @@ CRITICAL: Return ONLY the JSON object above, no explanations, no markdown format
                                    user_message: str,
                                    chart_data: Optional[Dict],
                                    user_name: str,
-                                   context_analysis: Dict) -> str:
+                                   context_analysis: Dict,
+                                   language_preference: str = 'hindi') -> str:
         """
         Second LLM call: Generate the final response using context analysis
         """
@@ -268,6 +279,15 @@ IMPORTANT GUIDELINES:
 
 Generate a natural, conversational response that feels like a caring guru speaking to their disciple."""
 
+        # Add language instruction to prompt
+        if language_preference == 'english':
+            lang_instruction = '\nRespond ONLY in English.'
+        elif language_preference == 'hindi':
+            lang_instruction = '\nRespond ONLY in Hindi.'
+        else:
+            lang_instruction = '\nRespond in a natural Hindi-English mix.'
+        response_prompt += lang_instruction
+
         try:
             logger.info("Sending contextual response request to Gemini")
             start_time = datetime.now()
@@ -294,7 +314,8 @@ Generate a natural, conversational response that feels like a caring guru speaki
                            chart_data: Optional[Dict],
                            user_name: str,
                            user_id: int,
-                           username: str) -> Tuple[str, Dict]:
+                           username: str,
+                           language_preference: str = 'hindi') -> Tuple[str, Dict]:
         """
         Main method to process user message with full context awareness
         Returns: (response_text, context_analysis)
@@ -308,12 +329,12 @@ Generate a natural, conversational response that feels like a caring guru speaki
             
             # Step 2: Analyze context and prepare response structure
             context_analysis = self.analyze_context_and_prepare_response(
-                user_message, chart_data, user_name, conversation_history
+                user_message, chart_data, user_name, conversation_history, language_preference
             )
             
             # Step 3: Generate contextual response
             response_text = self.generate_contextual_response(
-                user_message, chart_data, user_name, context_analysis
+                user_message, chart_data, user_name, context_analysis, language_preference
             )
             
             logger.info("Context-aware response generation completed successfully")
@@ -321,5 +342,5 @@ Generate a natural, conversational response that feels like a caring guru speaki
             
         except Exception as e:
             logger.error(f"Error in context-aware processing: {str(e)}")
-            fallback_response = "Maaf kijiye Beta, kuch technical problem aa raha hai. Aap thoda der baad dobara try karein. Main aapki help karunga. 🙏"
+            fallback_response = "Sorry, there was a technical problem. Please try again." if language_preference == 'english' else "Maaf kijiye Beta, kuch technical problem aa raha hai. Aap thoda der baad dobara try karein. Main aapki help karunga. 🙏"
             return fallback_response, {} 

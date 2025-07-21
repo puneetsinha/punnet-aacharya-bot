@@ -69,15 +69,12 @@ class AstrologyBot:
         logger.info("User data initialized for new session")
         
         # Send welcome message from Puneet Guruji
-        welcome_message = """🙏 Namaste Beta! 
-
-Main hoon Punnet Guruji, aapke personal Vedic astrology guide. 
-
-Aapko apne janam kundli ke anusar shadi, career, aur life ke har aspect mein guidance dene ke liye mujhe aapki complete birth details chahiye.
-
-Kripya apna naam batayein, main aapki help karunga. Aap nischint rahein, sab kuch theek ho jayega. 📿"""
+        welcome_message = """🙏 नमस्ते! मैं हूँ Punnet Aacharya, आपका व्यक्तिगत वैदिक ज्योतिष सलाहकार।\n\nयहाँ आप मुझसे शादी, करियर, धन, शिक्षा, स्वास्थ्य, या जीवन के किसी भी पहलू पर मार्गदर्शन ले सकते हैं — वो भी आपकी जन्म कुंडली के आधार पर, पूरी तरह गोपनीय और निशुल्क।\n\nमुझे आपकी जन्म संबंधी जानकारी (नाम, जन्म तिथि, समय, स्थान) चाहिए ताकि मैं सटीक ज्योतिषीय सलाह दे सकूं।\n\n💡 आप मुझसे पूछ सकते हैं:\n• शादी कब होगी? जीवनसाथी कैसा होगा?\n• करियर में सफलता के योग\n• धन, स्वास्थ्य, शिक्षा, विदेश यात्रा, और बहुत कुछ!\n\nकृपया सबसे पहले अपना नाम बताएं — मैं आपकी पूरी मदद करूंगा। आप निश्चिंत रहें, सब अच्छा होगा! 📿\n\n\n---\n\n🙏 Hello! I am Punnet Aacharya, your personal Vedic astrology advisor.\n\nHere, you can ask me about marriage, career, money, education, health, or any aspect of life — all based on your birth chart, confidentially and for free.\n\nI need your birth details (name, date, time, place) to give you accurate astrological guidance.\n\n💡 You can ask me things like:\n• When will I get married? What will my partner be like?\n• Career success possibilities\n• Money, health, education, foreign travel, and much more!\n\nPlease tell me your name first — I am here to help you. Everything will be fine! 📿\n\n\nकृपया बताएं, आप किस भाषा में बात करना पसंद करेंगे? (Please tell me, which language do you prefer to speak in?)\n\nType 'Hindi' or 'English'.\n"""
         
         await update.message.reply_text(welcome_message)
+        # Save that we are waiting for language preference
+        context.user_data['awaiting_language_preference'] = True
+        context.user_data['language_preference'] = None
         
         # Log bot response
         self.chat_logger.log_bot_response(
@@ -125,6 +122,16 @@ Kripya apna naam batayein, main aapki help karunga. Aap nischint rahein, sab kuc
                     context.user_data['birth_details'] = birth_details
                     logger.info(f"Heuristically captured name: {birth_details['name']}")
 
+            # In handle_onboarding, get language_preference from context.user_data
+            language = context.user_data.get('language_preference', 'hindi')
+
+            # In onboarding LLM prompt, add language instruction
+            if language == 'english':
+                lang_instruction = '\nRespond ONLY in English.'
+            elif language == 'hindi':
+                lang_instruction = '\nRespond ONLY in Hindi.'
+            else:
+                lang_instruction = '\nRespond in a natural Hindi-English mix.'
             puneet_guruji_context = f"""Aap Punnet Guruji hain - ek experienced Vedic astrologer jo Hindi mein baat karte hain.
 
 Current State: {current_state}
@@ -159,7 +166,7 @@ Respond in JSON format:
     "next_state": "collecting|complete",
     "response": "Aapka natural Hindi response",
     "missing_info": ["list of missing fields"]
-}}"""
+}}""" + lang_instruction
             
             # Get Puneet Guruji response
             logger.info("Sending request to Puneet Guruji")
@@ -198,6 +205,10 @@ Respond in JSON format:
                 
                 # Send response to user
                 user_response = response_data.get('response', "Dhanyawad! Aap apna naam batayein.")
+                if context.user_data.get('language_preference', 'hindi') == 'english':
+                    # Optionally, translate or use English response if available
+                    # For now, just reply in English if possible
+                    user_response = "Thank you! Please tell me your name." if user_response == "Dhanyawad! Aap apna naam batayein." else user_response
                 await update.message.reply_text(user_response)
                 
                 # Log bot response
@@ -232,12 +243,14 @@ Respond in JSON format:
                     # If a concern/question is present, answer it directly
                     if last_concern:
                         # Use context manager to generate answer
+                        # When calling context_manager.process_user_message, pass language_preference
                         response_text, context_analysis = self.context_manager.process_user_message(
                             user_message=last_concern,
                             chart_data=birth_details,
                             user_name=birth_details.get('name', 'User'),
                             user_id=user.id,
-                            username=user.username or "unknown"
+                            username=user.username or "unknown",
+                            language_preference=language
                         )
                         await update.message.reply_text(response_text)
                         self.chat_logger.log_bot_response(
@@ -383,14 +396,15 @@ Aap ye sab details ek saath ya ek-ek karke share kar sakte hain."""
 
             # --- NEW: Use context-aware response generation ---
             try:
-                # Use context manager for intelligent response generation
+                # In consultation handler, also pass language_preference
                 user_name = birth_details.get('name', 'User')
                 response_text, context_analysis = self.context_manager.process_user_message(
                     user_message=user_message,
                     chart_data=chart_data,
                     user_name=user_name,
                     user_id=user.id,
-                    username=user.username or "unknown"
+                    username=user.username or "unknown",
+                    language_preference=language
                 )
 
                 # --- NEW: Handle extracted birth details ---
@@ -468,7 +482,11 @@ Aap ye sab details ek saath ya ek-ek karke share kar sakte hain."""
 
             except Exception as e:
                 logger.error(f"Error in context-aware response generation: {str(e)}")
-                fallback_response = "Maaf kijiye Beta, kuch technical problem aa raha hai. Aap thoda der baad dobara try karein. Main aapki help karunga. 🙏"
+                # For all static/fallback messages, select by language
+                if language == 'english':
+                    fallback_response = "Sorry, there was a technical problem. Please try again."
+                else:
+                    fallback_response = "Maaf kijiye, kuch technical problem aa raha hai. Please try again."
                 await update.message.reply_text(fallback_response)
                 self.chat_logger.log_bot_response(
                     user.id,
@@ -726,7 +744,11 @@ Aap ye sab details ek saath ya ek-ek karke share kar sakte hain."""
             "command"
         )
         
-        cancel_message = 'Theek hai Beta, operation cancel kar diya gaya hai. Aap /start karke dobara shuru kar sakte hain. 🙏'
+        language = context.user_data.get('language_preference', 'hindi')
+        if language == 'english':
+            cancel_message = 'Okay, the operation has been cancelled. You can /start to begin again. 🙏'
+        else:
+            cancel_message = 'Theek hai Beta, operation cancel kar diya gaya hai. Aap /start karke dobara shuru kar sakte hain. 🙏'
         await update.message.reply_text(
             cancel_message,
             reply_markup=ReplyKeyboardRemove()
@@ -755,44 +777,29 @@ Aap ye sab details ek saath ya ek-ek karke share kar sakte hain."""
             "command"
         )
         
+        language = context.user_data.get('language_preference', 'hindi')
         conversation_memory = context.user_data.get('conversation_memory', {})
         asked_questions = conversation_memory.get('asked_questions', [])
         
         if not asked_questions:
-            history_message = """📋 आपकी बातचीत का इतिहास:
-
-कोई प्रश्न अभी तक नहीं पूछा गया है।
-
-आप निम्नलिखित क्षेत्रों के बारे में पूछ सकते हैं:
-• 💑 शादी और रिश्ते
-• 💼 करियर और व्यवसाय  
-• 🏥 स्वास्थ्य और कल्याण
-• 📚 शिक्षा और ज्ञान
-• 💰 धन और समृद्धि"""
+            if language == 'english':
+                history_message = "📋 Your conversation history:\n\nNo questions have been asked yet.\n\nYou can ask about the following areas:\n• 💑 Marriage & Relationships\n• 💼 Career & Business\n• 🏥 Health & Wellness\n• 📚 Education & Knowledge\n• 💰 Wealth & Prosperity"
+            else:
+                history_message = "📋 आपकी बातचीत का इतिहास:\n\nकोई प्रश्न अभी तक नहीं पूछा गया है।\n\nआप निम्नलिखित क्षेत्रों के बारे में पूछ सकते हैं:\n• 💑 शादी और रिश्ते\n• 💼 करियर और व्यवसाय  \n• 🏥 स्वास्थ्य और कल्याण\n• 📚 शिक्षा और ज्ञान\n• 💰 धन और समृद्धि"
         else:
-            question_names = [self._get_category_name_hindi(q) for q in asked_questions]
-            history_message = f"""📋 आपकी बातचीत का इतिहास:
-
-पूछे गए प्रश्न:
-{chr(10).join([f"• {name}" for name in question_names])}
-
-💡 आप इन क्षेत्रों के बारे में और जानकारी प्राप्त कर सकते हैं:
-• 💑 शादी और रिश्ते
-• 💼 करियर और व्यवसाय  
-• 🏥 स्वास्थ्य और कल्याण
-• 📚 शिक्षा और ज्ञान
-• 💰 धन और समृद्धि"""
-        
+            if language == 'english':
+                question_names = [q.capitalize() for q in asked_questions]
+                history_message = f"📋 Your conversation history:\n\nQuestions asked:\n{chr(10).join([f'• {name}' for name in question_names])}\n\n💡 You can ask more about these areas:\n• 💑 Marriage & Relationships\n• 💼 Career & Business\n• 🏥 Health & Wellness\n• 📚 Education & Knowledge\n• 💰 Wealth & Prosperity"
+            else:
+                question_names = [self._get_category_name_hindi(q) for q in asked_questions]
+                history_message = f"📋 आपकी बातचीत का इतिहास:\n\nपूछे गए प्रश्न:\n{chr(10).join([f'• {name}' for name in question_names])}\n\n💡 आप इन क्षेत्रों के बारे में और जानकारी प्राप्त कर सकते हैं:\n• 💑 शादी और रिश्ते\n• 💼 करियर और व्यवसाय  \n• 🏥 स्वास्थ्य और कल्याण\n• 📚 शिक्षा और ज्ञान\n• 💰 धन और समृद्धि"
         await update.message.reply_text(history_message)
-        
-        # Log bot response
         self.chat_logger.log_bot_response(
             user.id,
             user.username or "unknown",
             history_message,
             "history"
         )
-        
         return CONSULTATION
     
     async def reset_memory(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -808,6 +815,7 @@ Aap ye sab details ek saath ya ek-ek karke share kar sakte hain."""
             "command"
         )
         
+        language = context.user_data.get('language_preference', 'hindi')
         # Reset conversation memory
         if 'conversation_memory' in context.user_data:
             context.user_data['conversation_memory'] = {
@@ -816,34 +824,23 @@ Aap ye sab details ek saath ya ek-ek karke share kar sakte hain."""
                 'last_category': None,
                 'session_start': datetime.now().isoformat()
             }
-        
-        reset_message = """🔄 बातचीत का इतिहास रीसेट कर दिया गया है।
-
-अब आप सभी प्रश्न फिर से पूछ सकते हैं:
-• 💑 शादी और रिश्ते
-• 💼 करियर और व्यवसाय  
-• 🏥 स्वास्थ्य और कल्याण
-• 📚 शिक्षा और ज्ञान
-• 💰 धन और समृद्धि"""
-        
+        if language == 'english':
+            reset_message = "🔄 Conversation history has been reset.\n\nYou can now ask all questions again:\n• 💑 Marriage & Relationships\n• 💼 Career & Business\n• 🏥 Health & Wellness\n• 📚 Education & Knowledge\n• 💰 Wealth & Prosperity"
+        else:
+            reset_message = "🔄 बातचीत का इतिहास रीसेट कर दिया गया है।\n\nअब आप सभी प्रश्न फिर से पूछ सकते हैं:\n• 💑 शादी और रिश्ते\n• 💼 करियर और व्यवसाय  \n• 🏥 स्वास्थ्य और कल्याण\n• 📚 शिक्षा और ज्ञान\n• 💰 धन और समृद्धि"
         await update.message.reply_text(reset_message)
-        
-        # Log bot response
         self.chat_logger.log_bot_response(
             user.id,
             user.username or "unknown",
             reset_message,
             "reset"
         )
-        
-        # Log system event
         self.chat_logger.log_system_event(
             user.id,
             user.username or "unknown",
             "conversation_memory_reset",
             {"reset_time": datetime.now().isoformat()}
         )
-        
         return CONSULTATION
 
     def _get_category_name_hindi(self, category):

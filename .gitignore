@@ -1,6 +1,8 @@
 # Python virtual environments
 venv/
 ENV/
+chat_logs/
+logs/
 .env
 .venv/
 PuneetAacharya/punnet_aacharya/Puneetaacharya/
