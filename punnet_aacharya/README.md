@@ -83,6 +83,21 @@ source Puneetaacharya/bin/activate
 python main.py
 ```
 
+---
+
+### Running with Docker
+
+```bash
+# Build the Docker image
+docker build -t punnet-aacharya-bot .
+
+# Run the bot (make sure to provide your .env file for secrets)
+docker run --env-file .env punnet-aacharya-bot
+```
+
+- Ensure your `.env` file is in the project root and contains your API keys.
+- The container will run the bot in polling mode (no ports need to be exposed).
+
 ## Logging System
 
 The bot includes a comprehensive logging system that tracks all operations, calculations, and user interactions.
