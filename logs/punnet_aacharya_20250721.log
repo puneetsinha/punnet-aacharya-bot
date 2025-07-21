@@ -2093,3 +2093,510 @@ Samay: 5:...
 2025-07-21 19:39:44,005 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
 2025-07-21 19:39:54,171 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
 2025-07-21 19:40:04,364 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:41:54,212 - database - INFO - <module>:12 - Initializing database with URL: sqlite:///punnet_aacharya.db
+2025-07-21 19:41:54,226 - database - INFO - <module>:16 - Database engine created successfully
+2025-07-21 19:41:54,227 - database - INFO - <module>:22 - Database session maker configured
+2025-07-21 19:41:54,231 - database - INFO - <module>:52 - Creating database tables
+2025-07-21 19:41:54,235 - database - INFO - <module>:55 - Database tables created successfully
+2025-07-21 19:41:55,690 - __main__ - INFO - main:24 - Starting Punnet Aacharya Vedic Astrology Bot
+2025-07-21 19:41:55,690 - __main__ - INFO - main:25 - ==================================================
+2025-07-21 19:41:55,690 - __main__ - INFO - main:31 - Bot token found, proceeding with initialization
+2025-07-21 19:41:55,691 - __main__ - INFO - main:35 - Creating Telegram Application
+2025-07-21 19:41:55,747 - __main__ - INFO - main:37 - Telegram Application created successfully
+2025-07-21 19:41:55,747 - __main__ - INFO - main:40 - Initializing AstrologyBot
+2025-07-21 19:41:55,747 - bot_handlers - INFO - __init__:33 - Initializing AstrologyBot
+2025-07-21 19:41:55,747 - astro_calculator - INFO - __init__:14 - Initializing AstroCalculator
+2025-07-21 19:41:56,434 - astro_calculator - INFO - __init__:18 - AstroCalculator initialized successfully
+2025-07-21 19:41:56,435 - vector_store - INFO - __init__:13 - Initializing AstrologyKnowledgeBase
+2025-07-21 19:41:56,435 - vector_store - INFO - __init__:14 - Vector DB path: chromadb_storage
+2025-07-21 19:41:56,435 - vector_store - INFO - __init__:15 - Collection name: astrology_knowledge
+2025-07-21 19:41:56,565 - chromadb.telemetry.product.posthog - ERROR - _direct_capture:59 - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-07-21 19:41:56,565 - vector_store - INFO - __init__:22 - ChromaDB client created successfully
+2025-07-21 19:41:56,565 - vector_store - INFO - _get_or_create_collection:36 - Getting or creating collection
+2025-07-21 19:41:56,566 - vector_store - INFO - _get_or_create_collection:39 - Found existing collection: astrology_knowledge
+2025-07-21 19:41:56,566 - vector_store - INFO - __init__:25 - Collection ready
+2025-07-21 19:41:56,566 - vector_store - INFO - _load_knowledge_base:111 - Loading astrological rules into vector database
+2025-07-21 19:41:56,566 - vector_store - WARNING - _load_knowledge_files:56 - Knowledge directory not found
+2025-07-21 19:41:56,566 - vector_store - INFO - _load_knowledge_base:264 - Total rules to load: 19
+2025-07-21 19:41:56,574 - chromadb.telemetry.product.posthog - ERROR - _direct_capture:59 - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2025-07-21 19:41:56,575 - vector_store - INFO - _load_knowledge_base:269 - Existing rules in database: 19
+2025-07-21 19:41:56,575 - vector_store - INFO - _load_knowledge_base:307 - No new rules to add
+2025-07-21 19:41:56,575 - vector_store - INFO - __init__:28 - Knowledge base loaded successfully
+2025-07-21 19:41:56,575 - gemini_service - INFO - __init__:12 - Initializing GeminiAstrologer
+2025-07-21 19:41:56,575 - gemini_service - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 19:41:56,575 - gemini_service - INFO - __init__:53 - GeminiAstrologer initialized successfully
+2025-07-21 19:41:56,575 - context_manager - INFO - __init__:12 - Initializing ConversationContextManager
+2025-07-21 19:41:56,575 - context_manager - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 19:41:56,575 - context_manager - INFO - __init__:25 - ConversationContextManager initialized successfully
+2025-07-21 19:41:56,575 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 19:41:56,575 - bot_handlers - INFO - __init__:41 - AstrologyBot initialized successfully
+2025-07-21 19:41:56,575 - __main__ - INFO - main:42 - AstrologyBot initialized successfully
+2025-07-21 19:41:56,575 - __main__ - INFO - main:45 - Setting up conversation handler for onboarding and consultation
+2025-07-21 19:41:56,575 - __main__ - INFO - main:60 - Conversation handler added successfully
+2025-07-21 19:41:56,576 - __main__ - INFO - main:63 - Setting up error handler
+2025-07-21 19:41:56,576 - __main__ - INFO - main:65 - Error handler added successfully
+2025-07-21 19:41:56,576 - __main__ - INFO - main:68 - Starting Punnet Aacharya bot with Puneet Guruji...
+2025-07-21 19:41:56,576 - __main__ - INFO - main:69 - Bot is now running and listening for messages...
+2025-07-21 19:41:56,576 - __main__ - INFO - main:70 - ==================================================
+2025-07-21 19:41:57,072 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getMe "HTTP/1.1 200 OK"
+2025-07-21 19:41:57,309 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/deleteWebhook "HTTP/1.1 200 OK"
+2025-07-21 19:41:57,313 - telegram.ext.Application - INFO - start:620 - Application started
+2025-07-21 19:41:57,782 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:41:57,786 - bot_handlers - INFO - start:49 - Start command received from user 7950863476 (@None)
+2025-07-21 19:41:57,789 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: user, Content: /start...
+2025-07-21 19:41:57,789 - bot_handlers - INFO - start:69 - User data initialized for new session
+2025-07-21 19:41:58,157 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 19:41:58,163 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: bot, Content: कृपया अपनी पसंदीदा भाषा चुनें / Please select your preferred language:
+
+1️⃣ हिंदी में बात करें (Hind...
+2025-07-21 19:41:58,163 - bot_handlers - INFO - start:90 - Sent language selection prompt
+2025-07-21 19:41:58,163 - bot_handlers - INFO - handle_onboarding:97 - Onboarding message from user 7950863476: 'Hello...'
+2025-07-21 19:41:58,165 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: user, Content: Hello...
+2025-07-21 19:41:58,536 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 19:41:58,541 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: bot, Content: You have selected Hindi-English mix. Please provide your birth details....
+2025-07-21 19:42:07,971 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:42:17,134 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:42:17,138 - bot_handlers - INFO - handle_onboarding:97 - Onboarding message from user 7950863476: '22091981...'
+2025-07-21 19:42:17,140 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: user, Content: 22091981...
+2025-07-21 19:42:17,794 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 19:42:17,795 - bot_handlers - INFO - handle_onboarding:141 - Current onboarding state: start
+2025-07-21 19:42:17,795 - bot_handlers - INFO - handle_onboarding:142 - Current birth details: {}
+2025-07-21 19:42:17,795 - bot_handlers - INFO - handle_onboarding:201 - Sending request to Puneet Guruji
+2025-07-21 19:42:21,546 - bot_handlers - INFO - handle_onboarding:205 - Raw Puneet Guruji response: ```json
+{
+    "updated_details": {
+        "birth_date": "1981-09-22"
+    },
+    "next_state": "collecting",
+    "response": "Namaste! Aapka janam din to pata chal gaya, lekin aapka naam kya hai? Plea...
+2025-07-21 19:42:21,546 - bot_handlers - INFO - handle_onboarding:218 - Cleaned response: {
+    "updated_details": {
+        "birth_date": "1981-09-22"
+    },
+    "next_state": "collecting",
+    "response": "Namaste! Aapka janam din to pata chal gaya, lekin aapka naam kya hai? Please apna ...
+2025-07-21 19:42:21,547 - bot_handlers - INFO - handle_onboarding:222 - Puneet Guruji response: {'updated_details': {'birth_date': '1981-09-22'}, 'next_state': 'collecting', 'response': 'Namaste! Aapka janam din to pata chal gaya, lekin aapka naam kya hai? Please apna poora naam batayiye.', 'missing_info': ['name', 'birth_time', 'birth_place']}
+2025-07-21 19:42:21,547 - bot_handlers - INFO - handle_onboarding:228 - Updated birth details: {'birth_date': '1981-09-22'}
+2025-07-21 19:42:21,547 - bot_handlers - INFO - handle_onboarding:233 - Updated state to: collecting
+2025-07-21 19:42:21,896 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 19:42:21,900 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: bot, Content: Namaste! Aapka janam din to pata chal gaya, lekin aapka naam kya hai? Please apna poora naam batayiy...
+2025-07-21 19:42:27,321 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:42:32,728 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:42:32,731 - bot_handlers - INFO - handle_onboarding:97 - Onboarding message from user 7950863476: 'Karan behl...'
+2025-07-21 19:42:32,733 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: user, Content: Karan behl...
+2025-07-21 19:42:33,837 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 19:42:33,837 - bot_handlers - INFO - handle_onboarding:141 - Current onboarding state: collecting
+2025-07-21 19:42:33,838 - bot_handlers - INFO - handle_onboarding:142 - Current birth details: {'birth_date': '1981-09-22'}
+2025-07-21 19:42:33,838 - bot_handlers - INFO - handle_onboarding:152 - Heuristically captured name: Karan Behl
+2025-07-21 19:42:33,838 - bot_handlers - INFO - handle_onboarding:201 - Sending request to Puneet Guruji
+2025-07-21 19:42:35,392 - bot_handlers - INFO - handle_onboarding:205 - Raw Puneet Guruji response: ```json
+{
+    "updated_details": {"name": "Karan Behl", "birth_date": "1981-09-22"},
+    "next_state": "collecting",
+    "response": "Namaste Karan ji! Aapka naam aur janam tithi toh mil gayi hai. Jan...
+2025-07-21 19:42:35,393 - bot_handlers - INFO - handle_onboarding:218 - Cleaned response: {
+    "updated_details": {"name": "Karan Behl", "birth_date": "1981-09-22"},
+    "next_state": "collecting",
+    "response": "Namaste Karan ji! Aapka naam aur janam tithi toh mil gayi hai. Janam ka sa...
+2025-07-21 19:42:35,393 - bot_handlers - INFO - handle_onboarding:222 - Puneet Guruji response: {'updated_details': {'name': 'Karan Behl', 'birth_date': '1981-09-22'}, 'next_state': 'collecting', 'response': 'Namaste Karan ji! Aapka naam aur janam tithi toh mil gayi hai. Janam ka samay aur sthan bhi bata dijiye, taki main aapki kundli ka analysis kar sakun. Please provide your birth time (HH:MM format) and birth place (City, State).', 'missing_info': ['birth_time', 'birth_place']}
+2025-07-21 19:42:35,393 - bot_handlers - INFO - handle_onboarding:228 - Updated birth details: {'birth_date': '1981-09-22', 'name': 'Karan Behl'}
+2025-07-21 19:42:35,393 - bot_handlers - INFO - handle_onboarding:233 - Updated state to: collecting
+2025-07-21 19:42:35,739 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 19:42:35,744 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: bot, Content: Namaste Karan ji! Aapka naam aur janam tithi toh mil gayi hai. Janam ka samay aur sthan bhi bata dij...
+2025-07-21 19:42:42,895 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:42:53,430 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:43:03,656 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:43:06,424 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:43:06,427 - bot_handlers - INFO - handle_onboarding:97 - Onboarding message from user 7950863476: '09:55 , amritsar punjab...'
+2025-07-21 19:43:06,430 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: user, Content: 09:55 , amritsar punjab...
+2025-07-21 19:43:08,328 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 19:43:08,330 - bot_handlers - INFO - handle_onboarding:141 - Current onboarding state: collecting
+2025-07-21 19:43:08,330 - bot_handlers - INFO - handle_onboarding:142 - Current birth details: {'birth_date': '1981-09-22', 'name': 'Karan Behl'}
+2025-07-21 19:43:08,330 - bot_handlers - INFO - handle_onboarding:201 - Sending request to Puneet Guruji
+2025-07-21 19:43:10,176 - bot_handlers - INFO - handle_onboarding:205 - Raw Puneet Guruji response: ```json
+{
+    "updated_details": {
+        "birth_date": "1981-09-22",
+        "name": "Karan Behl",
+        "birth_time": "09:55",
+        "birth_place": "Amritsar, Punjab"
+    },
+    "next_state": "...
+2025-07-21 19:43:10,177 - bot_handlers - INFO - handle_onboarding:218 - Cleaned response: {
+    "updated_details": {
+        "birth_date": "1981-09-22",
+        "name": "Karan Behl",
+        "birth_time": "09:55",
+        "birth_place": "Amritsar, Punjab"
+    },
+    "next_state": "complete...
+2025-07-21 19:43:10,177 - bot_handlers - INFO - handle_onboarding:222 - Puneet Guruji response: {'updated_details': {'birth_date': '1981-09-22', 'name': 'Karan Behl', 'birth_time': '09:55', 'birth_place': 'Amritsar, Punjab'}, 'next_state': 'complete', 'response': 'Karan ji, aapka naam Karan Behl hai, janam tithi 22 September 1981, janam samay 09:55 subah, aur janam sthan Amritsar, Punjab. Kya yeh sab sahi hai? Agar haan, toh ab aap mujhe bataiye, aap kya janna chahte hain? Shadi ke bare mein, career ke bare mein, ya aapko koi aur guidance chahiye?', 'missing_info': []}
+2025-07-21 19:43:10,177 - bot_handlers - INFO - handle_onboarding:228 - Updated birth details: {'birth_date': '1981-09-22', 'name': 'Karan Behl', 'birth_time': '09:55', 'birth_place': 'Amritsar, Punjab'}
+2025-07-21 19:43:10,177 - bot_handlers - INFO - handle_onboarding:233 - Updated state to: complete
+2025-07-21 19:43:10,720 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 19:43:10,724 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: bot, Content: Karan ji, aapka naam Karan Behl hai, janam tithi 22 September 1981, janam samay 09:55 subah, aur jan...
+2025-07-21 19:43:10,724 - bot_handlers - INFO - handle_onboarding:253 - Onboarding complete, moving to consultation
+2025-07-21 19:43:10,726 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: system, Content: System event: onboarding_complete...
+2025-07-21 19:43:10,727 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 19:43:10,729 - context_manager - INFO - get_conversation_history:46 - Retrieved 4 messages for user 7950863476
+2025-07-21 19:43:11,108 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 19:43:11,110 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: bot, Content: Dhanyavaad! Aapke janm ki saari jaankari mil gayi hai. Ab aap apna prashna puch sakte hain. (Jaise: ...
+2025-07-21 19:43:16,588 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:43:27,317 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:43:28,685 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:43:28,688 - bot_handlers - INFO - handle_consultation:349 - Consultation message from user 7950863476: 'Tell me anything...'
+2025-07-21 19:43:28,691 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: user, Content: Tell me anything...
+2025-07-21 19:43:29,406 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 19:43:29,407 - bot_handlers - INFO - handle_consultation:390 - Calculating birth chart for consultation
+2025-07-21 19:43:29,407 - bot_handlers - INFO - _calculate_and_save_chart:692 - Calculating birth chart for user 7950863476
+2025-07-21 19:43:29,410 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: system, Content: System event: chart_calculation_started...
+2025-07-21 19:43:29,413 - bot_handlers - INFO - _calculate_and_save_chart:713 - Parsed details - Date: 1981-09-22, Time: 09:55:00, Place: Amritsar, Punjab
+2025-07-21 19:43:29,414 - astro_calculator - INFO - generate_birth_chart:227 - Generating birth chart for Karan Behl - 1981-09-22 09:55:00 at Amritsar, Punjab
+2025-07-21 19:43:29,414 - astro_calculator - INFO - generate_birth_chart:231 - Step 1: Getting coordinates
+2025-07-21 19:43:29,414 - astro_calculator - INFO - get_coordinates:22 - Getting coordinates for place: Amritsar, Punjab
+2025-07-21 19:43:30,449 - astro_calculator - INFO - get_coordinates:27 - Coordinates found: lat=31.6356659, lon=74.8787496
+2025-07-21 19:43:30,450 - astro_calculator - INFO - generate_birth_chart:235 - Step 2: Getting timezone
+2025-07-21 19:43:30,477 - astro_calculator - INFO - generate_birth_chart:237 - Timezone: Asia/Kolkata
+2025-07-21 19:43:30,478 - astro_calculator - INFO - generate_birth_chart:243 - Step 3: Calculating Julian Day
+2025-07-21 19:43:30,478 - astro_calculator - INFO - calculate_julian_day:38 - Calculating Julian Day for 1981-09-22 09:55:00 in timezone Asia/Kolkata
+2025-07-21 19:43:30,547 - astro_calculator - INFO - calculate_julian_day:50 - Julian Day calculated: 2444869.684027778
+2025-07-21 19:43:30,547 - astro_calculator - INFO - generate_birth_chart:247 - Step 4: Calculating houses
+2025-07-21 19:43:30,547 - astro_calculator - INFO - calculate_houses:58 - Calculating houses for JD=2444869.684027778, lat=31.6356659, lon=74.8787496
+2025-07-21 19:43:30,553 - astro_calculator - INFO - calculate_houses:66 - Houses calculated: ASC=224.28, MC=139.66
+2025-07-21 19:43:30,554 - astro_calculator - INFO - generate_birth_chart:251 - Step 5: Calculating planetary positions
+2025-07-21 19:43:30,554 - astro_calculator - INFO - calculate_planetary_positions:75 - Calculating planetary positions for JD=2444869.684027778
+2025-07-21 19:43:30,558 - astro_calculator - INFO - calculate_planetary_positions:119 - Planetary positions calculated for 9 planets
+2025-07-21 19:43:30,558 - astro_calculator - INFO - generate_birth_chart:255 - Step 6: Assigning planets to houses
+2025-07-21 19:43:30,558 - astro_calculator - INFO - generate_birth_chart:270 - Step 7: Calculating divisional charts
+2025-07-21 19:43:30,558 - astro_calculator - INFO - calculate_divisional_charts:154 - Calculating divisional charts (D9 and D10)
+2025-07-21 19:43:30,558 - astro_calculator - INFO - calculate_divisional_charts:181 - Divisional charts calculated successfully
+2025-07-21 19:43:30,558 - astro_calculator - INFO - generate_birth_chart:274 - Step 8: Calculating dasha periods
+2025-07-21 19:43:30,558 - astro_calculator - INFO - calculate_dasha_periods:190 - Calculating dasha periods for Moon longitude: 82.39°
+2025-07-21 19:43:30,558 - astro_calculator - INFO - calculate_dasha_periods:216 - Current dasha: Jupiter (2.9 years elapsed, 13.1 remaining)
+2025-07-21 19:43:30,558 - astro_calculator - INFO - generate_birth_chart:293 - Birth chart generated successfully for Karan Behl
+2025-07-21 19:43:30,560 - astro_calculator - INFO - generate_birth_chart:294 - Ascendant: Scorpio
+2025-07-21 19:43:30,560 - astro_calculator - INFO - generate_birth_chart:295 - Current dasha: Jupiter
+2025-07-21 19:43:30,560 - bot_handlers - INFO - _calculate_and_save_chart:719 - Birth chart calculated successfully for Karan Behl
+2025-07-21 19:43:30,560 - bot_handlers - INFO - _calculate_and_save_chart:725 - Saving user data to database
+2025-07-21 19:43:30,565 - bot_handlers - INFO - _calculate_and_save_chart:732 - Creating new user record for 7950863476
+2025-07-21 19:43:30,569 - bot_handlers - INFO - _calculate_and_save_chart:747 - User data saved successfully for 7950863476
+2025-07-21 19:43:30,570 - bot_handlers - INFO - handle_consultation:427 - Question category determined: None
+2025-07-21 19:43:30,570 - context_manager - INFO - process_user_message:323 - Processing user message with context: 'Tell me anything...'
+2025-07-21 19:43:30,570 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 19:43:30,571 - context_manager - INFO - get_conversation_history:46 - Retrieved 3 messages for user 7950863476
+2025-07-21 19:43:30,571 - context_manager - INFO - process_user_message:328 - Retrieved 3 historical messages
+2025-07-21 19:43:30,571 - context_manager - INFO - analyze_context_and_prepare_response:63 - Analyzing conversation context and preparing response structure
+2025-07-21 19:43:30,571 - context_manager - INFO - analyze_context_and_prepare_response:154 - Sending context analysis request to Gemini
+2025-07-21 19:43:33,348 - context_manager - INFO - analyze_context_and_prepare_response:160 - Context analysis received in 2.78 seconds
+2025-07-21 19:43:33,348 - context_manager - INFO - analyze_context_and_prepare_response:173 - Context analysis completed: general
+2025-07-21 19:43:33,348 - context_manager - INFO - generate_contextual_response:224 - Generating contextual response using analysis
+2025-07-21 19:43:33,348 - context_manager - INFO - generate_contextual_response:292 - Sending contextual response request to Gemini
+2025-07-21 19:43:36,341 - context_manager - INFO - generate_contextual_response:298 - Contextual response received in 2.99 seconds
+2025-07-21 19:43:36,342 - context_manager - INFO - generate_contextual_response:299 - Response length: 987 characters
+2025-07-21 19:43:36,342 - context_manager - INFO - process_user_message:340 - Context-aware response generation completed successfully
+2025-07-21 19:43:37,091 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 19:43:37,095 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: bot, Content: Namaste, Karan Behl ji. I see you are seeking guidance, seeking to understand what the stars have in...
+2025-07-21 19:43:37,095 - bot_handlers - INFO - handle_consultation:497 - Context analysis: general
+2025-07-21 19:43:38,905 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:43:49,062 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:43:59,273 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:44:09,461 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:44:19,620 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:44:29,796 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:44:40,152 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:44:43,733 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:44:43,735 - bot_handlers - INFO - handle_consultation:349 - Consultation message from user 7950863476: 'Career...'
+2025-07-21 19:44:43,736 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: user, Content: Career...
+2025-07-21 19:44:44,380 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 19:44:44,381 - bot_handlers - INFO - handle_consultation:427 - Question category determined: career
+2025-07-21 19:44:44,381 - context_manager - INFO - process_user_message:323 - Processing user message with context: 'Career...'
+2025-07-21 19:44:44,381 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 19:44:44,384 - context_manager - INFO - get_conversation_history:46 - Retrieved 3 messages for user 7950863476
+2025-07-21 19:44:44,384 - context_manager - INFO - process_user_message:328 - Retrieved 3 historical messages
+2025-07-21 19:44:44,384 - context_manager - INFO - analyze_context_and_prepare_response:63 - Analyzing conversation context and preparing response structure
+2025-07-21 19:44:44,385 - context_manager - INFO - analyze_context_and_prepare_response:154 - Sending context analysis request to Gemini
+2025-07-21 19:44:47,980 - context_manager - INFO - analyze_context_and_prepare_response:160 - Context analysis received in 3.60 seconds
+2025-07-21 19:44:47,982 - context_manager - INFO - analyze_context_and_prepare_response:173 - Context analysis completed: career
+2025-07-21 19:44:47,982 - context_manager - INFO - generate_contextual_response:224 - Generating contextual response using analysis
+2025-07-21 19:44:47,982 - context_manager - INFO - generate_contextual_response:292 - Sending contextual response request to Gemini
+2025-07-21 19:44:50,616 - context_manager - INFO - generate_contextual_response:298 - Contextual response received in 2.63 seconds
+2025-07-21 19:44:50,616 - context_manager - INFO - generate_contextual_response:299 - Response length: 1104 characters
+2025-07-21 19:44:50,617 - context_manager - INFO - process_user_message:340 - Context-aware response generation completed successfully
+2025-07-21 19:44:51,283 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 19:44:51,285 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: bot, Content: Namaste, Karan. I understand your concern regarding your career. *Chinta mat karo*, we will look at ...
+2025-07-21 19:44:51,285 - bot_handlers - INFO - handle_consultation:497 - Context analysis: career
+2025-07-21 19:44:53,900 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:45:04,049 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:45:14,273 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:45:24,430 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:45:30,674 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:45:30,677 - bot_handlers - INFO - handle_consultation:349 - Consultation message from user 7950863476: 'Salary...'
+2025-07-21 19:45:30,680 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: user, Content: Salary...
+2025-07-21 19:45:31,317 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 19:45:31,319 - bot_handlers - INFO - handle_consultation:427 - Question category determined: career
+2025-07-21 19:45:31,319 - context_manager - INFO - process_user_message:323 - Processing user message with context: 'Salary...'
+2025-07-21 19:45:31,319 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 19:45:31,323 - context_manager - INFO - get_conversation_history:46 - Retrieved 3 messages for user 7950863476
+2025-07-21 19:45:31,323 - context_manager - INFO - process_user_message:328 - Retrieved 3 historical messages
+2025-07-21 19:45:31,324 - context_manager - INFO - analyze_context_and_prepare_response:63 - Analyzing conversation context and preparing response structure
+2025-07-21 19:45:31,324 - context_manager - INFO - analyze_context_and_prepare_response:154 - Sending context analysis request to Gemini
+2025-07-21 19:45:34,493 - context_manager - INFO - analyze_context_and_prepare_response:160 - Context analysis received in 3.17 seconds
+2025-07-21 19:45:34,494 - context_manager - INFO - analyze_context_and_prepare_response:173 - Context analysis completed: career
+2025-07-21 19:45:34,494 - context_manager - INFO - generate_contextual_response:224 - Generating contextual response using analysis
+2025-07-21 19:45:34,494 - context_manager - INFO - generate_contextual_response:292 - Sending contextual response request to Gemini
+2025-07-21 19:45:37,507 - context_manager - INFO - generate_contextual_response:298 - Contextual response received in 3.01 seconds
+2025-07-21 19:45:37,507 - context_manager - INFO - generate_contextual_response:299 - Response length: 761 characters
+2025-07-21 19:45:37,507 - context_manager - INFO - process_user_message:340 - Context-aware response generation completed successfully
+2025-07-21 19:45:38,321 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 19:45:38,326 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: bot, Content: Namaste, Karan. Main samajh raha hoon, aapke mann mein salary ko lekar chinta hai. Pichli baar humne...
+2025-07-21 19:45:38,326 - bot_handlers - INFO - handle_consultation:497 - Context analysis: career
+2025-07-21 19:45:40,967 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:45:51,192 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:46:01,461 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:46:12,214 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:46:12,368 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:46:12,371 - bot_handlers - INFO - handle_consultation:349 - Consultation message from user 7950863476: 'Ji...'
+2025-07-21 19:46:12,373 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: user, Content: Ji...
+2025-07-21 19:46:13,037 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 19:46:13,037 - bot_handlers - INFO - handle_consultation:427 - Question category determined: None
+2025-07-21 19:46:13,037 - context_manager - INFO - process_user_message:323 - Processing user message with context: 'Ji...'
+2025-07-21 19:46:13,038 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 19:46:13,039 - context_manager - INFO - get_conversation_history:46 - Retrieved 3 messages for user 7950863476
+2025-07-21 19:46:13,039 - context_manager - INFO - process_user_message:328 - Retrieved 3 historical messages
+2025-07-21 19:46:13,039 - context_manager - INFO - analyze_context_and_prepare_response:63 - Analyzing conversation context and preparing response structure
+2025-07-21 19:46:13,039 - context_manager - INFO - analyze_context_and_prepare_response:154 - Sending context analysis request to Gemini
+2025-07-21 19:46:16,301 - context_manager - INFO - analyze_context_and_prepare_response:160 - Context analysis received in 3.26 seconds
+2025-07-21 19:46:16,302 - context_manager - INFO - analyze_context_and_prepare_response:173 - Context analysis completed: career
+2025-07-21 19:46:16,302 - context_manager - INFO - generate_contextual_response:224 - Generating contextual response using analysis
+2025-07-21 19:46:16,303 - context_manager - INFO - generate_contextual_response:292 - Sending contextual response request to Gemini
+2025-07-21 19:46:19,299 - context_manager - INFO - generate_contextual_response:298 - Contextual response received in 3.00 seconds
+2025-07-21 19:46:19,300 - context_manager - INFO - generate_contextual_response:299 - Response length: 920 characters
+2025-07-21 19:46:19,300 - context_manager - INFO - process_user_message:340 - Context-aware response generation completed successfully
+2025-07-21 19:46:19,962 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 19:46:19,966 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: bot, Content: Namaste, Karan Behl ji.
+
+"Ji" keh kar aapne salary ke baare mein apni chinta vyakt ki hai. I underst...
+2025-07-21 19:46:19,966 - bot_handlers - INFO - handle_consultation:497 - Context analysis: career
+2025-07-21 19:46:22,556 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:46:32,729 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:46:42,922 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:46:53,079 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:47:03,610 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:47:13,883 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:47:24,047 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:47:34,205 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:47:44,486 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:47:54,656 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:48:04,842 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:48:15,030 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:48:25,204 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:48:35,355 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:48:45,599 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:48:55,836 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:48:59,868 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:48:59,872 - bot_handlers - INFO - handle_consultation:349 - Consultation message from user 7950863476: 'Yes underpaid...'
+2025-07-21 19:48:59,873 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: user, Content: Yes underpaid...
+2025-07-21 19:49:00,527 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 19:49:00,527 - bot_handlers - INFO - handle_consultation:427 - Question category determined: None
+2025-07-21 19:49:00,528 - context_manager - INFO - process_user_message:323 - Processing user message with context: 'Yes underpaid...'
+2025-07-21 19:49:00,528 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 19:49:00,530 - context_manager - INFO - get_conversation_history:46 - Retrieved 3 messages for user 7950863476
+2025-07-21 19:49:00,530 - context_manager - INFO - process_user_message:328 - Retrieved 3 historical messages
+2025-07-21 19:49:00,530 - context_manager - INFO - analyze_context_and_prepare_response:63 - Analyzing conversation context and preparing response structure
+2025-07-21 19:49:00,531 - context_manager - INFO - analyze_context_and_prepare_response:154 - Sending context analysis request to Gemini
+2025-07-21 19:49:07,694 - context_manager - INFO - analyze_context_and_prepare_response:160 - Context analysis received in 7.16 seconds
+2025-07-21 19:49:07,696 - context_manager - INFO - analyze_context_and_prepare_response:173 - Context analysis completed: career
+2025-07-21 19:49:07,696 - context_manager - INFO - generate_contextual_response:224 - Generating contextual response using analysis
+2025-07-21 19:49:07,696 - context_manager - INFO - generate_contextual_response:292 - Sending contextual response request to Gemini
+2025-07-21 19:49:11,690 - context_manager - INFO - generate_contextual_response:298 - Contextual response received in 3.99 seconds
+2025-07-21 19:49:11,691 - context_manager - INFO - generate_contextual_response:299 - Response length: 938 characters
+2025-07-21 19:49:11,691 - context_manager - INFO - process_user_message:340 - Context-aware response generation completed successfully
+2025-07-21 19:49:11,694 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:49:12,408 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 19:49:12,412 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: bot, Content: Namaste Karan,
+
+Haan, I understand you feel underpaid. *Mujhe pata hai* this can be frustrating, esp...
+2025-07-21 19:49:12,413 - bot_handlers - INFO - handle_consultation:497 - Context analysis: career
+2025-07-21 19:49:21,867 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:49:32,076 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:49:42,232 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:49:52,460 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:50:02,611 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:50:12,841 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:50:22,995 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:50:33,154 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:50:40,764 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:50:40,767 - bot_handlers - INFO - handle_consultation:349 - Consultation message from user 7950863476: 'Meri shaadi kab hogi...'
+2025-07-21 19:50:40,769 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: user, Content: Meri shaadi kab hogi...
+2025-07-21 19:50:41,613 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 19:50:41,615 - bot_handlers - INFO - handle_consultation:427 - Question category determined: marriage
+2025-07-21 19:50:41,615 - context_manager - INFO - process_user_message:323 - Processing user message with context: 'Meri shaadi kab hogi...'
+2025-07-21 19:50:41,615 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 19:50:41,619 - context_manager - INFO - get_conversation_history:46 - Retrieved 3 messages for user 7950863476
+2025-07-21 19:50:41,619 - context_manager - INFO - process_user_message:328 - Retrieved 3 historical messages
+2025-07-21 19:50:41,619 - context_manager - INFO - analyze_context_and_prepare_response:63 - Analyzing conversation context and preparing response structure
+2025-07-21 19:50:41,620 - context_manager - INFO - analyze_context_and_prepare_response:154 - Sending context analysis request to Gemini
+2025-07-21 19:50:45,391 - context_manager - INFO - analyze_context_and_prepare_response:160 - Context analysis received in 3.77 seconds
+2025-07-21 19:50:45,392 - context_manager - INFO - analyze_context_and_prepare_response:173 - Context analysis completed: marriage
+2025-07-21 19:50:45,392 - context_manager - INFO - generate_contextual_response:224 - Generating contextual response using analysis
+2025-07-21 19:50:45,392 - context_manager - INFO - generate_contextual_response:292 - Sending contextual response request to Gemini
+2025-07-21 19:50:48,320 - context_manager - INFO - generate_contextual_response:298 - Contextual response received in 2.93 seconds
+2025-07-21 19:50:48,321 - context_manager - INFO - generate_contextual_response:299 - Response length: 1195 characters
+2025-07-21 19:50:48,321 - context_manager - INFO - process_user_message:340 - Context-aware response generation completed successfully
+2025-07-21 19:50:49,010 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 19:50:49,015 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: bot, Content: Namaste Karan,
+
+I understand your question, "Meri shaadi kab hogi?" It's natural to be curious aur c...
+2025-07-21 19:50:49,015 - bot_handlers - INFO - handle_consultation:497 - Context analysis: marriage
+2025-07-21 19:50:50,930 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:51:01,090 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:51:11,263 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:56:24,766 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:56:24,773 - bot_handlers - INFO - handle_consultation:349 - Consultation message from user 7950863476: 'U already have these details...'
+2025-07-21 19:56:24,776 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: user, Content: U already have these details...
+2025-07-21 19:56:25,413 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 19:56:25,413 - bot_handlers - INFO - handle_consultation:427 - Question category determined: clarification
+2025-07-21 19:56:25,414 - context_manager - INFO - process_user_message:323 - Processing user message with context: 'U already have these details...'
+2025-07-21 19:56:25,414 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 19:56:25,416 - context_manager - INFO - get_conversation_history:46 - Retrieved 3 messages for user 7950863476
+2025-07-21 19:56:25,416 - context_manager - INFO - process_user_message:328 - Retrieved 3 historical messages
+2025-07-21 19:56:25,416 - context_manager - INFO - analyze_context_and_prepare_response:63 - Analyzing conversation context and preparing response structure
+2025-07-21 19:56:25,416 - context_manager - INFO - analyze_context_and_prepare_response:154 - Sending context analysis request to Gemini
+2025-07-21 19:56:30,324 - context_manager - INFO - analyze_context_and_prepare_response:160 - Context analysis received in 4.91 seconds
+2025-07-21 19:56:30,324 - context_manager - INFO - analyze_context_and_prepare_response:173 - Context analysis completed: marriage
+2025-07-21 19:56:30,325 - context_manager - INFO - generate_contextual_response:224 - Generating contextual response using analysis
+2025-07-21 19:56:30,325 - context_manager - INFO - generate_contextual_response:292 - Sending contextual response request to Gemini
+2025-07-21 19:56:34,194 - context_manager - INFO - generate_contextual_response:298 - Contextual response received in 3.87 seconds
+2025-07-21 19:56:34,195 - context_manager - INFO - generate_contextual_response:299 - Response length: 1219 characters
+2025-07-21 19:56:34,195 - context_manager - INFO - process_user_message:340 - Context-aware response generation completed successfully
+2025-07-21 19:56:34,885 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 19:56:34,890 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: bot, Content: Namaste, Karan ji. I understand your eagerness. "Mujhe pata hai aap shaadi ke baare mein bahut utsuk...
+2025-07-21 19:56:34,890 - bot_handlers - INFO - handle_consultation:497 - Context analysis: marriage
+2025-07-21 19:56:34,890 - bot_handlers - INFO - handle_consultation:349 - Consultation message from user 7950863476: '??...'
+2025-07-21 19:56:34,892 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: user, Content: ??...
+2025-07-21 19:56:34,939 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:56:35,261 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 19:56:35,262 - bot_handlers - INFO - handle_consultation:427 - Question category determined: None
+2025-07-21 19:56:35,262 - context_manager - INFO - process_user_message:323 - Processing user message with context: '??...'
+2025-07-21 19:56:35,263 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 19:56:35,266 - context_manager - INFO - get_conversation_history:46 - Retrieved 4 messages for user 7950863476
+2025-07-21 19:56:35,266 - context_manager - INFO - process_user_message:328 - Retrieved 4 historical messages
+2025-07-21 19:56:35,266 - context_manager - INFO - analyze_context_and_prepare_response:63 - Analyzing conversation context and preparing response structure
+2025-07-21 19:56:35,266 - context_manager - INFO - analyze_context_and_prepare_response:154 - Sending context analysis request to Gemini
+2025-07-21 19:56:38,723 - context_manager - INFO - analyze_context_and_prepare_response:160 - Context analysis received in 3.46 seconds
+2025-07-21 19:56:38,724 - context_manager - INFO - analyze_context_and_prepare_response:173 - Context analysis completed: marriage
+2025-07-21 19:56:38,724 - context_manager - INFO - generate_contextual_response:224 - Generating contextual response using analysis
+2025-07-21 19:56:38,725 - context_manager - INFO - generate_contextual_response:292 - Sending contextual response request to Gemini
+2025-07-21 19:56:42,614 - context_manager - INFO - generate_contextual_response:298 - Contextual response received in 3.89 seconds
+2025-07-21 19:56:42,614 - context_manager - INFO - generate_contextual_response:299 - Response length: 1168 characters
+2025-07-21 19:56:42,615 - context_manager - INFO - process_user_message:340 - Context-aware response generation completed successfully
+2025-07-21 19:56:43,300 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 19:56:43,303 - chat_logger - INFO - log_message:69 - Chat logged - User: unknown (7950863476), Type: bot, Content: Namaste, Karan Beta. I see your eagerness, your "??". Mujhe pata hai, you are waiting for answers ab...
+2025-07-21 19:56:43,303 - bot_handlers - INFO - handle_consultation:497 - Context analysis: marriage
+2025-07-21 19:56:45,184 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:56:55,338 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:57:05,502 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:57:15,698 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:57:25,891 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:57:36,178 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:57:46,415 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:57:56,658 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:58:06,813 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:58:16,967 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:58:27,125 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:58:37,289 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:58:47,445 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:58:57,606 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:59:07,824 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:59:17,986 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:59:28,201 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:59:38,457 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:59:48,611 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 19:59:58,845 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:00:09,060 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:00:19,215 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:00:29,403 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:00:39,683 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:00:49,840 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:01:00,067 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:01:10,298 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:01:20,449 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:01:30,606 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:10:10,033 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:10:20,280 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:10:30,514 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:10:40,760 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:10:50,929 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:11:01,087 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:11:11,242 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:11:21,410 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:11:31,640 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:11:41,887 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:11:52,038 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:12:02,194 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:12:12,398 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:12:22,624 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:12:32,783 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:12:43,017 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:12:53,168 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:13:03,412 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:13:13,655 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:13:23,834 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:13:34,128 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:13:44,283 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:13:54,451 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:14:04,749 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:14:14,975 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:14:25,217 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:14:27,243 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:14:27,245 - bot_handlers - INFO - start:49 - Start command received from user 1177573677 (@puneetsinh)
+2025-07-21 20:14:27,248 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: /start...
+2025-07-21 20:14:27,248 - bot_handlers - INFO - start:69 - User data initialized for new session
+2025-07-21 20:14:27,909 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 20:14:27,912 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: कृपया अपनी पसंदीदा भाषा चुनें / Please select your preferred language:
+
+1️⃣ हिंदी में बात करें (Hind...
+2025-07-21 20:14:27,912 - bot_handlers - INFO - start:90 - Sent language selection prompt
+2025-07-21 20:14:37,399 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:14:44,319 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:14:44,323 - bot_handlers - INFO - handle_onboarding:97 - Onboarding message from user 1177573677: 'Mix Hindi & English...'
+2025-07-21 20:14:44,325 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: Mix Hindi & English...
+2025-07-21 20:14:44,978 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 20:14:44,979 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: आपने हिंदी चुना है। अब कृपया अपनी जन्म जानकारी दें।...
+2025-07-21 20:14:54,520 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:15:04,668 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:15:14,905 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:15:25,129 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:15:35,299 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:15:45,482 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:15:55,656 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:16:05,804 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:16:16,008 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:16:26,159 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:16:36,309 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:16:46,528 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:16:56,676 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:17:06,863 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:17:17,143 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:17:27,337 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:17:37,522 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:17:47,792 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:17:58,001 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:18:08,150 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:18:18,309 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:18:28,529 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:18:38,678 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:18:48,902 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:18:59,056 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:19:09,207 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:19:19,409 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:19:29,653 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:19:39,803 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:19:49,957 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:20:00,217 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:20:10,373 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:20:20,557 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:20:30,709 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:20:40,933 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:20:51,103 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 20:21:01,302 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
