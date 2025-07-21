@@ -1,0 +1,36 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250721_080858",
+  "created_at": "2025-07-21T08:08:58.724640",
+  "last_updated": "2025-07-21T08:08:58.726712",
+  "messages": [
+    {
+      "timestamp": "2025-07-21T08:08:58.724441",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "bot",
+      "content": "Divya ji ki janam kundli ke liye, aapki di hui jaankari bilkul sahi hai. Ab aap mujhe bataiye, aap kya janna chahte hain? Shadi ke bare mein, career ke bare mein, ya koi aur guidance chahiye?",
+      "metadata": {
+        "context": "onboarding",
+        "response_length": 191
+      }
+    },
+    {
+      "timestamp": "2025-07-21T08:08:58.726712",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "system",
+      "content": "System event: onboarding_complete",
+      "metadata": {
+        "event": "onboarding_complete",
+        "details": {
+          "birth_details": {
+            "name": "Sapna Yadav",
+            "birth_date": "2005-12-12",
+            "birth_time": "17:00",
+            "birth_place": "Delhi, Delhi"
+          }
+        }
+      }
+    }
+  ]
+}

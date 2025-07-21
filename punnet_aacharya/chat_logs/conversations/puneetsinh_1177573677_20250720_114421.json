@@ -1,0 +1,18 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250720_114421",
+  "created_at": "2025-07-20T11:44:21.987459",
+  "last_updated": "2025-07-20T11:44:21.987265",
+  "messages": [
+    {
+      "timestamp": "2025-07-20T11:44:21.987265",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "user",
+      "content": "mera naaam sonali hai",
+      "metadata": {
+        "context": "onboarding",
+        "message_length": 21
+      }
+    }
+  ]
+}

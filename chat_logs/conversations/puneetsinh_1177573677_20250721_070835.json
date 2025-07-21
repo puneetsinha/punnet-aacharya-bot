@@ -1,0 +1,36 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250721_070835",
+  "created_at": "2025-07-21T07:08:35.301084",
+  "last_updated": "2025-07-21T07:08:35.302266",
+  "messages": [
+    {
+      "timestamp": "2025-07-21T07:08:35.300958",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "bot",
+      "content": "Shalini ji, aapki janam tithi, samay aur sthan ke liye dhanyavaad. Bahut achha! Ab aap mujhe bataiye, aap kya janna chahte hain? Shadi ke bare mein, career ke bare mein, ya koi aur guidance chahiye?",
+      "metadata": {
+        "context": "onboarding",
+        "response_length": 198
+      }
+    },
+    {
+      "timestamp": "2025-07-21T07:08:35.302266",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "system",
+      "content": "System event: onboarding_complete",
+      "metadata": {
+        "event": "onboarding_complete",
+        "details": {
+          "birth_details": {
+            "name": "Shalini Arora",
+            "birth_date": "1992-08-14",
+            "birth_time": "10:30",
+            "birth_place": "Delhi, India"
+          }
+        }
+      }
+    }
+  ]
+}

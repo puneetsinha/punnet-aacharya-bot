@@ -1,0 +1,18 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250721_082829",
+  "created_at": "2025-07-21T08:28:29.633981",
+  "last_updated": "2025-07-21T08:28:29.633865",
+  "messages": [
+    {
+      "timestamp": "2025-07-21T08:28:29.633865",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "user",
+      "content": "Guruji, paisa nahi tikta, kya karun?",
+      "metadata": {
+        "context": "consultation",
+        "message_length": 36
+      }
+    }
+  ]
+}

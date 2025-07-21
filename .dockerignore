@@ -1,0 +1,28 @@
+# Byte-compiled / cache / temp files
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.DS_Store
+
+# Python virtual environments
+venv/
+ENV/
+.venv/
+PuneetAacharya/punnet_aacharya/Puneetaacharya/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# .env (uncomment if you don't want to build secrets into the image)
+.env 

@@ -1,0 +1,36 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250720_114530",
+  "created_at": "2025-07-20T11:45:30.904592",
+  "last_updated": "2025-07-20T11:45:30.906792",
+  "messages": [
+    {
+      "timestamp": "2025-07-20T11:45:30.904305",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "bot",
+      "content": "Sonali ji, Pune, Maharashtra mein aapka janam hua tha. Aapki janam tithi 1989-06-03 aur janam samay 17:58 hai. Ab aap mujhe bataiye, aap kya janna chahte hain? Shadi ke bare mein, career ke bare mein, ya koi aur guidance chahiye?",
+      "metadata": {
+        "context": "onboarding",
+        "response_length": 229
+      }
+    },
+    {
+      "timestamp": "2025-07-20T11:45:30.906792",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "system",
+      "content": "System event: onboarding_complete",
+      "metadata": {
+        "event": "onboarding_complete",
+        "details": {
+          "birth_details": {
+            "name": "Sonali",
+            "birth_date": "1989-06-03",
+            "birth_time": "17:58",
+            "birth_place": "Pune, Maharashtra"
+          }
+        }
+      }
+    }
+  ]
+}

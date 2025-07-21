@@ -1,0 +1,18 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250721_070856",
+  "created_at": "2025-07-21T07:08:56.812570",
+  "last_updated": "2025-07-21T07:08:56.812400",
+  "messages": [
+    {
+      "timestamp": "2025-07-21T07:08:56.812400",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "bot",
+      "content": "Namaste Beta! I am Punnet Aacharya, and it fills my heart to see you seeking guidance. Tell me, what brings you here today regarding your career? Don't worry, with Guruji ka ashirwad, we will find a path that aligns with your destiny. Aap nischint rahein (be assured).\n",
+      "metadata": {
+        "context": "consultation",
+        "response_length": 269
+      }
+    }
+  ]
+}

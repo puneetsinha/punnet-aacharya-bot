@@ -1,0 +1,22 @@
+# Python virtual environments
+venv/
+ENV/
+.env
+.venv/
+PuneetAacharya/punnet_aacharya/Puneetaacharya/
+
+# Byte-compiled / cache / temp files
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.DS_Store
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/ 

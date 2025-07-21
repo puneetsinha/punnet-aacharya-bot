@@ -1,0 +1,1311 @@
+2025-07-21 07:07:05,570 - database - INFO - <module>:12 - Initializing database with URL: sqlite:///punnet_aacharya.db
+2025-07-21 07:07:05,646 - database - INFO - <module>:16 - Database engine created successfully
+2025-07-21 07:07:05,646 - database - INFO - <module>:22 - Database session maker configured
+2025-07-21 07:07:05,649 - database - INFO - <module>:52 - Creating database tables
+2025-07-21 07:07:05,663 - database - INFO - <module>:55 - Database tables created successfully
+2025-07-21 07:07:11,792 - __main__ - INFO - main:24 - Starting Punnet Aacharya Vedic Astrology Bot
+2025-07-21 07:07:11,792 - __main__ - INFO - main:25 - ==================================================
+2025-07-21 07:07:11,792 - __main__ - INFO - main:31 - Bot token found, proceeding with initialization
+2025-07-21 07:07:11,792 - __main__ - INFO - main:35 - Creating Telegram Application
+2025-07-21 07:07:11,832 - __main__ - INFO - main:37 - Telegram Application created successfully
+2025-07-21 07:07:11,832 - __main__ - INFO - main:40 - Initializing AstrologyBot
+2025-07-21 07:07:11,832 - bot_handlers - INFO - __init__:32 - Initializing AstrologyBot
+2025-07-21 07:07:11,832 - astro_calculator - INFO - __init__:14 - Initializing AstroCalculator
+2025-07-21 07:07:12,287 - astro_calculator - INFO - __init__:18 - AstroCalculator initialized successfully
+2025-07-21 07:07:12,287 - vector_store - INFO - __init__:13 - Initializing AstrologyKnowledgeBase
+2025-07-21 07:07:12,287 - vector_store - INFO - __init__:14 - Vector DB path: chromadb_storage
+2025-07-21 07:07:12,287 - vector_store - INFO - __init__:15 - Collection name: astrology_knowledge
+2025-07-21 07:07:12,434 - vector_store - INFO - __init__:22 - ChromaDB client created successfully
+2025-07-21 07:07:12,434 - vector_store - INFO - _get_or_create_collection:36 - Getting or creating collection
+2025-07-21 07:07:12,435 - vector_store - INFO - _get_or_create_collection:42 - Collection not found, creating new collection: astrology_knowledge
+2025-07-21 07:07:12,442 - vector_store - INFO - _get_or_create_collection:47 - New collection created successfully
+2025-07-21 07:07:12,442 - vector_store - INFO - __init__:25 - Collection ready
+2025-07-21 07:07:12,442 - vector_store - INFO - _load_knowledge_base:111 - Loading astrological rules into vector database
+2025-07-21 07:07:12,442 - vector_store - WARNING - _load_knowledge_files:56 - Knowledge directory not found
+2025-07-21 07:07:12,442 - vector_store - INFO - _load_knowledge_base:264 - Total rules to load: 19
+2025-07-21 07:07:12,443 - vector_store - INFO - _load_knowledge_base:269 - Existing rules in database: 0
+2025-07-21 07:07:12,443 - vector_store - INFO - _load_knowledge_base:299 - Adding 19 new rules to database
+2025-07-21 07:07:16,587 - vector_store - INFO - _load_knowledge_base:305 - Rules added successfully
+2025-07-21 07:07:16,587 - vector_store - INFO - __init__:28 - Knowledge base loaded successfully
+2025-07-21 07:07:16,587 - gemini_service - INFO - __init__:12 - Initializing GeminiAstrologer
+2025-07-21 07:07:16,588 - gemini_service - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 07:07:16,588 - gemini_service - INFO - __init__:45 - GeminiAstrologer initialized successfully
+2025-07-21 07:07:16,589 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 07:07:16,589 - bot_handlers - INFO - __init__:39 - AstrologyBot initialized successfully
+2025-07-21 07:07:16,589 - __main__ - INFO - main:42 - AstrologyBot initialized successfully
+2025-07-21 07:07:16,589 - __main__ - INFO - main:45 - Setting up conversation handler for onboarding and consultation
+2025-07-21 07:07:16,590 - __main__ - INFO - main:60 - Conversation handler added successfully
+2025-07-21 07:07:16,590 - __main__ - INFO - main:63 - Setting up error handler
+2025-07-21 07:07:16,590 - __main__ - INFO - main:65 - Error handler added successfully
+2025-07-21 07:07:16,590 - __main__ - INFO - main:68 - Starting Punnet Aacharya bot with Puneet Guruji...
+2025-07-21 07:07:16,590 - __main__ - INFO - main:69 - Bot is now running and listening for messages...
+2025-07-21 07:07:16,590 - __main__ - INFO - main:70 - ==================================================
+2025-07-21 07:07:17,532 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getMe "HTTP/1.1 200 OK"
+2025-07-21 07:07:17,702 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/deleteWebhook "HTTP/1.1 200 OK"
+2025-07-21 07:07:17,707 - telegram.ext.Application - INFO - start:620 - Application started
+2025-07-21 07:07:28,520 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:07:38,864 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:07:41,867 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:07:41,874 - bot_handlers - INFO - start:47 - Start command received from user 1177573677 (@puneetsinh)
+2025-07-21 07:07:41,877 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: /start...
+2025-07-21 07:07:41,877 - bot_handlers - INFO - start:67 - User data initialized for new session
+2025-07-21 07:07:42,978 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 07:07:42,981 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: 🙏 Namaste! 
+
+Main hoon Punnet Guruji, aapke personal Vedic astrology guide. 
+
+Aapko apne janam kundl...
+2025-07-21 07:07:42,981 - bot_handlers - INFO - start:88 - Sent welcome message from Puneet Guruji
+2025-07-21 07:07:52,173 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:07:55,289 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:07:55,292 - bot_handlers - INFO - handle_onboarding:95 - Onboarding message from user 1177573677: 'guruji main career ko leke pareshan hun...'
+2025-07-21 07:07:55,293 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: guruji main career ko leke pareshan hun...
+2025-07-21 07:07:56,417 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 07:07:56,418 - bot_handlers - INFO - handle_onboarding:113 - Current onboarding state: start
+2025-07-21 07:07:56,418 - bot_handlers - INFO - handle_onboarding:114 - Current birth details: {}
+2025-07-21 07:07:56,418 - bot_handlers - INFO - handle_onboarding:163 - Sending request to Puneet Guruji
+2025-07-21 07:07:57,965 - bot_handlers - INFO - handle_onboarding:167 - Raw Puneet Guruji response: ```json
+{
+    "updated_details": {},
+    "next_state": "collecting",
+    "response": "Namaste! Main Punnet Guruji, aapki career sambandhi pareshani sunkar dukhi hun. Aapka bhavishya janne ke liye mujh...
+2025-07-21 07:07:57,965 - bot_handlers - INFO - handle_onboarding:180 - Cleaned response: {
+    "updated_details": {},
+    "next_state": "collecting",
+    "response": "Namaste! Main Punnet Guruji, aapki career sambandhi pareshani sunkar dukhi hun. Aapka bhavishya janne ke liye mujhe aapke ...
+2025-07-21 07:07:57,966 - bot_handlers - INFO - handle_onboarding:184 - Puneet Guruji response: {'updated_details': {}, 'next_state': 'collecting', 'response': 'Namaste! Main Punnet Guruji, aapki career sambandhi pareshani sunkar dukhi hun. Aapka bhavishya janne ke liye mujhe aapke janm vivaran ki avashyakta hogi. Kripya apna pura naam bataiye.', 'missing_info': ['name', 'birth_date', 'birth_time', 'birth_place']}
+2025-07-21 07:07:57,966 - bot_handlers - INFO - handle_onboarding:190 - Updated birth details: {}
+2025-07-21 07:07:57,966 - bot_handlers - INFO - handle_onboarding:195 - Updated state to: collecting
+2025-07-21 07:07:58,389 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 07:07:58,390 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Namaste! Main Punnet Guruji, aapki career sambandhi pareshani sunkar dukhi hun. Aapka bhavishya jann...
+2025-07-21 07:08:05,590 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:08:14,351 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:08:14,359 - bot_handlers - INFO - handle_onboarding:95 - Onboarding message from user 1177573677: 'shalini arora...'
+2025-07-21 07:08:14,361 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: shalini arora...
+2025-07-21 07:08:15,585 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 07:08:15,586 - bot_handlers - INFO - handle_onboarding:113 - Current onboarding state: collecting
+2025-07-21 07:08:15,586 - bot_handlers - INFO - handle_onboarding:114 - Current birth details: {}
+2025-07-21 07:08:15,586 - bot_handlers - INFO - handle_onboarding:124 - Heuristically captured name: Shalini Arora
+2025-07-21 07:08:15,586 - bot_handlers - INFO - handle_onboarding:163 - Sending request to Puneet Guruji
+2025-07-21 07:08:16,715 - bot_handlers - INFO - handle_onboarding:167 - Raw Puneet Guruji response: ```json
+{
+    "updated_details": {"name": "Shalini Arora"},
+    "next_state": "collecting",
+    "response": "Namaste, Shalini Ji! Aapka naam toh mil gaya. Ab kripya apni janam tithi (DD/MM/YYYY format...
+2025-07-21 07:08:16,716 - bot_handlers - INFO - handle_onboarding:180 - Cleaned response: {
+    "updated_details": {"name": "Shalini Arora"},
+    "next_state": "collecting",
+    "response": "Namaste, Shalini Ji! Aapka naam toh mil gaya. Ab kripya apni janam tithi (DD/MM/YYYY format mein) b...
+2025-07-21 07:08:16,716 - bot_handlers - INFO - handle_onboarding:184 - Puneet Guruji response: {'updated_details': {'name': 'Shalini Arora'}, 'next_state': 'collecting', 'response': 'Namaste, Shalini Ji! Aapka naam toh mil gaya. Ab kripya apni janam tithi (DD/MM/YYYY format mein) batayein?', 'missing_info': ['birth_date', 'birth_time', 'birth_place']}
+2025-07-21 07:08:16,716 - bot_handlers - INFO - handle_onboarding:190 - Updated birth details: {'name': 'Shalini Arora'}
+2025-07-21 07:08:16,716 - bot_handlers - INFO - handle_onboarding:195 - Updated state to: collecting
+2025-07-21 07:08:17,111 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 07:08:17,114 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Namaste, Shalini Ji! Aapka naam toh mil gaya. Ab kripya apni janam tithi (DD/MM/YYYY format mein) ba...
+2025-07-21 07:08:24,798 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:08:32,393 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:08:32,396 - bot_handlers - INFO - handle_onboarding:95 - Onboarding message from user 1177573677: 'Din: 14/08/1992
+Samay: 10:30 AM
+Sthan: Delhi, Indi...'
+2025-07-21 07:08:32,398 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: Din: 14/08/1992
+Samay: 10:30 AM
+Sthan: Delhi, India...
+2025-07-21 07:08:33,291 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 07:08:33,292 - bot_handlers - INFO - handle_onboarding:113 - Current onboarding state: collecting
+2025-07-21 07:08:33,292 - bot_handlers - INFO - handle_onboarding:114 - Current birth details: {'name': 'Shalini Arora'}
+2025-07-21 07:08:33,292 - bot_handlers - INFO - handle_onboarding:163 - Sending request to Puneet Guruji
+2025-07-21 07:08:34,835 - bot_handlers - INFO - handle_onboarding:167 - Raw Puneet Guruji response: ```json
+{
+    "updated_details": {
+        "name": "Shalini Arora",
+        "birth_date": "1992-08-14",
+        "birth_time": "10:30",
+        "birth_place": "Delhi, India"
+    },
+    "next_state": "c...
+2025-07-21 07:08:34,835 - bot_handlers - INFO - handle_onboarding:180 - Cleaned response: {
+    "updated_details": {
+        "name": "Shalini Arora",
+        "birth_date": "1992-08-14",
+        "birth_time": "10:30",
+        "birth_place": "Delhi, India"
+    },
+    "next_state": "complete"...
+2025-07-21 07:08:34,836 - bot_handlers - INFO - handle_onboarding:184 - Puneet Guruji response: {'updated_details': {'name': 'Shalini Arora', 'birth_date': '1992-08-14', 'birth_time': '10:30', 'birth_place': 'Delhi, India'}, 'next_state': 'complete', 'response': 'Shalini ji, aapki janam tithi, samay aur sthan ke liye dhanyavaad. Bahut achha! Ab aap mujhe bataiye, aap kya janna chahte hain? Shadi ke bare mein, career ke bare mein, ya koi aur guidance chahiye?', 'missing_info': []}
+2025-07-21 07:08:34,836 - bot_handlers - INFO - handle_onboarding:190 - Updated birth details: {'name': 'Shalini Arora', 'birth_date': '1992-08-14', 'birth_time': '10:30', 'birth_place': 'Delhi, India'}
+2025-07-21 07:08:34,836 - bot_handlers - INFO - handle_onboarding:195 - Updated state to: complete
+2025-07-21 07:08:35,299 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 07:08:35,302 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Shalini ji, aapki janam tithi, samay aur sthan ke liye dhanyavaad. Bahut achha! Ab aap mujhe bataiye...
+2025-07-21 07:08:35,302 - bot_handlers - INFO - handle_onboarding:211 - Onboarding complete, moving to consultation
+2025-07-21 07:08:35,303 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: system, Content: System event: onboarding_complete...
+2025-07-21 07:08:42,619 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:08:52,497 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:08:52,500 - bot_handlers - INFO - handle_consultation:268 - Consultation message from user 1177573677: 'career ko leke pareshan hun...'
+2025-07-21 07:08:52,502 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: career ko leke pareshan hun...
+2025-07-21 07:08:53,172 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 07:08:53,174 - bot_handlers - INFO - handle_consultation:306 - Calculating birth chart for consultation
+2025-07-21 07:08:53,174 - bot_handlers - INFO - _calculate_and_save_chart:552 - Calculating birth chart for user 1177573677
+2025-07-21 07:08:53,176 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: system, Content: System event: chart_calculation_started...
+2025-07-21 07:08:53,181 - bot_handlers - INFO - _calculate_and_save_chart:573 - Parsed details - Date: 1992-08-14, Time: 10:30:00, Place: Delhi, India
+2025-07-21 07:08:53,182 - astro_calculator - INFO - generate_birth_chart:227 - Generating birth chart for Shalini Arora - 1992-08-14 10:30:00 at Delhi, India
+2025-07-21 07:08:53,182 - astro_calculator - INFO - generate_birth_chart:231 - Step 1: Getting coordinates
+2025-07-21 07:08:53,182 - astro_calculator - INFO - get_coordinates:22 - Getting coordinates for place: Delhi, India
+2025-07-21 07:08:54,251 - astro_calculator - INFO - get_coordinates:27 - Coordinates found: lat=28.6328027, lon=77.2197713
+2025-07-21 07:08:54,251 - astro_calculator - INFO - generate_birth_chart:235 - Step 2: Getting timezone
+2025-07-21 07:08:54,253 - astro_calculator - INFO - generate_birth_chart:237 - Timezone: Asia/Kolkata
+2025-07-21 07:08:54,253 - astro_calculator - INFO - generate_birth_chart:243 - Step 3: Calculating Julian Day
+2025-07-21 07:08:54,253 - astro_calculator - INFO - calculate_julian_day:38 - Calculating Julian Day for 1992-08-14 10:30:00 in timezone Asia/Kolkata
+2025-07-21 07:08:54,388 - astro_calculator - INFO - calculate_julian_day:50 - Julian Day calculated: 2448848.7083333335
+2025-07-21 07:08:54,388 - astro_calculator - INFO - generate_birth_chart:247 - Step 4: Calculating houses
+2025-07-21 07:08:54,388 - astro_calculator - INFO - calculate_houses:58 - Calculating houses for JD=2448848.7083333335, lat=28.6328027, lon=77.2197713
+2025-07-21 07:08:54,388 - astro_calculator - INFO - calculate_houses:66 - Houses calculated: ASC=202.03, MC=113.25
+2025-07-21 07:08:54,388 - astro_calculator - INFO - generate_birth_chart:251 - Step 5: Calculating planetary positions
+2025-07-21 07:08:54,388 - astro_calculator - INFO - calculate_planetary_positions:75 - Calculating planetary positions for JD=2448848.7083333335
+2025-07-21 07:08:54,389 - astro_calculator - INFO - calculate_planetary_positions:119 - Planetary positions calculated for 9 planets
+2025-07-21 07:08:54,389 - astro_calculator - INFO - generate_birth_chart:255 - Step 6: Assigning planets to houses
+2025-07-21 07:08:54,389 - astro_calculator - INFO - generate_birth_chart:270 - Step 7: Calculating divisional charts
+2025-07-21 07:08:54,389 - astro_calculator - INFO - calculate_divisional_charts:154 - Calculating divisional charts (D9 and D10)
+2025-07-21 07:08:54,389 - astro_calculator - INFO - calculate_divisional_charts:181 - Divisional charts calculated successfully
+2025-07-21 07:08:54,389 - astro_calculator - INFO - generate_birth_chart:274 - Step 8: Calculating dasha periods
+2025-07-21 07:08:54,389 - astro_calculator - INFO - calculate_dasha_periods:190 - Calculating dasha periods for Moon longitude: 305.89°
+2025-07-21 07:08:54,389 - astro_calculator - INFO - calculate_dasha_periods:216 - Current dasha: Mars (6.6 years elapsed, 0.4 remaining)
+2025-07-21 07:08:54,389 - astro_calculator - INFO - generate_birth_chart:293 - Birth chart generated successfully for Shalini Arora
+2025-07-21 07:08:54,389 - astro_calculator - INFO - generate_birth_chart:294 - Ascendant: Libra
+2025-07-21 07:08:54,389 - astro_calculator - INFO - generate_birth_chart:295 - Current dasha: Mars
+2025-07-21 07:08:54,389 - bot_handlers - INFO - _calculate_and_save_chart:579 - Birth chart calculated successfully for Shalini Arora
+2025-07-21 07:08:54,389 - bot_handlers - INFO - _calculate_and_save_chart:585 - Saving user data to database
+2025-07-21 07:08:54,395 - bot_handlers - INFO - _calculate_and_save_chart:592 - Creating new user record for 1177573677
+2025-07-21 07:08:54,398 - bot_handlers - INFO - _calculate_and_save_chart:607 - User data saved successfully for 1177573677
+2025-07-21 07:08:55,061 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 07:08:55,064 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: 🎉 Bahut achha! Main aapka janam kundli calculate kar liya hoon.
+
+📊 Aapki Birth Details:
+Naam: Shalin...
+2025-07-21 07:08:55,066 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: system, Content: System event: chart_calculation_completed...
+2025-07-21 07:08:55,066 - bot_handlers - INFO - _calculate_and_save_chart:647 - Sent chart calculation success message
+2025-07-21 07:08:55,066 - bot_handlers - INFO - handle_consultation:343 - Question category determined: career
+2025-07-21 07:08:55,066 - gemini_service - INFO - generate_career_prediction:202 - Generating career prediction
+2025-07-21 07:08:55,066 - gemini_service - INFO - generate_career_prediction:203 - User name: Shalini Arora
+2025-07-21 07:08:55,066 - gemini_service - INFO - generate_career_prediction:223 - Career context prepared
+2025-07-21 07:08:55,066 - gemini_service - INFO - generate_career_prediction:240 - Sending career prediction request to Gemini
+2025-07-21 07:08:56,375 - gemini_service - INFO - generate_career_prediction:246 - Career prediction received in 1.31 seconds
+2025-07-21 07:08:56,376 - gemini_service - INFO - generate_career_prediction:247 - Career prediction length: 269 characters
+2025-07-21 07:08:56,810 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 07:08:56,814 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Namaste Beta! I am Punnet Aacharya, and it fills my heart to see you seeking guidance. Tell me, what...
+2025-07-21 07:09:02,652 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:09:12,934 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:09:23,100 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:09:33,372 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:09:42,523 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:09:42,528 - bot_handlers - INFO - handle_consultation:268 - Consultation message from user 1177573677: 'career...'
+2025-07-21 07:09:42,530 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: career...
+2025-07-21 07:09:43,257 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 07:09:43,259 - bot_handlers - INFO - handle_consultation:343 - Question category determined: career
+2025-07-21 07:09:43,259 - gemini_service - INFO - generate_career_prediction:202 - Generating career prediction
+2025-07-21 07:09:43,259 - gemini_service - INFO - generate_career_prediction:203 - User name: Shalini Arora
+2025-07-21 07:09:43,259 - gemini_service - INFO - generate_career_prediction:223 - Career context prepared
+2025-07-21 07:09:43,259 - gemini_service - INFO - generate_career_prediction:240 - Sending career prediction request to Gemini
+2025-07-21 07:09:50,622 - gemini_service - INFO - generate_career_prediction:246 - Career prediction received in 7.36 seconds
+2025-07-21 07:09:50,624 - gemini_service - INFO - generate_career_prediction:247 - Career prediction length: 4293 characters
+2025-07-21 07:09:51,143 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 400 Bad Request"
+2025-07-21 07:09:51,144 - bot_handlers - ERROR - handle_consultation:380 - Error generating Gemini reply: Message is too long
+2025-07-21 07:09:51,514 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 07:09:51,517 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Maaf kijiye, kuch technical problem aa raha hai. Please try again later....
+2025-07-21 07:09:52,707 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:10:02,868 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:10:13,155 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:10:23,313 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:10:33,477 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:10:43,656 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:10:53,966 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:11:04,240 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:11:14,429 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:11:24,680 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:33:30,965 - gemini_service - INFO - __init__:12 - Initializing GeminiAstrologer
+2025-07-21 07:33:30,965 - gemini_service - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 07:33:30,965 - gemini_service - INFO - __init__:53 - GeminiAstrologer initialized successfully
+2025-07-21 07:33:30,965 - gemini_service - INFO - generate_career_prediction:210 - Generating career prediction
+2025-07-21 07:33:30,965 - gemini_service - INFO - generate_career_prediction:211 - User name: Shalini Arora
+2025-07-21 07:33:30,965 - gemini_service - INFO - generate_career_prediction:231 - Career context prepared
+2025-07-21 07:33:30,965 - gemini_service - INFO - generate_career_prediction:248 - Sending career prediction request to Gemini
+2025-07-21 07:33:34,029 - gemini_service - INFO - generate_career_prediction:254 - Career prediction received in 3.06 seconds
+2025-07-21 07:33:34,032 - gemini_service - INFO - generate_career_prediction:255 - Career prediction length: 1061 characters
+2025-07-21 07:33:34,041 - gemini_service - INFO - generate_marriage_prediction:152 - Generating marriage prediction
+2025-07-21 07:33:34,043 - gemini_service - INFO - generate_marriage_prediction:153 - User name: Shalini Arora
+2025-07-21 07:33:34,048 - gemini_service - INFO - generate_marriage_prediction:172 - Marriage context prepared
+2025-07-21 07:33:34,048 - gemini_service - INFO - generate_marriage_prediction:188 - Sending marriage prediction request to Gemini
+2025-07-21 07:33:37,505 - gemini_service - INFO - generate_marriage_prediction:194 - Marriage prediction received in 3.46 seconds
+2025-07-21 07:33:37,505 - gemini_service - INFO - generate_marriage_prediction:195 - Marriage prediction length: 899 characters
+2025-07-21 07:33:37,506 - gemini_service - INFO - detect_context_and_respond:57 - Processing user message: 'career ke bare mein bataiye...'
+2025-07-21 07:33:37,506 - gemini_service - INFO - detect_context_and_respond:58 - User name: Shalini Arora
+2025-07-21 07:33:37,506 - gemini_service - INFO - detect_context_and_respond:59 - Chart data available: True
+2025-07-21 07:33:37,506 - gemini_service - INFO - detect_context_and_respond:64 - Formatting chart context for Gemini
+2025-07-21 07:33:37,506 - gemini_service - INFO - detect_context_and_respond:93 - Sending request to Gemini AI
+2025-07-21 07:33:40,654 - gemini_service - INFO - detect_context_and_respond:102 - Response received in 3.15 seconds
+2025-07-21 07:33:40,654 - gemini_service - INFO - detect_context_and_respond:103 - Response length: 1099 characters
+2025-07-21 07:39:05,072 - context_manager - INFO - __init__:12 - Initializing ConversationContextManager
+2025-07-21 07:39:05,072 - context_manager - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 07:39:05,072 - context_manager - INFO - __init__:25 - ConversationContextManager initialized successfully
+2025-07-21 07:39:05,072 - context_manager - INFO - process_user_message:277 - Processing user message with context: 'career ke bare mein bataiye...'
+2025-07-21 07:39:05,073 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 07:39:05,073 - context_manager - INFO - get_conversation_history:46 - Retrieved 0 messages for user 123456789
+2025-07-21 07:39:05,073 - context_manager - INFO - process_user_message:282 - Retrieved 0 historical messages
+2025-07-21 07:39:05,073 - context_manager - INFO - analyze_context_and_prepare_response:62 - Analyzing conversation context and preparing response structure
+2025-07-21 07:39:05,073 - context_manager - INFO - analyze_context_and_prepare_response:137 - Sending context analysis request to Gemini
+2025-07-21 07:39:07,958 - context_manager - INFO - analyze_context_and_prepare_response:143 - Context analysis received in 2.89 seconds
+2025-07-21 07:39:07,959 - context_manager - ERROR - analyze_context_and_prepare_response:152 - Error in context analysis: Expecting value: line 1 column 1 (char 0)
+2025-07-21 07:39:07,959 - context_manager - INFO - generate_contextual_response:188 - Generating contextual response using analysis
+2025-07-21 07:39:07,959 - context_manager - INFO - generate_contextual_response:247 - Sending contextual response request to Gemini
+2025-07-21 07:39:11,663 - context_manager - INFO - generate_contextual_response:253 - Contextual response received in 3.70 seconds
+2025-07-21 07:39:11,663 - context_manager - INFO - generate_contextual_response:254 - Response length: 1599 characters
+2025-07-21 07:39:11,663 - context_manager - INFO - process_user_message:294 - Context-aware response generation completed successfully
+2025-07-21 07:39:11,663 - context_manager - INFO - process_user_message:277 - Processing user message with context: 'aur shadi ke bare mein bhi bataiye...'
+2025-07-21 07:39:11,663 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 07:39:11,664 - context_manager - INFO - get_conversation_history:46 - Retrieved 0 messages for user 123456789
+2025-07-21 07:39:11,664 - context_manager - INFO - process_user_message:282 - Retrieved 0 historical messages
+2025-07-21 07:39:11,664 - context_manager - INFO - analyze_context_and_prepare_response:62 - Analyzing conversation context and preparing response structure
+2025-07-21 07:39:11,664 - context_manager - INFO - analyze_context_and_prepare_response:137 - Sending context analysis request to Gemini
+2025-07-21 07:39:14,550 - context_manager - INFO - analyze_context_and_prepare_response:143 - Context analysis received in 2.89 seconds
+2025-07-21 07:39:14,550 - context_manager - ERROR - analyze_context_and_prepare_response:152 - Error in context analysis: Expecting value: line 1 column 1 (char 0)
+2025-07-21 07:39:14,550 - context_manager - INFO - generate_contextual_response:188 - Generating contextual response using analysis
+2025-07-21 07:39:14,551 - context_manager - INFO - generate_contextual_response:247 - Sending contextual response request to Gemini
+2025-07-21 07:39:17,105 - context_manager - INFO - generate_contextual_response:253 - Contextual response received in 2.55 seconds
+2025-07-21 07:39:17,106 - context_manager - INFO - generate_contextual_response:254 - Response length: 1003 characters
+2025-07-21 07:39:17,106 - context_manager - INFO - process_user_message:294 - Context-aware response generation completed successfully
+2025-07-21 07:39:17,106 - context_manager - INFO - process_user_message:277 - Processing user message with context: 'samajh nahi aa raha, detail mein bataiye...'
+2025-07-21 07:39:17,106 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 07:39:17,107 - context_manager - INFO - get_conversation_history:46 - Retrieved 0 messages for user 123456789
+2025-07-21 07:39:17,107 - context_manager - INFO - process_user_message:282 - Retrieved 0 historical messages
+2025-07-21 07:39:17,107 - context_manager - INFO - analyze_context_and_prepare_response:62 - Analyzing conversation context and preparing response structure
+2025-07-21 07:39:17,107 - context_manager - INFO - analyze_context_and_prepare_response:137 - Sending context analysis request to Gemini
+2025-07-21 07:39:19,570 - context_manager - INFO - analyze_context_and_prepare_response:143 - Context analysis received in 2.46 seconds
+2025-07-21 07:39:19,570 - context_manager - ERROR - analyze_context_and_prepare_response:152 - Error in context analysis: Expecting value: line 1 column 1 (char 0)
+2025-07-21 07:39:19,570 - context_manager - INFO - generate_contextual_response:188 - Generating contextual response using analysis
+2025-07-21 07:39:19,570 - context_manager - INFO - generate_contextual_response:247 - Sending contextual response request to Gemini
+2025-07-21 07:39:22,414 - context_manager - INFO - generate_contextual_response:253 - Contextual response received in 2.84 seconds
+2025-07-21 07:39:22,414 - context_manager - INFO - generate_contextual_response:254 - Response length: 1063 characters
+2025-07-21 07:39:22,414 - context_manager - INFO - process_user_message:294 - Context-aware response generation completed successfully
+2025-07-21 07:39:22,415 - context_manager - INFO - process_user_message:277 - Processing user message with context: 'main bahut pareshan hun, kuch solution bataiye...'
+2025-07-21 07:39:22,415 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 07:39:22,415 - context_manager - INFO - get_conversation_history:46 - Retrieved 0 messages for user 123456789
+2025-07-21 07:39:22,416 - context_manager - INFO - process_user_message:282 - Retrieved 0 historical messages
+2025-07-21 07:39:22,416 - context_manager - INFO - analyze_context_and_prepare_response:62 - Analyzing conversation context and preparing response structure
+2025-07-21 07:39:22,416 - context_manager - INFO - analyze_context_and_prepare_response:137 - Sending context analysis request to Gemini
+2025-07-21 07:39:25,073 - context_manager - INFO - analyze_context_and_prepare_response:143 - Context analysis received in 2.66 seconds
+2025-07-21 07:39:25,073 - context_manager - ERROR - analyze_context_and_prepare_response:152 - Error in context analysis: Expecting value: line 1 column 1 (char 0)
+2025-07-21 07:39:25,073 - context_manager - INFO - generate_contextual_response:188 - Generating contextual response using analysis
+2025-07-21 07:39:25,074 - context_manager - INFO - generate_contextual_response:247 - Sending contextual response request to Gemini
+2025-07-21 07:39:28,055 - context_manager - INFO - generate_contextual_response:253 - Contextual response received in 2.98 seconds
+2025-07-21 07:39:28,055 - context_manager - INFO - generate_contextual_response:254 - Response length: 1168 characters
+2025-07-21 07:39:28,055 - context_manager - INFO - process_user_message:294 - Context-aware response generation completed successfully
+2025-07-21 07:40:00,239 - context_manager - INFO - __init__:12 - Initializing ConversationContextManager
+2025-07-21 07:40:00,239 - context_manager - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 07:40:00,239 - context_manager - INFO - __init__:25 - ConversationContextManager initialized successfully
+2025-07-21 07:40:00,239 - context_manager - INFO - process_user_message:290 - Processing user message with context: 'career ke bare mein bataiye...'
+2025-07-21 07:40:00,240 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 07:40:00,240 - context_manager - INFO - get_conversation_history:46 - Retrieved 0 messages for user 123456789
+2025-07-21 07:40:00,240 - context_manager - INFO - process_user_message:295 - Retrieved 0 historical messages
+2025-07-21 07:40:00,240 - context_manager - INFO - analyze_context_and_prepare_response:62 - Analyzing conversation context and preparing response structure
+2025-07-21 07:40:00,240 - context_manager - INFO - analyze_context_and_prepare_response:138 - Sending context analysis request to Gemini
+2025-07-21 07:40:04,172 - context_manager - INFO - analyze_context_and_prepare_response:144 - Context analysis received in 3.93 seconds
+2025-07-21 07:40:04,172 - context_manager - INFO - analyze_context_and_prepare_response:157 - Context analysis completed: career
+2025-07-21 07:40:04,172 - context_manager - INFO - generate_contextual_response:201 - Generating contextual response using analysis
+2025-07-21 07:40:04,173 - context_manager - INFO - generate_contextual_response:260 - Sending contextual response request to Gemini
+2025-07-21 07:40:08,056 - context_manager - INFO - generate_contextual_response:266 - Contextual response received in 3.88 seconds
+2025-07-21 07:40:08,056 - context_manager - INFO - generate_contextual_response:267 - Response length: 1294 characters
+2025-07-21 07:40:08,056 - context_manager - INFO - process_user_message:307 - Context-aware response generation completed successfully
+2025-07-21 07:40:08,056 - context_manager - INFO - process_user_message:290 - Processing user message with context: 'aur shadi ke bare mein bhi bataiye...'
+2025-07-21 07:40:08,057 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 07:40:08,057 - context_manager - INFO - get_conversation_history:46 - Retrieved 0 messages for user 123456789
+2025-07-21 07:40:08,057 - context_manager - INFO - process_user_message:295 - Retrieved 0 historical messages
+2025-07-21 07:40:08,057 - context_manager - INFO - analyze_context_and_prepare_response:62 - Analyzing conversation context and preparing response structure
+2025-07-21 07:40:08,058 - context_manager - INFO - analyze_context_and_prepare_response:138 - Sending context analysis request to Gemini
+2025-07-21 07:40:10,269 - context_manager - INFO - analyze_context_and_prepare_response:144 - Context analysis received in 2.21 seconds
+2025-07-21 07:40:10,270 - context_manager - INFO - analyze_context_and_prepare_response:157 - Context analysis completed: marriage
+2025-07-21 07:40:10,270 - context_manager - INFO - generate_contextual_response:201 - Generating contextual response using analysis
+2025-07-21 07:40:10,270 - context_manager - INFO - generate_contextual_response:260 - Sending contextual response request to Gemini
+2025-07-21 07:40:12,594 - context_manager - INFO - generate_contextual_response:266 - Contextual response received in 2.32 seconds
+2025-07-21 07:40:12,595 - context_manager - INFO - generate_contextual_response:267 - Response length: 872 characters
+2025-07-21 07:40:12,595 - context_manager - INFO - process_user_message:307 - Context-aware response generation completed successfully
+2025-07-21 07:40:12,595 - context_manager - INFO - process_user_message:290 - Processing user message with context: 'samajh nahi aa raha, detail mein bataiye...'
+2025-07-21 07:40:12,595 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 07:40:12,596 - context_manager - INFO - get_conversation_history:46 - Retrieved 0 messages for user 123456789
+2025-07-21 07:40:12,596 - context_manager - INFO - process_user_message:295 - Retrieved 0 historical messages
+2025-07-21 07:40:12,596 - context_manager - INFO - analyze_context_and_prepare_response:62 - Analyzing conversation context and preparing response structure
+2025-07-21 07:40:12,596 - context_manager - INFO - analyze_context_and_prepare_response:138 - Sending context analysis request to Gemini
+2025-07-21 07:40:14,714 - context_manager - INFO - analyze_context_and_prepare_response:144 - Context analysis received in 2.12 seconds
+2025-07-21 07:40:14,714 - context_manager - INFO - analyze_context_and_prepare_response:157 - Context analysis completed: general
+2025-07-21 07:40:14,714 - context_manager - INFO - generate_contextual_response:201 - Generating contextual response using analysis
+2025-07-21 07:40:14,715 - context_manager - INFO - generate_contextual_response:260 - Sending contextual response request to Gemini
+2025-07-21 07:40:17,022 - context_manager - INFO - generate_contextual_response:266 - Contextual response received in 2.31 seconds
+2025-07-21 07:40:17,023 - context_manager - INFO - generate_contextual_response:267 - Response length: 789 characters
+2025-07-21 07:40:17,023 - context_manager - INFO - process_user_message:307 - Context-aware response generation completed successfully
+2025-07-21 07:40:17,023 - context_manager - INFO - process_user_message:290 - Processing user message with context: 'main bahut pareshan hun, kuch solution bataiye...'
+2025-07-21 07:40:17,023 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 07:40:17,024 - context_manager - INFO - get_conversation_history:46 - Retrieved 0 messages for user 123456789
+2025-07-21 07:40:17,024 - context_manager - INFO - process_user_message:295 - Retrieved 0 historical messages
+2025-07-21 07:40:17,024 - context_manager - INFO - analyze_context_and_prepare_response:62 - Analyzing conversation context and preparing response structure
+2025-07-21 07:40:17,024 - context_manager - INFO - analyze_context_and_prepare_response:138 - Sending context analysis request to Gemini
+2025-07-21 07:40:19,687 - context_manager - INFO - analyze_context_and_prepare_response:144 - Context analysis received in 2.66 seconds
+2025-07-21 07:40:19,688 - context_manager - INFO - analyze_context_and_prepare_response:157 - Context analysis completed: general
+2025-07-21 07:40:19,688 - context_manager - INFO - generate_contextual_response:201 - Generating contextual response using analysis
+2025-07-21 07:40:19,688 - context_manager - INFO - generate_contextual_response:260 - Sending contextual response request to Gemini
+2025-07-21 07:40:22,413 - context_manager - INFO - generate_contextual_response:266 - Contextual response received in 2.72 seconds
+2025-07-21 07:40:22,413 - context_manager - INFO - generate_contextual_response:267 - Response length: 1043 characters
+2025-07-21 07:40:22,413 - context_manager - INFO - process_user_message:307 - Context-aware response generation completed successfully
+2025-07-21 07:41:50,067 - database - INFO - <module>:12 - Initializing database with URL: sqlite:///punnet_aacharya.db
+2025-07-21 07:41:50,080 - database - INFO - <module>:16 - Database engine created successfully
+2025-07-21 07:41:50,081 - database - INFO - <module>:22 - Database session maker configured
+2025-07-21 07:41:50,084 - database - INFO - <module>:52 - Creating database tables
+2025-07-21 07:41:50,086 - database - INFO - <module>:55 - Database tables created successfully
+2025-07-21 07:41:52,531 - __main__ - INFO - main:24 - Starting Punnet Aacharya Vedic Astrology Bot
+2025-07-21 07:41:52,531 - __main__ - INFO - main:25 - ==================================================
+2025-07-21 07:41:52,531 - __main__ - INFO - main:31 - Bot token found, proceeding with initialization
+2025-07-21 07:41:52,531 - __main__ - INFO - main:35 - Creating Telegram Application
+2025-07-21 07:41:52,596 - __main__ - INFO - main:37 - Telegram Application created successfully
+2025-07-21 07:41:52,597 - __main__ - INFO - main:40 - Initializing AstrologyBot
+2025-07-21 07:41:52,597 - bot_handlers - INFO - __init__:33 - Initializing AstrologyBot
+2025-07-21 07:41:52,597 - astro_calculator - INFO - __init__:14 - Initializing AstroCalculator
+2025-07-21 07:41:53,337 - astro_calculator - INFO - __init__:18 - AstroCalculator initialized successfully
+2025-07-21 07:41:53,337 - vector_store - INFO - __init__:13 - Initializing AstrologyKnowledgeBase
+2025-07-21 07:41:53,337 - vector_store - INFO - __init__:14 - Vector DB path: chromadb_storage
+2025-07-21 07:41:53,337 - vector_store - INFO - __init__:15 - Collection name: astrology_knowledge
+2025-07-21 07:41:53,469 - vector_store - INFO - __init__:22 - ChromaDB client created successfully
+2025-07-21 07:41:53,469 - vector_store - INFO - _get_or_create_collection:36 - Getting or creating collection
+2025-07-21 07:41:53,470 - vector_store - INFO - _get_or_create_collection:39 - Found existing collection: astrology_knowledge
+2025-07-21 07:41:53,470 - vector_store - INFO - __init__:25 - Collection ready
+2025-07-21 07:41:53,470 - vector_store - INFO - _load_knowledge_base:111 - Loading astrological rules into vector database
+2025-07-21 07:41:53,470 - vector_store - WARNING - _load_knowledge_files:56 - Knowledge directory not found
+2025-07-21 07:41:53,470 - vector_store - INFO - _load_knowledge_base:264 - Total rules to load: 19
+2025-07-21 07:41:53,478 - vector_store - INFO - _load_knowledge_base:269 - Existing rules in database: 19
+2025-07-21 07:41:53,478 - vector_store - INFO - _load_knowledge_base:307 - No new rules to add
+2025-07-21 07:41:53,478 - vector_store - INFO - __init__:28 - Knowledge base loaded successfully
+2025-07-21 07:41:53,478 - gemini_service - INFO - __init__:12 - Initializing GeminiAstrologer
+2025-07-21 07:41:53,478 - gemini_service - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 07:41:53,478 - gemini_service - INFO - __init__:53 - GeminiAstrologer initialized successfully
+2025-07-21 07:41:53,478 - context_manager - INFO - __init__:12 - Initializing ConversationContextManager
+2025-07-21 07:41:53,478 - context_manager - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 07:41:53,478 - context_manager - INFO - __init__:25 - ConversationContextManager initialized successfully
+2025-07-21 07:41:53,478 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 07:41:53,478 - bot_handlers - INFO - __init__:41 - AstrologyBot initialized successfully
+2025-07-21 07:41:53,478 - __main__ - INFO - main:42 - AstrologyBot initialized successfully
+2025-07-21 07:41:53,478 - __main__ - INFO - main:45 - Setting up conversation handler for onboarding and consultation
+2025-07-21 07:41:53,479 - __main__ - INFO - main:60 - Conversation handler added successfully
+2025-07-21 07:41:53,479 - __main__ - INFO - main:63 - Setting up error handler
+2025-07-21 07:41:53,479 - __main__ - INFO - main:65 - Error handler added successfully
+2025-07-21 07:41:53,479 - __main__ - INFO - main:68 - Starting Punnet Aacharya bot with Puneet Guruji...
+2025-07-21 07:41:53,479 - __main__ - INFO - main:69 - Bot is now running and listening for messages...
+2025-07-21 07:41:53,479 - __main__ - INFO - main:70 - ==================================================
+2025-07-21 07:41:53,963 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getMe "HTTP/1.1 200 OK"
+2025-07-21 07:41:54,174 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/deleteWebhook "HTTP/1.1 200 OK"
+2025-07-21 07:41:54,179 - telegram.ext.Application - INFO - start:620 - Application started
+2025-07-21 07:42:04,657 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:42:13,006 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:42:13,009 - bot_handlers - INFO - start:49 - Start command received from user 1177573677 (@puneetsinh)
+2025-07-21 07:42:13,014 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: /start...
+2025-07-21 07:42:13,014 - bot_handlers - INFO - start:69 - User data initialized for new session
+2025-07-21 07:42:13,885 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 07:42:13,890 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: 🙏 Namaste Beta! 
+
+Main hoon Punnet Guruji, aapke personal Vedic astrology guide. 
+
+Aapko apne janam ...
+2025-07-21 07:42:13,890 - bot_handlers - INFO - start:90 - Sent welcome message from Puneet Guruji
+2025-07-21 07:42:23,172 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:42:33,496 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:42:43,739 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:42:54,339 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:43:04,495 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:43:14,665 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:43:17,831 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:43:17,833 - bot_handlers - INFO - handle_onboarding:97 - Onboarding message from user 1177573677: 'Mera naam divya  hai .. main delhi me paida hui th...'
+2025-07-21 07:43:17,842 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: Mera naam divya  hai .. main delhi me paida hui thi  12 december 2005 ko sham 5 baje...
+2025-07-21 07:43:18,512 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 07:43:18,513 - bot_handlers - INFO - handle_onboarding:115 - Current onboarding state: start
+2025-07-21 07:43:18,513 - bot_handlers - INFO - handle_onboarding:116 - Current birth details: {}
+2025-07-21 07:43:18,514 - bot_handlers - INFO - handle_onboarding:165 - Sending request to Puneet Guruji
+2025-07-21 07:43:21,730 - bot_handlers - INFO - handle_onboarding:169 - Raw Puneet Guruji response: ```json
+{
+    "updated_details": {
+        "name": "divya",
+        "birth_date": "2005-12-12",
+        "birth_time": "17:00",
+        "birth_place": "delhi"
+    },
+    "next_state": "complete",
+    "...
+2025-07-21 07:43:21,731 - bot_handlers - INFO - handle_onboarding:182 - Cleaned response: {
+    "updated_details": {
+        "name": "divya",
+        "birth_date": "2005-12-12",
+        "birth_time": "17:00",
+        "birth_place": "delhi"
+    },
+    "next_state": "complete",
+    "response...
+2025-07-21 07:43:21,731 - bot_handlers - INFO - handle_onboarding:186 - Puneet Guruji response: {'updated_details': {'name': 'divya', 'birth_date': '2005-12-12', 'birth_time': '17:00', 'birth_place': 'delhi'}, 'next_state': 'complete', 'response': 'Namaste Divya! Aapki janam tithi aur samay ke anusar, aap Delhi mein shaam 5 baje, 12 December 2005 ko paida hui hain. Kya aap mujhe batana chahengi ki aap kis vishay mein margdarshan chahti hain? Shadi, career ya anya koi chinta?', 'missing_info': []}
+2025-07-21 07:43:21,731 - bot_handlers - INFO - handle_onboarding:192 - Updated birth details: {'name': 'divya', 'birth_date': '2005-12-12', 'birth_time': '17:00', 'birth_place': 'delhi'}
+2025-07-21 07:43:21,731 - bot_handlers - INFO - handle_onboarding:197 - Updated state to: complete
+2025-07-21 07:43:22,111 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 07:43:22,115 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Namaste Divya! Aapki janam tithi aur samay ke anusar, aap Delhi mein shaam 5 baje, 12 December 2005 ...
+2025-07-21 07:43:22,115 - bot_handlers - INFO - handle_onboarding:213 - Onboarding complete, moving to consultation
+2025-07-21 07:43:22,117 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: system, Content: System event: onboarding_complete...
+2025-07-21 07:43:28,039 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:43:38,295 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:43:42,180 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:43:42,182 - bot_handlers - INFO - handle_consultation:270 - Consultation message from user 1177573677: 'meri shaddi kab hogi...'
+2025-07-21 07:43:42,184 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: meri shaddi kab hogi...
+2025-07-21 07:43:42,828 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 07:43:42,829 - bot_handlers - INFO - handle_consultation:308 - Calculating birth chart for consultation
+2025-07-21 07:43:42,830 - bot_handlers - INFO - _calculate_and_save_chart:561 - Calculating birth chart for user 1177573677
+2025-07-21 07:43:42,832 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: system, Content: System event: chart_calculation_started...
+2025-07-21 07:43:42,835 - bot_handlers - INFO - _calculate_and_save_chart:582 - Parsed details - Date: 2005-12-12, Time: 17:00:00, Place: delhi
+2025-07-21 07:43:42,835 - astro_calculator - INFO - generate_birth_chart:227 - Generating birth chart for divya - 2005-12-12 17:00:00 at delhi
+2025-07-21 07:43:42,835 - astro_calculator - INFO - generate_birth_chart:231 - Step 1: Getting coordinates
+2025-07-21 07:43:42,835 - astro_calculator - INFO - get_coordinates:22 - Getting coordinates for place: delhi
+2025-07-21 07:43:43,775 - astro_calculator - INFO - get_coordinates:27 - Coordinates found: lat=28.6328027, lon=77.2197713
+2025-07-21 07:43:43,776 - astro_calculator - INFO - generate_birth_chart:235 - Step 2: Getting timezone
+2025-07-21 07:43:43,778 - astro_calculator - INFO - generate_birth_chart:237 - Timezone: Asia/Kolkata
+2025-07-21 07:43:43,778 - astro_calculator - INFO - generate_birth_chart:243 - Step 3: Calculating Julian Day
+2025-07-21 07:43:43,778 - astro_calculator - INFO - calculate_julian_day:38 - Calculating Julian Day for 2005-12-12 17:00:00 in timezone Asia/Kolkata
+2025-07-21 07:43:43,924 - astro_calculator - INFO - calculate_julian_day:50 - Julian Day calculated: 2453716.9791666665
+2025-07-21 07:43:43,924 - astro_calculator - INFO - generate_birth_chart:247 - Step 4: Calculating houses
+2025-07-21 07:43:43,924 - astro_calculator - INFO - calculate_houses:58 - Calculating houses for JD=2453716.9791666665, lat=28.6328027, lon=77.2197713
+2025-07-21 07:43:43,925 - astro_calculator - INFO - calculate_houses:66 - Houses calculated: ASC=75.40, MC=328.85
+2025-07-21 07:43:43,925 - astro_calculator - INFO - generate_birth_chart:251 - Step 5: Calculating planetary positions
+2025-07-21 07:43:43,925 - astro_calculator - INFO - calculate_planetary_positions:75 - Calculating planetary positions for JD=2453716.9791666665
+2025-07-21 07:43:43,925 - astro_calculator - INFO - calculate_planetary_positions:119 - Planetary positions calculated for 9 planets
+2025-07-21 07:43:43,925 - astro_calculator - INFO - generate_birth_chart:255 - Step 6: Assigning planets to houses
+2025-07-21 07:43:43,925 - astro_calculator - INFO - generate_birth_chart:270 - Step 7: Calculating divisional charts
+2025-07-21 07:43:43,925 - astro_calculator - INFO - calculate_divisional_charts:154 - Calculating divisional charts (D9 and D10)
+2025-07-21 07:43:43,925 - astro_calculator - INFO - calculate_divisional_charts:181 - Divisional charts calculated successfully
+2025-07-21 07:43:43,925 - astro_calculator - INFO - generate_birth_chart:274 - Step 8: Calculating dasha periods
+2025-07-21 07:43:43,925 - astro_calculator - INFO - calculate_dasha_periods:190 - Calculating dasha periods for Moon longitude: 17.95°
+2025-07-21 07:43:43,925 - astro_calculator - INFO - calculate_dasha_periods:216 - Current dasha: Venus (6.9 years elapsed, 13.1 remaining)
+2025-07-21 07:43:43,925 - astro_calculator - INFO - generate_birth_chart:293 - Birth chart generated successfully for divya
+2025-07-21 07:43:43,925 - astro_calculator - INFO - generate_birth_chart:294 - Ascendant: Gemini
+2025-07-21 07:43:43,925 - astro_calculator - INFO - generate_birth_chart:295 - Current dasha: Venus
+2025-07-21 07:43:43,925 - bot_handlers - INFO - _calculate_and_save_chart:588 - Birth chart calculated successfully for divya
+2025-07-21 07:43:43,925 - bot_handlers - INFO - _calculate_and_save_chart:594 - Saving user data to database
+2025-07-21 07:43:43,933 - bot_handlers - INFO - _calculate_and_save_chart:616 - User data saved successfully for 1177573677
+2025-07-21 07:43:44,279 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 07:43:44,282 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: 🎉 Bahut achha Beta! Main aapka janam kundli calculate kar liya hoon.
+
+📊 Aapki Birth Details:
+Naam: d...
+2025-07-21 07:43:44,284 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: system, Content: System event: chart_calculation_completed...
+2025-07-21 07:43:44,284 - bot_handlers - INFO - _calculate_and_save_chart:656 - Sent chart calculation success message
+2025-07-21 07:43:44,285 - bot_handlers - INFO - handle_consultation:345 - Question category determined: marriage
+2025-07-21 07:43:44,286 - context_manager - INFO - process_user_message:290 - Processing user message with context: 'meri shaddi kab hogi...'
+2025-07-21 07:43:44,286 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 07:43:44,288 - context_manager - ERROR - get_conversation_history:50 - Error getting conversation history: 'message_type'
+2025-07-21 07:43:44,289 - context_manager - INFO - process_user_message:295 - Retrieved 0 historical messages
+2025-07-21 07:43:44,289 - context_manager - INFO - analyze_context_and_prepare_response:62 - Analyzing conversation context and preparing response structure
+2025-07-21 07:43:44,289 - context_manager - INFO - analyze_context_and_prepare_response:138 - Sending context analysis request to Gemini
+2025-07-21 07:43:46,740 - context_manager - INFO - analyze_context_and_prepare_response:144 - Context analysis received in 2.45 seconds
+2025-07-21 07:43:46,741 - context_manager - INFO - analyze_context_and_prepare_response:157 - Context analysis completed: marriage
+2025-07-21 07:43:46,741 - context_manager - INFO - generate_contextual_response:201 - Generating contextual response using analysis
+2025-07-21 07:43:46,742 - context_manager - INFO - generate_contextual_response:260 - Sending contextual response request to Gemini
+2025-07-21 07:43:49,522 - context_manager - INFO - generate_contextual_response:266 - Contextual response received in 2.78 seconds
+2025-07-21 07:43:49,523 - context_manager - INFO - generate_contextual_response:267 - Response length: 1268 characters
+2025-07-21 07:43:49,523 - context_manager - INFO - process_user_message:307 - Context-aware response generation completed successfully
+2025-07-21 07:43:50,985 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 07:43:50,989 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Namaste, Divya. "Meri shaddi kab hogi," you ask. This is a very important question, and I understand...
+2025-07-21 07:43:50,989 - bot_handlers - INFO - handle_consultation:370 - Context analysis: marriage
+2025-07-21 07:43:52,424 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:44:02,599 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:44:12,833 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:44:23,033 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:44:33,197 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:44:43,597 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:44:53,846 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:45:04,063 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:45:14,367 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:45:24,521 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:45:34,742 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:45:44,895 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:45:55,084 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:46:05,239 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:46:15,390 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:46:16,389 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:46:16,391 - bot_handlers - INFO - handle_consultation:270 - Consultation message from user 1177573677: 'maine bataya toh  tarik 12 december 2005,  time sh...'
+2025-07-21 07:46:16,396 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: maine bataya toh  tarik 12 december 2005,  time sham 5 baje, jagah delhi...
+2025-07-21 07:46:17,069 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 07:46:17,070 - bot_handlers - INFO - handle_consultation:345 - Question category determined: None
+2025-07-21 07:46:17,070 - context_manager - INFO - process_user_message:290 - Processing user message with context: 'maine bataya toh  tarik 12 december 2005,  time sh...'
+2025-07-21 07:46:17,070 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 07:46:17,073 - context_manager - ERROR - get_conversation_history:50 - Error getting conversation history: 'message_type'
+2025-07-21 07:46:17,074 - context_manager - INFO - process_user_message:295 - Retrieved 0 historical messages
+2025-07-21 07:46:17,074 - context_manager - INFO - analyze_context_and_prepare_response:62 - Analyzing conversation context and preparing response structure
+2025-07-21 07:46:17,074 - context_manager - INFO - analyze_context_and_prepare_response:138 - Sending context analysis request to Gemini
+2025-07-21 07:46:19,497 - context_manager - INFO - analyze_context_and_prepare_response:144 - Context analysis received in 2.42 seconds
+2025-07-21 07:46:19,498 - context_manager - INFO - analyze_context_and_prepare_response:157 - Context analysis completed: general
+2025-07-21 07:46:19,498 - context_manager - INFO - generate_contextual_response:201 - Generating contextual response using analysis
+2025-07-21 07:46:19,498 - context_manager - INFO - generate_contextual_response:260 - Sending contextual response request to Gemini
+2025-07-21 07:46:22,683 - context_manager - INFO - generate_contextual_response:266 - Contextual response received in 3.18 seconds
+2025-07-21 07:46:22,684 - context_manager - INFO - generate_contextual_response:267 - Response length: 1118 characters
+2025-07-21 07:46:22,685 - context_manager - INFO - process_user_message:307 - Context-aware response generation completed successfully
+2025-07-21 07:46:23,453 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 07:46:23,456 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Namaste, Divya.
+
+Aapka message mila. 12 December 2005, sham 5 baje, Delhi. Bilkul. Pehle toh, beta, ...
+2025-07-21 07:46:23,457 - bot_handlers - INFO - handle_consultation:370 - Context analysis: general
+2025-07-21 07:46:26,546 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:46:36,695 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:46:46,859 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:46:57,389 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:47:07,553 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:47:17,710 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:47:27,937 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:47:28,111 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:47:28,113 - bot_handlers - INFO - handle_consultation:270 - Consultation message from user 1177573677: 'iss saal ho jayegi meri shaddi?...'
+2025-07-21 07:47:28,115 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: iss saal ho jayegi meri shaddi?...
+2025-07-21 07:47:29,012 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 07:47:29,013 - bot_handlers - INFO - handle_consultation:345 - Question category determined: marriage
+2025-07-21 07:47:29,013 - context_manager - INFO - process_user_message:290 - Processing user message with context: 'iss saal ho jayegi meri shaddi?...'
+2025-07-21 07:47:29,013 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 07:47:29,014 - context_manager - ERROR - get_conversation_history:50 - Error getting conversation history: 'message_type'
+2025-07-21 07:47:29,014 - context_manager - INFO - process_user_message:295 - Retrieved 0 historical messages
+2025-07-21 07:47:29,014 - context_manager - INFO - analyze_context_and_prepare_response:62 - Analyzing conversation context and preparing response structure
+2025-07-21 07:47:29,014 - context_manager - INFO - analyze_context_and_prepare_response:138 - Sending context analysis request to Gemini
+2025-07-21 07:47:31,186 - context_manager - INFO - analyze_context_and_prepare_response:144 - Context analysis received in 2.17 seconds
+2025-07-21 07:47:31,187 - context_manager - INFO - analyze_context_and_prepare_response:157 - Context analysis completed: marriage
+2025-07-21 07:47:31,187 - context_manager - INFO - generate_contextual_response:201 - Generating contextual response using analysis
+2025-07-21 07:47:31,187 - context_manager - INFO - generate_contextual_response:260 - Sending contextual response request to Gemini
+2025-07-21 07:47:34,010 - context_manager - INFO - generate_contextual_response:266 - Contextual response received in 2.82 seconds
+2025-07-21 07:47:34,010 - context_manager - INFO - generate_contextual_response:267 - Response length: 892 characters
+2025-07-21 07:47:34,011 - context_manager - INFO - process_user_message:307 - Context-aware response generation completed successfully
+2025-07-21 07:47:34,489 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 07:47:34,495 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Namaste, Divya. Aapka prashna sun kar achha laga. Shaddi ka vichar mann mein aana, ek natural baat h...
+2025-07-21 07:47:34,495 - bot_handlers - INFO - handle_consultation:370 - Context analysis: marriage
+2025-07-21 07:47:38,271 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:47:48,478 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:47:58,641 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:48:08,794 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:48:18,979 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:48:29,152 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:48:39,323 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:48:49,526 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:48:59,686 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:49:09,844 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:49:19,994 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:49:30,187 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:49:40,341 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:49:50,524 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 07:50:00,688 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:07:51,131 - database - INFO - <module>:12 - Initializing database with URL: sqlite:///punnet_aacharya.db
+2025-07-21 08:07:51,145 - database - INFO - <module>:16 - Database engine created successfully
+2025-07-21 08:07:51,145 - database - INFO - <module>:22 - Database session maker configured
+2025-07-21 08:07:51,149 - database - INFO - <module>:52 - Creating database tables
+2025-07-21 08:07:51,151 - database - INFO - <module>:55 - Database tables created successfully
+2025-07-21 08:07:53,502 - __main__ - INFO - main:24 - Starting Punnet Aacharya Vedic Astrology Bot
+2025-07-21 08:07:53,503 - __main__ - INFO - main:25 - ==================================================
+2025-07-21 08:07:53,503 - __main__ - INFO - main:31 - Bot token found, proceeding with initialization
+2025-07-21 08:07:53,503 - __main__ - INFO - main:35 - Creating Telegram Application
+2025-07-21 08:07:53,568 - __main__ - INFO - main:37 - Telegram Application created successfully
+2025-07-21 08:07:53,568 - __main__ - INFO - main:40 - Initializing AstrologyBot
+2025-07-21 08:07:53,568 - bot_handlers - INFO - __init__:33 - Initializing AstrologyBot
+2025-07-21 08:07:53,568 - astro_calculator - INFO - __init__:14 - Initializing AstroCalculator
+2025-07-21 08:07:54,343 - astro_calculator - INFO - __init__:18 - AstroCalculator initialized successfully
+2025-07-21 08:07:54,343 - vector_store - INFO - __init__:13 - Initializing AstrologyKnowledgeBase
+2025-07-21 08:07:54,343 - vector_store - INFO - __init__:14 - Vector DB path: chromadb_storage
+2025-07-21 08:07:54,343 - vector_store - INFO - __init__:15 - Collection name: astrology_knowledge
+2025-07-21 08:07:54,475 - vector_store - INFO - __init__:22 - ChromaDB client created successfully
+2025-07-21 08:07:54,475 - vector_store - INFO - _get_or_create_collection:36 - Getting or creating collection
+2025-07-21 08:07:54,476 - vector_store - INFO - _get_or_create_collection:39 - Found existing collection: astrology_knowledge
+2025-07-21 08:07:54,476 - vector_store - INFO - __init__:25 - Collection ready
+2025-07-21 08:07:54,476 - vector_store - INFO - _load_knowledge_base:111 - Loading astrological rules into vector database
+2025-07-21 08:07:54,476 - vector_store - WARNING - _load_knowledge_files:56 - Knowledge directory not found
+2025-07-21 08:07:54,476 - vector_store - INFO - _load_knowledge_base:264 - Total rules to load: 19
+2025-07-21 08:07:54,486 - vector_store - INFO - _load_knowledge_base:269 - Existing rules in database: 19
+2025-07-21 08:07:54,486 - vector_store - INFO - _load_knowledge_base:307 - No new rules to add
+2025-07-21 08:07:54,486 - vector_store - INFO - __init__:28 - Knowledge base loaded successfully
+2025-07-21 08:07:54,486 - gemini_service - INFO - __init__:12 - Initializing GeminiAstrologer
+2025-07-21 08:07:54,486 - gemini_service - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 08:07:54,486 - gemini_service - INFO - __init__:53 - GeminiAstrologer initialized successfully
+2025-07-21 08:07:54,486 - context_manager - INFO - __init__:12 - Initializing ConversationContextManager
+2025-07-21 08:07:54,487 - context_manager - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 08:07:54,487 - context_manager - INFO - __init__:25 - ConversationContextManager initialized successfully
+2025-07-21 08:07:54,487 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 08:07:54,487 - bot_handlers - INFO - __init__:41 - AstrologyBot initialized successfully
+2025-07-21 08:07:54,487 - __main__ - INFO - main:42 - AstrologyBot initialized successfully
+2025-07-21 08:07:54,487 - __main__ - INFO - main:45 - Setting up conversation handler for onboarding and consultation
+2025-07-21 08:07:54,488 - __main__ - INFO - main:60 - Conversation handler added successfully
+2025-07-21 08:07:54,488 - __main__ - INFO - main:63 - Setting up error handler
+2025-07-21 08:07:54,488 - __main__ - INFO - main:65 - Error handler added successfully
+2025-07-21 08:07:54,488 - __main__ - INFO - main:68 - Starting Punnet Aacharya bot with Puneet Guruji...
+2025-07-21 08:07:54,488 - __main__ - INFO - main:69 - Bot is now running and listening for messages...
+2025-07-21 08:07:54,488 - __main__ - INFO - main:70 - ==================================================
+2025-07-21 08:07:54,955 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getMe "HTTP/1.1 200 OK"
+2025-07-21 08:07:55,114 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/deleteWebhook "HTTP/1.1 200 OK"
+2025-07-21 08:07:55,125 - telegram.ext.Application - INFO - start:620 - Application started
+2025-07-21 08:08:04,864 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:08:04,867 - bot_handlers - INFO - start:49 - Start command received from user 1177573677 (@puneetsinh)
+2025-07-21 08:08:04,870 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: /start...
+2025-07-21 08:08:04,871 - bot_handlers - INFO - start:69 - User data initialized for new session
+2025-07-21 08:08:05,529 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:08:05,533 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: 🙏 Namaste Beta! 
+
+Main hoon Punnet Guruji, aapke personal Vedic astrology guide. 
+
+Aapko apne janam ...
+2025-07-21 08:08:05,533 - bot_handlers - INFO - start:90 - Sent welcome message from Puneet Guruji
+2025-07-21 08:08:15,020 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:08:21,848 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:08:21,850 - bot_handlers - INFO - handle_onboarding:97 - Onboarding message from user 1177573677: 'Guruji, paisa nahi tikta, kya karun?...'
+2025-07-21 08:08:21,852 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: Guruji, paisa nahi tikta, kya karun?...
+2025-07-21 08:08:22,491 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 08:08:22,492 - bot_handlers - INFO - handle_onboarding:115 - Current onboarding state: start
+2025-07-21 08:08:22,492 - bot_handlers - INFO - handle_onboarding:116 - Current birth details: {}
+2025-07-21 08:08:22,492 - bot_handlers - INFO - handle_onboarding:165 - Sending request to Puneet Guruji
+2025-07-21 08:08:23,841 - bot_handlers - INFO - handle_onboarding:169 - Raw Puneet Guruji response: ```json
+{
+    "updated_details": {},
+    "next_state": "collecting",
+    "response": "Namaste! Paisa nahi tikta, yeh ek aam samasya hai. Iska samadhan kundali dekh kar kiya ja sakta hai. Kripya apna p...
+2025-07-21 08:08:23,841 - bot_handlers - INFO - handle_onboarding:182 - Cleaned response: {
+    "updated_details": {},
+    "next_state": "collecting",
+    "response": "Namaste! Paisa nahi tikta, yeh ek aam samasya hai. Iska samadhan kundali dekh kar kiya ja sakta hai. Kripya apna pura naam...
+2025-07-21 08:08:23,841 - bot_handlers - INFO - handle_onboarding:186 - Puneet Guruji response: {'updated_details': {}, 'next_state': 'collecting', 'response': 'Namaste! Paisa nahi tikta, yeh ek aam samasya hai. Iska samadhan kundali dekh kar kiya ja sakta hai. Kripya apna pura naam batayen.', 'missing_info': ['name', 'birth_date', 'birth_time', 'birth_place']}
+2025-07-21 08:08:23,841 - bot_handlers - INFO - handle_onboarding:192 - Updated birth details: {}
+2025-07-21 08:08:23,842 - bot_handlers - INFO - handle_onboarding:197 - Updated state to: collecting
+2025-07-21 08:08:24,184 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:08:24,189 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Namaste! Paisa nahi tikta, yeh ek aam samasya hai. Iska samadhan kundali dekh kar kiya ja sakta hai....
+2025-07-21 08:08:32,106 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:08:35,355 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:08:35,359 - bot_handlers - INFO - handle_onboarding:97 - Onboarding message from user 1177573677: 'sapna yadav...'
+2025-07-21 08:08:35,363 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: sapna yadav...
+2025-07-21 08:08:36,061 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 08:08:36,062 - bot_handlers - INFO - handle_onboarding:115 - Current onboarding state: collecting
+2025-07-21 08:08:36,062 - bot_handlers - INFO - handle_onboarding:116 - Current birth details: {}
+2025-07-21 08:08:36,062 - bot_handlers - INFO - handle_onboarding:126 - Heuristically captured name: Sapna Yadav
+2025-07-21 08:08:36,062 - bot_handlers - INFO - handle_onboarding:165 - Sending request to Puneet Guruji
+2025-07-21 08:08:37,626 - bot_handlers - INFO - handle_onboarding:169 - Raw Puneet Guruji response: ```json
+{
+    "updated_details": {"name": "Sapna Yadav"},
+    "next_state": "collecting",
+    "response": "Namaste Sapna Ji! Aapka naam toh maine jaan liya hai. Apne janam ki tareekh bhi bata dijiye. ...
+2025-07-21 08:08:37,627 - bot_handlers - INFO - handle_onboarding:182 - Cleaned response: {
+    "updated_details": {"name": "Sapna Yadav"},
+    "next_state": "collecting",
+    "response": "Namaste Sapna Ji! Aapka naam toh maine jaan liya hai. Apne janam ki tareekh bhi bata dijiye. YYYY-MM-...
+2025-07-21 08:08:37,630 - bot_handlers - INFO - handle_onboarding:186 - Puneet Guruji response: {'updated_details': {'name': 'Sapna Yadav'}, 'next_state': 'collecting', 'response': 'Namaste Sapna Ji! Aapka naam toh maine jaan liya hai. Apne janam ki tareekh bhi bata dijiye. YYYY-MM-DD format mein bataiyega, jaise ki 1985-06-15.', 'missing_info': ['birth_date', 'birth_time', 'birth_place']}
+2025-07-21 08:08:37,630 - bot_handlers - INFO - handle_onboarding:192 - Updated birth details: {'name': 'Sapna Yadav'}
+2025-07-21 08:08:37,630 - bot_handlers - INFO - handle_onboarding:197 - Updated state to: collecting
+2025-07-21 08:08:37,967 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:08:37,971 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Namaste Sapna Ji! Aapka naam toh maine jaan liya hai. Apne janam ki tareekh bhi bata dijiye. YYYY-MM...
+2025-07-21 08:08:45,510 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:08:55,662 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:08:56,326 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:08:56,330 - bot_handlers - INFO - handle_onboarding:97 - Onboarding message from user 1177573677: 'Naam: divya
+Din: 12/12/2005
+Samay: 05:00 PM
+Sthan:...'
+2025-07-21 08:08:56,332 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: Naam: divya
+Din: 12/12/2005
+Samay: 05:00 PM
+Sthan: delhi...
+2025-07-21 08:08:56,985 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 08:08:56,986 - bot_handlers - INFO - handle_onboarding:115 - Current onboarding state: collecting
+2025-07-21 08:08:56,986 - bot_handlers - INFO - handle_onboarding:116 - Current birth details: {'name': 'Sapna Yadav'}
+2025-07-21 08:08:56,986 - bot_handlers - INFO - handle_onboarding:165 - Sending request to Puneet Guruji
+2025-07-21 08:08:58,388 - bot_handlers - INFO - handle_onboarding:169 - Raw Puneet Guruji response: ```json
+{
+    "updated_details": {
+        "name": "Sapna Yadav",
+        "birth_date": "2005-12-12",
+        "birth_time": "17:00",
+        "birth_place": "Delhi, Delhi"
+    },
+    "next_state": "com...
+2025-07-21 08:08:58,389 - bot_handlers - INFO - handle_onboarding:182 - Cleaned response: {
+    "updated_details": {
+        "name": "Sapna Yadav",
+        "birth_date": "2005-12-12",
+        "birth_time": "17:00",
+        "birth_place": "Delhi, Delhi"
+    },
+    "next_state": "complete",
+...
+2025-07-21 08:08:58,389 - bot_handlers - INFO - handle_onboarding:186 - Puneet Guruji response: {'updated_details': {'name': 'Sapna Yadav', 'birth_date': '2005-12-12', 'birth_time': '17:00', 'birth_place': 'Delhi, Delhi'}, 'next_state': 'complete', 'response': 'Divya ji ki janam kundli ke liye, aapki di hui jaankari bilkul sahi hai. Ab aap mujhe bataiye, aap kya janna chahte hain? Shadi ke bare mein, career ke bare mein, ya koi aur guidance chahiye?', 'missing_info': []}
+2025-07-21 08:08:58,389 - bot_handlers - INFO - handle_onboarding:192 - Updated birth details: {'name': 'Sapna Yadav', 'birth_date': '2005-12-12', 'birth_time': '17:00', 'birth_place': 'Delhi, Delhi'}
+2025-07-21 08:08:58,390 - bot_handlers - INFO - handle_onboarding:197 - Updated state to: complete
+2025-07-21 08:08:58,722 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:08:58,726 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Divya ji ki janam kundli ke liye, aapki di hui jaankari bilkul sahi hai. Ab aap mujhe bataiye, aap k...
+2025-07-21 08:08:58,726 - bot_handlers - INFO - handle_onboarding:213 - Onboarding complete, moving to consultation
+2025-07-21 08:08:58,731 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: system, Content: System event: onboarding_complete...
+2025-07-21 08:09:06,510 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:09:16,149 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:09:16,152 - bot_handlers - INFO - handle_consultation:270 - Consultation message from user 1177573677: 'Guruji, paisa nahi tikta, kya karun?...'
+2025-07-21 08:09:16,154 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: Guruji, paisa nahi tikta, kya karun?...
+2025-07-21 08:09:16,802 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 08:09:16,803 - bot_handlers - INFO - handle_consultation:308 - Calculating birth chart for consultation
+2025-07-21 08:09:16,803 - bot_handlers - INFO - _calculate_and_save_chart:605 - Calculating birth chart for user 1177573677
+2025-07-21 08:09:16,806 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: system, Content: System event: chart_calculation_started...
+2025-07-21 08:09:16,809 - bot_handlers - INFO - _calculate_and_save_chart:626 - Parsed details - Date: 2005-12-12, Time: 17:00:00, Place: Delhi, Delhi
+2025-07-21 08:09:16,810 - astro_calculator - INFO - generate_birth_chart:227 - Generating birth chart for Sapna Yadav - 2005-12-12 17:00:00 at Delhi, Delhi
+2025-07-21 08:09:16,812 - astro_calculator - INFO - generate_birth_chart:231 - Step 1: Getting coordinates
+2025-07-21 08:09:16,813 - astro_calculator - INFO - get_coordinates:22 - Getting coordinates for place: Delhi, Delhi
+2025-07-21 08:09:17,674 - astro_calculator - INFO - get_coordinates:27 - Coordinates found: lat=42.2781401, lon=-74.9159946
+2025-07-21 08:09:17,674 - astro_calculator - INFO - generate_birth_chart:235 - Step 2: Getting timezone
+2025-07-21 08:09:17,676 - astro_calculator - INFO - generate_birth_chart:237 - Timezone: America/New_York
+2025-07-21 08:09:17,676 - astro_calculator - INFO - generate_birth_chart:243 - Step 3: Calculating Julian Day
+2025-07-21 08:09:17,676 - astro_calculator - INFO - calculate_julian_day:38 - Calculating Julian Day for 2005-12-12 17:00:00 in timezone America/New_York
+2025-07-21 08:09:17,822 - astro_calculator - INFO - calculate_julian_day:50 - Julian Day calculated: 2453717.4166666665
+2025-07-21 08:09:17,823 - astro_calculator - INFO - generate_birth_chart:247 - Step 4: Calculating houses
+2025-07-21 08:09:17,823 - astro_calculator - INFO - calculate_houses:58 - Calculating houses for JD=2453717.4166666665, lat=42.2781401, lon=-74.9159946
+2025-07-21 08:09:17,823 - astro_calculator - INFO - calculate_houses:66 - Houses calculated: ASC=90.00, MC=334.94
+2025-07-21 08:09:17,823 - astro_calculator - INFO - generate_birth_chart:251 - Step 5: Calculating planetary positions
+2025-07-21 08:09:17,823 - astro_calculator - INFO - calculate_planetary_positions:75 - Calculating planetary positions for JD=2453717.4166666665
+2025-07-21 08:09:17,823 - astro_calculator - INFO - calculate_planetary_positions:119 - Planetary positions calculated for 9 planets
+2025-07-21 08:09:17,823 - astro_calculator - INFO - generate_birth_chart:255 - Step 6: Assigning planets to houses
+2025-07-21 08:09:17,823 - astro_calculator - INFO - generate_birth_chart:270 - Step 7: Calculating divisional charts
+2025-07-21 08:09:17,823 - astro_calculator - INFO - calculate_divisional_charts:154 - Calculating divisional charts (D9 and D10)
+2025-07-21 08:09:17,823 - astro_calculator - INFO - calculate_divisional_charts:181 - Divisional charts calculated successfully
+2025-07-21 08:09:17,823 - astro_calculator - INFO - generate_birth_chart:274 - Step 8: Calculating dasha periods
+2025-07-21 08:09:17,823 - astro_calculator - INFO - calculate_dasha_periods:190 - Calculating dasha periods for Moon longitude: 23.76°
+2025-07-21 08:09:17,823 - astro_calculator - INFO - calculate_dasha_periods:216 - Current dasha: Venus (15.6 years elapsed, 4.4 remaining)
+2025-07-21 08:09:17,823 - astro_calculator - INFO - generate_birth_chart:293 - Birth chart generated successfully for Sapna Yadav
+2025-07-21 08:09:17,823 - astro_calculator - INFO - generate_birth_chart:294 - Ascendant: Gemini
+2025-07-21 08:09:17,823 - astro_calculator - INFO - generate_birth_chart:295 - Current dasha: Venus
+2025-07-21 08:09:17,823 - bot_handlers - INFO - _calculate_and_save_chart:632 - Birth chart calculated successfully for Sapna Yadav
+2025-07-21 08:09:17,824 - bot_handlers - INFO - _calculate_and_save_chart:638 - Saving user data to database
+2025-07-21 08:09:17,831 - bot_handlers - INFO - _calculate_and_save_chart:660 - User data saved successfully for 1177573677
+2025-07-21 08:09:18,197 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:09:18,200 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: 🎉 Bahut achha Beta! Main aapka janam kundli calculate kar liya hoon.
+
+📊 Aapki Birth Details:
+Naam: S...
+2025-07-21 08:09:18,203 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: system, Content: System event: chart_calculation_completed...
+2025-07-21 08:09:18,204 - bot_handlers - INFO - _calculate_and_save_chart:700 - Sent chart calculation success message
+2025-07-21 08:09:18,204 - bot_handlers - INFO - handle_consultation:345 - Question category determined: finance
+2025-07-21 08:09:18,204 - context_manager - INFO - process_user_message:302 - Processing user message with context: 'Guruji, paisa nahi tikta, kya karun?...'
+2025-07-21 08:09:18,205 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 08:09:18,208 - context_manager - INFO - get_conversation_history:46 - Retrieved 6 messages for user 1177573677
+2025-07-21 08:09:18,209 - context_manager - INFO - process_user_message:307 - Retrieved 6 historical messages
+2025-07-21 08:09:18,211 - context_manager - INFO - analyze_context_and_prepare_response:62 - Analyzing conversation context and preparing response structure
+2025-07-21 08:09:18,212 - context_manager - INFO - analyze_context_and_prepare_response:144 - Sending context analysis request to Gemini
+2025-07-21 08:09:20,840 - context_manager - INFO - analyze_context_and_prepare_response:150 - Context analysis received in 2.63 seconds
+2025-07-21 08:09:20,841 - context_manager - INFO - analyze_context_and_prepare_response:163 - Context analysis completed: general
+2025-07-21 08:09:20,841 - context_manager - INFO - generate_contextual_response:213 - Generating contextual response using analysis
+2025-07-21 08:09:20,841 - context_manager - INFO - generate_contextual_response:272 - Sending contextual response request to Gemini
+2025-07-21 08:09:23,519 - context_manager - INFO - generate_contextual_response:278 - Contextual response received in 2.68 seconds
+2025-07-21 08:09:23,520 - context_manager - INFO - generate_contextual_response:279 - Response length: 1159 characters
+2025-07-21 08:09:23,520 - context_manager - INFO - process_user_message:319 - Context-aware response generation completed successfully
+2025-07-21 08:09:24,186 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:09:24,189 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: 🙏 Aapke janm vivaran ko update kar diya gaya hai.
+Naam: Sapna Yadav
+Janm Tithi: 12/12/2005
+Samay: 05...
+2025-07-21 08:09:24,572 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:09:24,575 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Namaste, Sapna beta. "Paisa nahi tikta," I understand your concern. Don't worry, hum dekhte hain kya...
+2025-07-21 08:09:24,576 - bot_handlers - INFO - handle_consultation:414 - Context analysis: general
+2025-07-21 08:09:26,305 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:09:36,513 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:09:46,762 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:09:56,916 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:10:07,081 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:10:17,240 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:19:37,198 - database - INFO - <module>:12 - Initializing database with URL: sqlite:///punnet_aacharya.db
+2025-07-21 08:19:37,210 - database - INFO - <module>:16 - Database engine created successfully
+2025-07-21 08:19:37,210 - database - INFO - <module>:22 - Database session maker configured
+2025-07-21 08:19:37,215 - database - INFO - <module>:52 - Creating database tables
+2025-07-21 08:19:37,217 - database - INFO - <module>:55 - Database tables created successfully
+2025-07-21 08:19:39,630 - __main__ - INFO - main:24 - Starting Punnet Aacharya Vedic Astrology Bot
+2025-07-21 08:19:39,630 - __main__ - INFO - main:25 - ==================================================
+2025-07-21 08:19:39,630 - __main__ - INFO - main:31 - Bot token found, proceeding with initialization
+2025-07-21 08:19:39,630 - __main__ - INFO - main:35 - Creating Telegram Application
+2025-07-21 08:19:39,694 - __main__ - INFO - main:37 - Telegram Application created successfully
+2025-07-21 08:19:39,694 - __main__ - INFO - main:40 - Initializing AstrologyBot
+2025-07-21 08:19:39,694 - bot_handlers - INFO - __init__:33 - Initializing AstrologyBot
+2025-07-21 08:19:39,694 - astro_calculator - INFO - __init__:14 - Initializing AstroCalculator
+2025-07-21 08:19:40,363 - astro_calculator - INFO - __init__:18 - AstroCalculator initialized successfully
+2025-07-21 08:19:40,363 - vector_store - INFO - __init__:13 - Initializing AstrologyKnowledgeBase
+2025-07-21 08:19:40,363 - vector_store - INFO - __init__:14 - Vector DB path: chromadb_storage
+2025-07-21 08:19:40,363 - vector_store - INFO - __init__:15 - Collection name: astrology_knowledge
+2025-07-21 08:19:40,479 - vector_store - INFO - __init__:22 - ChromaDB client created successfully
+2025-07-21 08:19:40,479 - vector_store - INFO - _get_or_create_collection:36 - Getting or creating collection
+2025-07-21 08:19:40,479 - vector_store - INFO - _get_or_create_collection:39 - Found existing collection: astrology_knowledge
+2025-07-21 08:19:40,479 - vector_store - INFO - __init__:25 - Collection ready
+2025-07-21 08:19:40,479 - vector_store - INFO - _load_knowledge_base:111 - Loading astrological rules into vector database
+2025-07-21 08:19:40,480 - vector_store - WARNING - _load_knowledge_files:56 - Knowledge directory not found
+2025-07-21 08:19:40,480 - vector_store - INFO - _load_knowledge_base:264 - Total rules to load: 19
+2025-07-21 08:19:40,488 - vector_store - INFO - _load_knowledge_base:269 - Existing rules in database: 19
+2025-07-21 08:19:40,488 - vector_store - INFO - _load_knowledge_base:307 - No new rules to add
+2025-07-21 08:19:40,488 - vector_store - INFO - __init__:28 - Knowledge base loaded successfully
+2025-07-21 08:19:40,488 - gemini_service - INFO - __init__:12 - Initializing GeminiAstrologer
+2025-07-21 08:19:40,488 - gemini_service - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 08:19:40,488 - gemini_service - INFO - __init__:53 - GeminiAstrologer initialized successfully
+2025-07-21 08:19:40,488 - context_manager - INFO - __init__:12 - Initializing ConversationContextManager
+2025-07-21 08:19:40,488 - context_manager - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 08:19:40,488 - context_manager - INFO - __init__:25 - ConversationContextManager initialized successfully
+2025-07-21 08:19:40,488 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 08:19:40,488 - bot_handlers - INFO - __init__:41 - AstrologyBot initialized successfully
+2025-07-21 08:19:40,488 - __main__ - INFO - main:42 - AstrologyBot initialized successfully
+2025-07-21 08:19:40,488 - __main__ - INFO - main:45 - Setting up conversation handler for onboarding and consultation
+2025-07-21 08:19:40,489 - __main__ - INFO - main:60 - Conversation handler added successfully
+2025-07-21 08:19:40,489 - __main__ - INFO - main:63 - Setting up error handler
+2025-07-21 08:19:40,489 - __main__ - INFO - main:65 - Error handler added successfully
+2025-07-21 08:19:40,489 - __main__ - INFO - main:68 - Starting Punnet Aacharya bot with Puneet Guruji...
+2025-07-21 08:19:40,489 - __main__ - INFO - main:69 - Bot is now running and listening for messages...
+2025-07-21 08:19:40,489 - __main__ - INFO - main:70 - ==================================================
+2025-07-21 08:19:40,975 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getMe "HTTP/1.1 200 OK"
+2025-07-21 08:19:41,124 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/deleteWebhook "HTTP/1.1 200 OK"
+2025-07-21 08:19:41,127 - telegram.ext.Application - INFO - start:620 - Application started
+2025-07-21 08:19:51,577 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:20:01,767 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:20:12,555 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:20:22,736 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:20:32,902 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:20:43,145 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:20:53,292 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:21:03,515 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:21:13,665 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:21:24,232 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:26:54,624 - database - INFO - <module>:12 - Initializing database with URL: sqlite:///punnet_aacharya.db
+2025-07-21 08:26:54,634 - database - INFO - <module>:16 - Database engine created successfully
+2025-07-21 08:26:54,635 - database - INFO - <module>:22 - Database session maker configured
+2025-07-21 08:26:54,638 - database - INFO - <module>:52 - Creating database tables
+2025-07-21 08:26:54,640 - database - INFO - <module>:55 - Database tables created successfully
+2025-07-21 08:26:56,995 - __main__ - INFO - main:24 - Starting Punnet Aacharya Vedic Astrology Bot
+2025-07-21 08:26:56,995 - __main__ - INFO - main:25 - ==================================================
+2025-07-21 08:26:56,995 - __main__ - INFO - main:31 - Bot token found, proceeding with initialization
+2025-07-21 08:26:56,995 - __main__ - INFO - main:35 - Creating Telegram Application
+2025-07-21 08:26:57,057 - __main__ - INFO - main:37 - Telegram Application created successfully
+2025-07-21 08:26:57,057 - __main__ - INFO - main:40 - Initializing AstrologyBot
+2025-07-21 08:26:57,057 - bot_handlers - INFO - __init__:33 - Initializing AstrologyBot
+2025-07-21 08:26:57,057 - astro_calculator - INFO - __init__:14 - Initializing AstroCalculator
+2025-07-21 08:26:57,721 - astro_calculator - INFO - __init__:18 - AstroCalculator initialized successfully
+2025-07-21 08:26:57,721 - vector_store - INFO - __init__:13 - Initializing AstrologyKnowledgeBase
+2025-07-21 08:26:57,721 - vector_store - INFO - __init__:14 - Vector DB path: chromadb_storage
+2025-07-21 08:26:57,721 - vector_store - INFO - __init__:15 - Collection name: astrology_knowledge
+2025-07-21 08:26:57,850 - vector_store - INFO - __init__:22 - ChromaDB client created successfully
+2025-07-21 08:26:57,850 - vector_store - INFO - _get_or_create_collection:36 - Getting or creating collection
+2025-07-21 08:26:57,852 - vector_store - INFO - _get_or_create_collection:39 - Found existing collection: astrology_knowledge
+2025-07-21 08:26:57,852 - vector_store - INFO - __init__:25 - Collection ready
+2025-07-21 08:26:57,852 - vector_store - INFO - _load_knowledge_base:111 - Loading astrological rules into vector database
+2025-07-21 08:26:57,852 - vector_store - WARNING - _load_knowledge_files:56 - Knowledge directory not found
+2025-07-21 08:26:57,852 - vector_store - INFO - _load_knowledge_base:264 - Total rules to load: 19
+2025-07-21 08:26:57,861 - vector_store - INFO - _load_knowledge_base:269 - Existing rules in database: 19
+2025-07-21 08:26:57,861 - vector_store - INFO - _load_knowledge_base:307 - No new rules to add
+2025-07-21 08:26:57,861 - vector_store - INFO - __init__:28 - Knowledge base loaded successfully
+2025-07-21 08:26:57,861 - gemini_service - INFO - __init__:12 - Initializing GeminiAstrologer
+2025-07-21 08:26:57,861 - gemini_service - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 08:26:57,861 - gemini_service - INFO - __init__:53 - GeminiAstrologer initialized successfully
+2025-07-21 08:26:57,861 - context_manager - INFO - __init__:12 - Initializing ConversationContextManager
+2025-07-21 08:26:57,861 - context_manager - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 08:26:57,861 - context_manager - INFO - __init__:25 - ConversationContextManager initialized successfully
+2025-07-21 08:26:57,861 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 08:26:57,861 - bot_handlers - INFO - __init__:41 - AstrologyBot initialized successfully
+2025-07-21 08:26:57,861 - __main__ - INFO - main:42 - AstrologyBot initialized successfully
+2025-07-21 08:26:57,861 - __main__ - INFO - main:45 - Setting up conversation handler for onboarding and consultation
+2025-07-21 08:26:57,861 - __main__ - INFO - main:60 - Conversation handler added successfully
+2025-07-21 08:26:57,861 - __main__ - INFO - main:63 - Setting up error handler
+2025-07-21 08:26:57,861 - __main__ - INFO - main:65 - Error handler added successfully
+2025-07-21 08:26:57,861 - __main__ - INFO - main:68 - Starting Punnet Aacharya bot with Puneet Guruji...
+2025-07-21 08:26:57,861 - __main__ - INFO - main:69 - Bot is now running and listening for messages...
+2025-07-21 08:26:57,862 - __main__ - INFO - main:70 - ==================================================
+2025-07-21 08:26:58,341 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getMe "HTTP/1.1 200 OK"
+2025-07-21 08:26:58,491 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/deleteWebhook "HTTP/1.1 200 OK"
+2025-07-21 08:26:58,493 - telegram.ext.Application - INFO - start:620 - Application started
+2025-07-21 08:27:07,557 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:27:07,560 - bot_handlers - INFO - start:49 - Start command received from user 1177573677 (@puneetsinh)
+2025-07-21 08:27:07,562 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: /start...
+2025-07-21 08:27:07,562 - bot_handlers - INFO - start:69 - User data initialized for new session
+2025-07-21 08:27:08,231 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:27:08,234 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: 🙏 Namaste Beta! 
+
+Main hoon Punnet Guruji, aapke personal Vedic astrology guide. 
+
+Aapko apne janam ...
+2025-07-21 08:27:08,234 - bot_handlers - INFO - start:90 - Sent welcome message from Puneet Guruji
+2025-07-21 08:27:15,811 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:27:15,813 - bot_handlers - INFO - handle_onboarding:97 - Onboarding message from user 1177573677: 'Guruji, paisa nahi tikta, kya karun?...'
+2025-07-21 08:27:15,814 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: Guruji, paisa nahi tikta, kya karun?...
+2025-07-21 08:27:16,433 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 08:27:16,433 - bot_handlers - INFO - handle_onboarding:115 - Current onboarding state: start
+2025-07-21 08:27:16,434 - bot_handlers - INFO - handle_onboarding:116 - Current birth details: {}
+2025-07-21 08:27:16,434 - bot_handlers - INFO - handle_onboarding:165 - Sending request to Puneet Guruji
+2025-07-21 08:27:18,033 - bot_handlers - INFO - handle_onboarding:169 - Raw Puneet Guruji response: ```json
+{
+    "updated_details": {},
+    "next_state": "collecting",
+    "response": "Namaste! Paisa nahi tikta, yeh toh bahut logon ki samasya hai. Chinta na karein, hum iska hal dhoondenge. Sabse pe...
+2025-07-21 08:27:18,033 - bot_handlers - INFO - handle_onboarding:182 - Cleaned response: {
+    "updated_details": {},
+    "next_state": "collecting",
+    "response": "Namaste! Paisa nahi tikta, yeh toh bahut logon ki samasya hai. Chinta na karein, hum iska hal dhoondenge. Sabse pehle, muj...
+2025-07-21 08:27:18,034 - bot_handlers - INFO - handle_onboarding:186 - Puneet Guruji response: {'updated_details': {}, 'next_state': 'collecting', 'response': 'Namaste! Paisa nahi tikta, yeh toh bahut logon ki samasya hai. Chinta na karein, hum iska hal dhoondenge. Sabse pehle, mujhe aapka naam bataiye.', 'missing_info': ['name', 'birth_date', 'birth_time', 'birth_place']}
+2025-07-21 08:27:18,034 - bot_handlers - INFO - handle_onboarding:192 - Updated birth details: {}
+2025-07-21 08:27:18,034 - bot_handlers - INFO - handle_onboarding:197 - Updated state to: collecting
+2025-07-21 08:27:18,371 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:27:18,375 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Namaste! Paisa nahi tikta, yeh toh bahut logon ki samasya hai. Chinta na karein, hum iska hal dhoond...
+2025-07-21 08:27:25,963 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:27:36,314 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:27:46,468 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:27:50,148 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:27:50,151 - bot_handlers - INFO - handle_onboarding:97 - Onboarding message from user 1177573677: 'Naam: divya
+Din: 12/12/2005
+Samay: 05:00 PM
+Sthan:...'
+2025-07-21 08:27:50,152 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: Naam: divya
+Din: 12/12/2005
+Samay: 05:00 PM
+Sthan: delhi...
+2025-07-21 08:27:50,779 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 08:27:50,781 - bot_handlers - INFO - handle_onboarding:115 - Current onboarding state: collecting
+2025-07-21 08:27:50,781 - bot_handlers - INFO - handle_onboarding:116 - Current birth details: {}
+2025-07-21 08:27:50,781 - bot_handlers - INFO - handle_onboarding:165 - Sending request to Puneet Guruji
+2025-07-21 08:27:52,498 - bot_handlers - INFO - handle_onboarding:169 - Raw Puneet Guruji response: ```json
+{
+    "updated_details": {
+        "name": "divya",
+        "birth_date": "2005-12-12",
+        "birth_time": "17:00",
+        "birth_place": "delhi"
+    },
+    "next_state": "complete",
+    "...
+2025-07-21 08:27:52,498 - bot_handlers - INFO - handle_onboarding:182 - Cleaned response: {
+    "updated_details": {
+        "name": "divya",
+        "birth_date": "2005-12-12",
+        "birth_time": "17:00",
+        "birth_place": "delhi"
+    },
+    "next_state": "complete",
+    "response...
+2025-07-21 08:27:52,498 - bot_handlers - INFO - handle_onboarding:186 - Puneet Guruji response: {'updated_details': {'name': 'divya', 'birth_date': '2005-12-12', 'birth_time': '17:00', 'birth_place': 'delhi'}, 'next_state': 'complete', 'response': 'Divya ji, aapka swagat hai. Aapki janam tithi 12 December 2005, janam samay shaam 5 baje aur janam sthan Delhi hai.  Bahut achha! Ab aap mujhe bataiye, aap kya janna chahte hain? Shadi ke bare mein, career ke bare mein, ya koi aur guidance chahiye?', 'missing_info': []}
+2025-07-21 08:27:52,498 - bot_handlers - INFO - handle_onboarding:192 - Updated birth details: {'name': 'divya', 'birth_date': '2005-12-12', 'birth_time': '17:00', 'birth_place': 'delhi'}
+2025-07-21 08:27:52,498 - bot_handlers - INFO - handle_onboarding:197 - Updated state to: complete
+2025-07-21 08:27:52,831 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:27:52,834 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Divya ji, aapka swagat hai. Aapki janam tithi 12 December 2005, janam samay shaam 5 baje aur janam s...
+2025-07-21 08:27:52,834 - bot_handlers - INFO - handle_onboarding:213 - Onboarding complete, moving to consultation
+2025-07-21 08:27:52,835 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: system, Content: System event: onboarding_complete...
+2025-07-21 08:27:52,835 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 08:27:52,837 - context_manager - INFO - get_conversation_history:46 - Retrieved 4 messages for user 1177573677
+2025-07-21 08:27:53,223 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:27:53,227 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Dhanyavaad! Aapke janm ki saari jaankari mil gayi hai. Ab aap apna prashna puch sakte hain. (Jaise: ...
+2025-07-21 08:28:00,302 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:28:10,464 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:28:20,687 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:28:29,629 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:28:29,633 - bot_handlers - INFO - handle_consultation:307 - Consultation message from user 1177573677: 'Guruji, paisa nahi tikta, kya karun?...'
+2025-07-21 08:28:29,635 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: Guruji, paisa nahi tikta, kya karun?...
+2025-07-21 08:28:30,287 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 08:28:30,288 - bot_handlers - INFO - handle_consultation:345 - Calculating birth chart for consultation
+2025-07-21 08:28:30,288 - bot_handlers - INFO - _calculate_and_save_chart:642 - Calculating birth chart for user 1177573677
+2025-07-21 08:28:30,290 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: system, Content: System event: chart_calculation_started...
+2025-07-21 08:28:30,294 - bot_handlers - INFO - _calculate_and_save_chart:663 - Parsed details - Date: 2005-12-12, Time: 17:00:00, Place: delhi
+2025-07-21 08:28:30,295 - astro_calculator - INFO - generate_birth_chart:227 - Generating birth chart for divya - 2005-12-12 17:00:00 at delhi
+2025-07-21 08:28:30,295 - astro_calculator - INFO - generate_birth_chart:231 - Step 1: Getting coordinates
+2025-07-21 08:28:30,295 - astro_calculator - INFO - get_coordinates:22 - Getting coordinates for place: delhi
+2025-07-21 08:28:31,208 - astro_calculator - INFO - get_coordinates:27 - Coordinates found: lat=28.6328027, lon=77.2197713
+2025-07-21 08:28:31,209 - astro_calculator - INFO - generate_birth_chart:235 - Step 2: Getting timezone
+2025-07-21 08:28:31,210 - astro_calculator - INFO - generate_birth_chart:237 - Timezone: Asia/Kolkata
+2025-07-21 08:28:31,210 - astro_calculator - INFO - generate_birth_chart:243 - Step 3: Calculating Julian Day
+2025-07-21 08:28:31,210 - astro_calculator - INFO - calculate_julian_day:38 - Calculating Julian Day for 2005-12-12 17:00:00 in timezone Asia/Kolkata
+2025-07-21 08:28:31,345 - astro_calculator - INFO - calculate_julian_day:50 - Julian Day calculated: 2453716.9791666665
+2025-07-21 08:28:31,345 - astro_calculator - INFO - generate_birth_chart:247 - Step 4: Calculating houses
+2025-07-21 08:28:31,345 - astro_calculator - INFO - calculate_houses:58 - Calculating houses for JD=2453716.9791666665, lat=28.6328027, lon=77.2197713
+2025-07-21 08:28:31,345 - astro_calculator - INFO - calculate_houses:66 - Houses calculated: ASC=75.40, MC=328.85
+2025-07-21 08:28:31,345 - astro_calculator - INFO - generate_birth_chart:251 - Step 5: Calculating planetary positions
+2025-07-21 08:28:31,345 - astro_calculator - INFO - calculate_planetary_positions:75 - Calculating planetary positions for JD=2453716.9791666665
+2025-07-21 08:28:31,345 - astro_calculator - INFO - calculate_planetary_positions:119 - Planetary positions calculated for 9 planets
+2025-07-21 08:28:31,346 - astro_calculator - INFO - generate_birth_chart:255 - Step 6: Assigning planets to houses
+2025-07-21 08:28:31,346 - astro_calculator - INFO - generate_birth_chart:270 - Step 7: Calculating divisional charts
+2025-07-21 08:28:31,346 - astro_calculator - INFO - calculate_divisional_charts:154 - Calculating divisional charts (D9 and D10)
+2025-07-21 08:28:31,346 - astro_calculator - INFO - calculate_divisional_charts:181 - Divisional charts calculated successfully
+2025-07-21 08:28:31,346 - astro_calculator - INFO - generate_birth_chart:274 - Step 8: Calculating dasha periods
+2025-07-21 08:28:31,346 - astro_calculator - INFO - calculate_dasha_periods:190 - Calculating dasha periods for Moon longitude: 17.95°
+2025-07-21 08:28:31,346 - astro_calculator - INFO - calculate_dasha_periods:216 - Current dasha: Venus (6.9 years elapsed, 13.1 remaining)
+2025-07-21 08:28:31,346 - astro_calculator - INFO - generate_birth_chart:293 - Birth chart generated successfully for divya
+2025-07-21 08:28:31,346 - astro_calculator - INFO - generate_birth_chart:294 - Ascendant: Gemini
+2025-07-21 08:28:31,346 - astro_calculator - INFO - generate_birth_chart:295 - Current dasha: Venus
+2025-07-21 08:28:31,346 - bot_handlers - INFO - _calculate_and_save_chart:669 - Birth chart calculated successfully for divya
+2025-07-21 08:28:31,346 - bot_handlers - INFO - _calculate_and_save_chart:675 - Saving user data to database
+2025-07-21 08:28:31,353 - bot_handlers - INFO - _calculate_and_save_chart:697 - User data saved successfully for 1177573677
+2025-07-21 08:28:31,689 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:28:31,693 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: 🎉 Bahut achha Beta! Main aapka janam kundli calculate kar liya hoon.
+
+📊 Aapki Birth Details:
+Naam: d...
+2025-07-21 08:28:31,696 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: system, Content: System event: chart_calculation_completed...
+2025-07-21 08:28:31,696 - bot_handlers - INFO - _calculate_and_save_chart:737 - Sent chart calculation success message
+2025-07-21 08:28:31,696 - bot_handlers - INFO - handle_consultation:382 - Question category determined: finance
+2025-07-21 08:28:31,697 - context_manager - INFO - process_user_message:302 - Processing user message with context: 'Guruji, paisa nahi tikta, kya karun?...'
+2025-07-21 08:28:31,698 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 08:28:31,703 - context_manager - INFO - get_conversation_history:46 - Retrieved 4 messages for user 1177573677
+2025-07-21 08:28:31,704 - context_manager - INFO - process_user_message:307 - Retrieved 4 historical messages
+2025-07-21 08:28:31,704 - context_manager - INFO - analyze_context_and_prepare_response:62 - Analyzing conversation context and preparing response structure
+2025-07-21 08:28:31,704 - context_manager - INFO - analyze_context_and_prepare_response:144 - Sending context analysis request to Gemini
+2025-07-21 08:28:34,379 - context_manager - INFO - analyze_context_and_prepare_response:150 - Context analysis received in 2.68 seconds
+2025-07-21 08:28:34,380 - context_manager - INFO - analyze_context_and_prepare_response:163 - Context analysis completed: general
+2025-07-21 08:28:34,380 - context_manager - INFO - generate_contextual_response:213 - Generating contextual response using analysis
+2025-07-21 08:28:34,380 - context_manager - INFO - generate_contextual_response:272 - Sending contextual response request to Gemini
+2025-07-21 08:28:37,556 - context_manager - INFO - generate_contextual_response:278 - Contextual response received in 3.18 seconds
+2025-07-21 08:28:37,557 - context_manager - INFO - generate_contextual_response:279 - Response length: 1150 characters
+2025-07-21 08:28:37,557 - context_manager - INFO - process_user_message:319 - Context-aware response generation completed successfully
+2025-07-21 08:28:38,403 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:28:38,409 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: 🙏 Aapke janm vivaran ko update kar diya gaya hai.
+Naam: divya
+Janm Tithi: 12/12/2005
+Samay: 05:00 PM...
+2025-07-21 08:28:38,751 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:28:38,755 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Namaste, Divya. *Beta*, I understand your concern. "Paisa nahi tikta, kya karun?" This is a common w...
+2025-07-21 08:28:38,755 - bot_handlers - INFO - handle_consultation:451 - Context analysis: general
+2025-07-21 08:28:39,787 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:28:50,052 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:29:00,203 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:29:10,366 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:29:20,567 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:29:30,810 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:29:40,963 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:29:51,123 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:30:01,273 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:30:11,421 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:44:04,482 - database - INFO - <module>:12 - Initializing database with URL: sqlite:///punnet_aacharya.db
+2025-07-21 08:44:04,497 - database - INFO - <module>:16 - Database engine created successfully
+2025-07-21 08:44:04,497 - database - INFO - <module>:22 - Database session maker configured
+2025-07-21 08:44:04,501 - database - INFO - <module>:52 - Creating database tables
+2025-07-21 08:44:04,507 - database - INFO - <module>:55 - Database tables created successfully
+2025-07-21 08:44:08,214 - __main__ - INFO - main:24 - Starting Punnet Aacharya Vedic Astrology Bot
+2025-07-21 08:44:08,214 - __main__ - INFO - main:25 - ==================================================
+2025-07-21 08:44:08,214 - __main__ - INFO - main:31 - Bot token found, proceeding with initialization
+2025-07-21 08:44:08,214 - __main__ - INFO - main:35 - Creating Telegram Application
+2025-07-21 08:44:08,277 - __main__ - INFO - main:37 - Telegram Application created successfully
+2025-07-21 08:44:08,277 - __main__ - INFO - main:40 - Initializing AstrologyBot
+2025-07-21 08:44:08,277 - bot_handlers - INFO - __init__:33 - Initializing AstrologyBot
+2025-07-21 08:44:08,277 - astro_calculator - INFO - __init__:14 - Initializing AstroCalculator
+2025-07-21 08:44:08,959 - astro_calculator - INFO - __init__:18 - AstroCalculator initialized successfully
+2025-07-21 08:44:08,959 - vector_store - INFO - __init__:13 - Initializing AstrologyKnowledgeBase
+2025-07-21 08:44:08,959 - vector_store - INFO - __init__:14 - Vector DB path: chromadb_storage
+2025-07-21 08:44:08,959 - vector_store - INFO - __init__:15 - Collection name: astrology_knowledge
+2025-07-21 08:44:09,081 - vector_store - INFO - __init__:22 - ChromaDB client created successfully
+2025-07-21 08:44:09,081 - vector_store - INFO - _get_or_create_collection:36 - Getting or creating collection
+2025-07-21 08:44:09,082 - vector_store - INFO - _get_or_create_collection:39 - Found existing collection: astrology_knowledge
+2025-07-21 08:44:09,082 - vector_store - INFO - __init__:25 - Collection ready
+2025-07-21 08:44:09,082 - vector_store - INFO - _load_knowledge_base:111 - Loading astrological rules into vector database
+2025-07-21 08:44:09,082 - vector_store - WARNING - _load_knowledge_files:56 - Knowledge directory not found
+2025-07-21 08:44:09,083 - vector_store - INFO - _load_knowledge_base:264 - Total rules to load: 19
+2025-07-21 08:44:09,091 - vector_store - INFO - _load_knowledge_base:269 - Existing rules in database: 19
+2025-07-21 08:44:09,091 - vector_store - INFO - _load_knowledge_base:307 - No new rules to add
+2025-07-21 08:44:09,091 - vector_store - INFO - __init__:28 - Knowledge base loaded successfully
+2025-07-21 08:44:09,091 - gemini_service - INFO - __init__:12 - Initializing GeminiAstrologer
+2025-07-21 08:44:09,091 - gemini_service - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 08:44:09,091 - gemini_service - INFO - __init__:53 - GeminiAstrologer initialized successfully
+2025-07-21 08:44:09,091 - context_manager - INFO - __init__:12 - Initializing ConversationContextManager
+2025-07-21 08:44:09,091 - context_manager - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 08:44:09,092 - context_manager - INFO - __init__:25 - ConversationContextManager initialized successfully
+2025-07-21 08:44:09,092 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 08:44:09,092 - bot_handlers - INFO - __init__:41 - AstrologyBot initialized successfully
+2025-07-21 08:44:09,092 - __main__ - INFO - main:42 - AstrologyBot initialized successfully
+2025-07-21 08:44:09,092 - __main__ - INFO - main:45 - Setting up conversation handler for onboarding and consultation
+2025-07-21 08:44:09,092 - __main__ - INFO - main:60 - Conversation handler added successfully
+2025-07-21 08:44:09,092 - __main__ - INFO - main:63 - Setting up error handler
+2025-07-21 08:44:09,092 - __main__ - INFO - main:65 - Error handler added successfully
+2025-07-21 08:44:09,092 - __main__ - INFO - main:68 - Starting Punnet Aacharya bot with Puneet Guruji...
+2025-07-21 08:44:09,092 - __main__ - INFO - main:69 - Bot is now running and listening for messages...
+2025-07-21 08:44:09,092 - __main__ - INFO - main:70 - ==================================================
+2025-07-21 08:44:09,560 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getMe "HTTP/1.1 200 OK"
+2025-07-21 08:44:09,714 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/deleteWebhook "HTTP/1.1 200 OK"
+2025-07-21 08:44:09,717 - telegram.ext.Application - INFO - start:620 - Application started
+2025-07-21 08:44:20,298 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:44:25,130 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 409 Conflict"
+2025-07-21 08:44:25,132 - telegram.ext.Updater - ERROR - _network_loop_retry:701 - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-07-21 08:44:25,132 - bot_handlers - ERROR - error_handler:863 - Update "None" caused error "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+2025-07-21 08:44:32,763 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 409 Conflict"
+2025-07-21 08:44:32,764 - telegram.ext.Updater - ERROR - _network_loop_retry:701 - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-07-21 08:44:32,764 - bot_handlers - ERROR - error_handler:863 - Update "None" caused error "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+2025-07-21 08:44:41,761 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 409 Conflict"
+2025-07-21 08:44:41,763 - telegram.ext.Updater - ERROR - _network_loop_retry:701 - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-07-21 08:44:41,763 - bot_handlers - ERROR - error_handler:863 - Update "None" caused error "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+2025-07-21 08:44:52,691 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 409 Conflict"
+2025-07-21 08:44:52,692 - telegram.ext.Updater - ERROR - _network_loop_retry:701 - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-07-21 08:44:52,692 - bot_handlers - ERROR - error_handler:863 - Update "None" caused error "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+2025-07-21 08:45:06,222 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:45:16,402 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:45:26,653 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:51:34,390 - database - INFO - <module>:12 - Initializing database with URL: sqlite:///punnet_aacharya.db
+2025-07-21 08:51:34,401 - database - INFO - <module>:16 - Database engine created successfully
+2025-07-21 08:51:34,401 - database - INFO - <module>:22 - Database session maker configured
+2025-07-21 08:51:34,405 - database - INFO - <module>:52 - Creating database tables
+2025-07-21 08:51:34,407 - database - INFO - <module>:55 - Database tables created successfully
+2025-07-21 08:51:36,569 - __main__ - INFO - main:24 - Starting Punnet Aacharya Vedic Astrology Bot
+2025-07-21 08:51:36,569 - __main__ - INFO - main:25 - ==================================================
+2025-07-21 08:51:36,569 - __main__ - INFO - main:31 - Bot token found, proceeding with initialization
+2025-07-21 08:51:36,569 - __main__ - INFO - main:35 - Creating Telegram Application
+2025-07-21 08:51:36,630 - __main__ - INFO - main:37 - Telegram Application created successfully
+2025-07-21 08:51:36,630 - __main__ - INFO - main:40 - Initializing AstrologyBot
+2025-07-21 08:51:36,631 - bot_handlers - INFO - __init__:33 - Initializing AstrologyBot
+2025-07-21 08:51:36,631 - astro_calculator - INFO - __init__:14 - Initializing AstroCalculator
+2025-07-21 08:51:37,651 - astro_calculator - INFO - __init__:18 - AstroCalculator initialized successfully
+2025-07-21 08:51:37,651 - vector_store - INFO - __init__:13 - Initializing AstrologyKnowledgeBase
+2025-07-21 08:51:37,651 - vector_store - INFO - __init__:14 - Vector DB path: chromadb_storage
+2025-07-21 08:51:37,651 - vector_store - INFO - __init__:15 - Collection name: astrology_knowledge
+2025-07-21 08:51:37,769 - vector_store - INFO - __init__:22 - ChromaDB client created successfully
+2025-07-21 08:51:37,769 - vector_store - INFO - _get_or_create_collection:36 - Getting or creating collection
+2025-07-21 08:51:37,770 - vector_store - INFO - _get_or_create_collection:39 - Found existing collection: astrology_knowledge
+2025-07-21 08:51:37,770 - vector_store - INFO - __init__:25 - Collection ready
+2025-07-21 08:51:37,770 - vector_store - INFO - _load_knowledge_base:111 - Loading astrological rules into vector database
+2025-07-21 08:51:37,770 - vector_store - WARNING - _load_knowledge_files:56 - Knowledge directory not found
+2025-07-21 08:51:37,770 - vector_store - INFO - _load_knowledge_base:264 - Total rules to load: 19
+2025-07-21 08:51:37,778 - vector_store - INFO - _load_knowledge_base:269 - Existing rules in database: 19
+2025-07-21 08:51:37,778 - vector_store - INFO - _load_knowledge_base:307 - No new rules to add
+2025-07-21 08:51:37,778 - vector_store - INFO - __init__:28 - Knowledge base loaded successfully
+2025-07-21 08:51:37,778 - gemini_service - INFO - __init__:12 - Initializing GeminiAstrologer
+2025-07-21 08:51:37,778 - gemini_service - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 08:51:37,778 - gemini_service - INFO - __init__:53 - GeminiAstrologer initialized successfully
+2025-07-21 08:51:37,778 - context_manager - INFO - __init__:12 - Initializing ConversationContextManager
+2025-07-21 08:51:37,778 - context_manager - INFO - __init__:20 - Gemini model initialized: gemini-2.0-flash
+2025-07-21 08:51:37,778 - context_manager - INFO - __init__:25 - ConversationContextManager initialized successfully
+2025-07-21 08:51:37,778 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 08:51:37,778 - bot_handlers - INFO - __init__:41 - AstrologyBot initialized successfully
+2025-07-21 08:51:37,778 - __main__ - INFO - main:42 - AstrologyBot initialized successfully
+2025-07-21 08:51:37,778 - __main__ - INFO - main:45 - Setting up conversation handler for onboarding and consultation
+2025-07-21 08:51:37,779 - __main__ - INFO - main:60 - Conversation handler added successfully
+2025-07-21 08:51:37,779 - __main__ - INFO - main:63 - Setting up error handler
+2025-07-21 08:51:37,779 - __main__ - INFO - main:65 - Error handler added successfully
+2025-07-21 08:51:37,779 - __main__ - INFO - main:68 - Starting Punnet Aacharya bot with Puneet Guruji...
+2025-07-21 08:51:37,779 - __main__ - INFO - main:69 - Bot is now running and listening for messages...
+2025-07-21 08:51:37,779 - __main__ - INFO - main:70 - ==================================================
+2025-07-21 08:51:38,242 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getMe "HTTP/1.1 200 OK"
+2025-07-21 08:51:38,397 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/deleteWebhook "HTTP/1.1 200 OK"
+2025-07-21 08:51:38,401 - telegram.ext.Application - INFO - start:620 - Application started
+2025-07-21 08:51:47,580 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:51:47,584 - bot_handlers - INFO - start:49 - Start command received from user 1177573677 (@puneetsinh)
+2025-07-21 08:51:47,586 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: /start...
+2025-07-21 08:51:47,587 - bot_handlers - INFO - start:69 - User data initialized for new session
+2025-07-21 08:51:48,235 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:51:48,239 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: 🙏 Namaste Beta! 
+
+Main hoon Punnet Guruji, aapke personal Vedic astrology guide. 
+
+Aapko apne janam ...
+2025-07-21 08:51:48,240 - bot_handlers - INFO - start:90 - Sent welcome message from Puneet Guruji
+2025-07-21 08:51:49,327 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:51:49,332 - bot_handlers - INFO - handle_onboarding:97 - Onboarding message from user 1177573677: 'Guruji, paisa nahi tikta, kya karun?...'
+2025-07-21 08:51:49,334 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: Guruji, paisa nahi tikta, kya karun?...
+2025-07-21 08:51:49,651 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 08:51:49,652 - bot_handlers - INFO - handle_onboarding:115 - Current onboarding state: start
+2025-07-21 08:51:49,653 - bot_handlers - INFO - handle_onboarding:116 - Current birth details: {}
+2025-07-21 08:51:49,653 - bot_handlers - INFO - handle_onboarding:165 - Sending request to Puneet Guruji
+2025-07-21 08:51:51,111 - bot_handlers - INFO - handle_onboarding:169 - Raw Puneet Guruji response: ```json
+{
+    "updated_details": {},
+    "next_state": "collecting",
+    "response": "Namaste! Paisa nahi tik raha, yeh toh badi samasya hai. Chinta na karein, hum iska samadhan dhoondhenge. Sabse peh...
+2025-07-21 08:51:51,111 - bot_handlers - INFO - handle_onboarding:182 - Cleaned response: {
+    "updated_details": {},
+    "next_state": "collecting",
+    "response": "Namaste! Paisa nahi tik raha, yeh toh badi samasya hai. Chinta na karein, hum iska samadhan dhoondhenge. Sabse pehle, mujh...
+2025-07-21 08:51:51,111 - bot_handlers - INFO - handle_onboarding:186 - Puneet Guruji response: {'updated_details': {}, 'next_state': 'collecting', 'response': 'Namaste! Paisa nahi tik raha, yeh toh badi samasya hai. Chinta na karein, hum iska samadhan dhoondhenge. Sabse pehle, mujhe aapka naam batayiye.', 'missing_info': ['name', 'birth_date', 'birth_time', 'birth_place']}
+2025-07-21 08:51:51,111 - bot_handlers - INFO - handle_onboarding:192 - Updated birth details: {}
+2025-07-21 08:51:51,111 - bot_handlers - INFO - handle_onboarding:197 - Updated state to: collecting
+2025-07-21 08:51:51,450 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:51:51,454 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Namaste! Paisa nahi tik raha, yeh toh badi samasya hai. Chinta na karein, hum iska samadhan dhoondhe...
+2025-07-21 08:51:58,847 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:51:58,848 - bot_handlers - INFO - handle_onboarding:97 - Onboarding message from user 1177573677: 'Naam: divya
+Janm Tithi: 12/12/2005
+Samay: 05:00 PM...'
+2025-07-21 08:51:58,850 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: Naam: divya
+Janm Tithi: 12/12/2005
+Samay: 05:00 PM
+Sthan: delhi...
+2025-07-21 08:51:59,483 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 08:51:59,485 - bot_handlers - INFO - handle_onboarding:115 - Current onboarding state: collecting
+2025-07-21 08:51:59,485 - bot_handlers - INFO - handle_onboarding:116 - Current birth details: {}
+2025-07-21 08:51:59,485 - bot_handlers - INFO - handle_onboarding:165 - Sending request to Puneet Guruji
+2025-07-21 08:52:01,114 - bot_handlers - INFO - handle_onboarding:169 - Raw Puneet Guruji response: ```json
+{
+    "updated_details": {
+        "name": "divya",
+        "birth_date": "2005-12-12",
+        "birth_time": "17:00",
+        "birth_place": "delhi"
+    },
+    "next_state": "complete",
+    "...
+2025-07-21 08:52:01,115 - bot_handlers - INFO - handle_onboarding:182 - Cleaned response: {
+    "updated_details": {
+        "name": "divya",
+        "birth_date": "2005-12-12",
+        "birth_time": "17:00",
+        "birth_place": "delhi"
+    },
+    "next_state": "complete",
+    "response...
+2025-07-21 08:52:01,115 - bot_handlers - INFO - handle_onboarding:186 - Puneet Guruji response: {'updated_details': {'name': 'divya', 'birth_date': '2005-12-12', 'birth_time': '17:00', 'birth_place': 'delhi'}, 'next_state': 'complete', 'response': 'Namaste Divya! Aapki janm tithi, samay aur sthan ki jaankari mil gayi hai. Kya aap bata sakte hain ki aap kis vishay mein jaankari chahte hain? Jaise ki vivah, career ya koi aur margdarshan?', 'missing_info': []}
+2025-07-21 08:52:01,115 - bot_handlers - INFO - handle_onboarding:192 - Updated birth details: {'name': 'divya', 'birth_date': '2005-12-12', 'birth_time': '17:00', 'birth_place': 'delhi'}
+2025-07-21 08:52:01,115 - bot_handlers - INFO - handle_onboarding:197 - Updated state to: complete
+2025-07-21 08:52:01,462 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:52:01,464 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Namaste Divya! Aapki janm tithi, samay aur sthan ki jaankari mil gayi hai. Kya aap bata sakte hain k...
+2025-07-21 08:52:01,465 - bot_handlers - INFO - handle_onboarding:213 - Onboarding complete, moving to consultation
+2025-07-21 08:52:01,466 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: system, Content: System event: onboarding_complete...
+2025-07-21 08:52:01,466 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 08:52:01,468 - context_manager - INFO - get_conversation_history:46 - Retrieved 4 messages for user 1177573677
+2025-07-21 08:52:01,825 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:52:01,837 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Dhanyavaad! Aapke janm ki saari jaankari mil gayi hai. Ab aap apna prashna puch sakte hain. (Jaise: ...
+2025-07-21 08:52:09,001 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:52:19,233 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:52:22,310 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:52:22,313 - bot_handlers - INFO - handle_consultation:307 - Consultation message from user 1177573677: 'Guruji, paisa nahi tikta, kya karun?...'
+2025-07-21 08:52:22,315 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: user, Content: Guruji, paisa nahi tikta, kya karun?...
+2025-07-21 08:52:22,944 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendChatAction "HTTP/1.1 200 OK"
+2025-07-21 08:52:22,945 - bot_handlers - INFO - handle_consultation:345 - Calculating birth chart for consultation
+2025-07-21 08:52:22,946 - bot_handlers - INFO - _calculate_and_save_chart:642 - Calculating birth chart for user 1177573677
+2025-07-21 08:52:22,947 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: system, Content: System event: chart_calculation_started...
+2025-07-21 08:52:22,950 - bot_handlers - INFO - _calculate_and_save_chart:663 - Parsed details - Date: 2005-12-12, Time: 17:00:00, Place: delhi
+2025-07-21 08:52:22,950 - astro_calculator - INFO - generate_birth_chart:227 - Generating birth chart for divya - 2005-12-12 17:00:00 at delhi
+2025-07-21 08:52:22,950 - astro_calculator - INFO - generate_birth_chart:231 - Step 1: Getting coordinates
+2025-07-21 08:52:22,951 - astro_calculator - INFO - get_coordinates:22 - Getting coordinates for place: delhi
+2025-07-21 08:52:23,900 - astro_calculator - INFO - get_coordinates:27 - Coordinates found: lat=28.6328027, lon=77.2197713
+2025-07-21 08:52:23,900 - astro_calculator - INFO - generate_birth_chart:235 - Step 2: Getting timezone
+2025-07-21 08:52:23,903 - astro_calculator - INFO - generate_birth_chart:237 - Timezone: Asia/Kolkata
+2025-07-21 08:52:23,904 - astro_calculator - INFO - generate_birth_chart:243 - Step 3: Calculating Julian Day
+2025-07-21 08:52:23,904 - astro_calculator - INFO - calculate_julian_day:38 - Calculating Julian Day for 2005-12-12 17:00:00 in timezone Asia/Kolkata
+2025-07-21 08:52:24,042 - astro_calculator - INFO - calculate_julian_day:50 - Julian Day calculated: 2453716.9791666665
+2025-07-21 08:52:24,042 - astro_calculator - INFO - generate_birth_chart:247 - Step 4: Calculating houses
+2025-07-21 08:52:24,042 - astro_calculator - INFO - calculate_houses:58 - Calculating houses for JD=2453716.9791666665, lat=28.6328027, lon=77.2197713
+2025-07-21 08:52:24,043 - astro_calculator - INFO - calculate_houses:66 - Houses calculated: ASC=75.40, MC=328.85
+2025-07-21 08:52:24,043 - astro_calculator - INFO - generate_birth_chart:251 - Step 5: Calculating planetary positions
+2025-07-21 08:52:24,043 - astro_calculator - INFO - calculate_planetary_positions:75 - Calculating planetary positions for JD=2453716.9791666665
+2025-07-21 08:52:24,043 - astro_calculator - INFO - calculate_planetary_positions:119 - Planetary positions calculated for 9 planets
+2025-07-21 08:52:24,043 - astro_calculator - INFO - generate_birth_chart:255 - Step 6: Assigning planets to houses
+2025-07-21 08:52:24,043 - astro_calculator - INFO - generate_birth_chart:270 - Step 7: Calculating divisional charts
+2025-07-21 08:52:24,043 - astro_calculator - INFO - calculate_divisional_charts:154 - Calculating divisional charts (D9 and D10)
+2025-07-21 08:52:24,043 - astro_calculator - INFO - calculate_divisional_charts:181 - Divisional charts calculated successfully
+2025-07-21 08:52:24,044 - astro_calculator - INFO - generate_birth_chart:274 - Step 8: Calculating dasha periods
+2025-07-21 08:52:24,044 - astro_calculator - INFO - calculate_dasha_periods:190 - Calculating dasha periods for Moon longitude: 17.95°
+2025-07-21 08:52:24,044 - astro_calculator - INFO - calculate_dasha_periods:216 - Current dasha: Venus (6.9 years elapsed, 13.1 remaining)
+2025-07-21 08:52:24,044 - astro_calculator - INFO - generate_birth_chart:293 - Birth chart generated successfully for divya
+2025-07-21 08:52:24,044 - astro_calculator - INFO - generate_birth_chart:294 - Ascendant: Gemini
+2025-07-21 08:52:24,044 - astro_calculator - INFO - generate_birth_chart:295 - Current dasha: Venus
+2025-07-21 08:52:24,044 - bot_handlers - INFO - _calculate_and_save_chart:669 - Birth chart calculated successfully for divya
+2025-07-21 08:52:24,044 - bot_handlers - INFO - _calculate_and_save_chart:675 - Saving user data to database
+2025-07-21 08:52:24,049 - bot_handlers - INFO - _calculate_and_save_chart:697 - User data saved successfully for 1177573677
+2025-07-21 08:52:24,049 - bot_handlers - INFO - handle_consultation:382 - Question category determined: finance
+2025-07-21 08:52:24,049 - context_manager - INFO - process_user_message:302 - Processing user message with context: 'Guruji, paisa nahi tikta, kya karun?...'
+2025-07-21 08:52:24,049 - chat_logger - INFO - __init__:19 - ChatLogger initialized with base directory: chat_logs
+2025-07-21 08:52:24,051 - context_manager - INFO - get_conversation_history:46 - Retrieved 6 messages for user 1177573677
+2025-07-21 08:52:24,051 - context_manager - INFO - process_user_message:307 - Retrieved 6 historical messages
+2025-07-21 08:52:24,051 - context_manager - INFO - analyze_context_and_prepare_response:62 - Analyzing conversation context and preparing response structure
+2025-07-21 08:52:24,051 - context_manager - INFO - analyze_context_and_prepare_response:144 - Sending context analysis request to Gemini
+2025-07-21 08:52:26,792 - context_manager - INFO - analyze_context_and_prepare_response:150 - Context analysis received in 2.74 seconds
+2025-07-21 08:52:26,793 - context_manager - INFO - analyze_context_and_prepare_response:163 - Context analysis completed: general
+2025-07-21 08:52:26,793 - context_manager - INFO - generate_contextual_response:213 - Generating contextual response using analysis
+2025-07-21 08:52:26,794 - context_manager - INFO - generate_contextual_response:272 - Sending contextual response request to Gemini
+2025-07-21 08:52:29,292 - context_manager - INFO - generate_contextual_response:278 - Contextual response received in 2.50 seconds
+2025-07-21 08:52:29,293 - context_manager - INFO - generate_contextual_response:279 - Response length: 1166 characters
+2025-07-21 08:52:29,294 - context_manager - INFO - process_user_message:319 - Context-aware response generation completed successfully
+2025-07-21 08:52:29,933 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:52:29,936 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: 🙏 Aapke janm vivaran ko update kar diya gaya hai.
+Naam: divya
+Janm Tithi: 12/12/2005
+Samay: 05:00 PM...
+2025-07-21 08:52:30,326 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/sendMessage "HTTP/1.1 200 OK"
+2025-07-21 08:52:30,328 - chat_logger - INFO - log_message:69 - Chat logged - User: puneetsinh (1177573677), Type: bot, Content: Namaste, Divya. Beta, main samajh sakta hoon. "Paisa nahi tikta" - this is a very common concern in ...
+2025-07-21 08:52:30,328 - bot_handlers - INFO - handle_consultation:451 - Context analysis: general
+2025-07-21 08:52:32,536 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:52:42,776 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"
+2025-07-21 08:52:53,019 - httpx - INFO - _send_single_request:1729 - HTTP Request: POST https://api.telegram.org/bot7649205179:AAHNCUK78You2XqG93msH_hkD-poZVBKfF4/getUpdates "HTTP/1.1 200 OK"

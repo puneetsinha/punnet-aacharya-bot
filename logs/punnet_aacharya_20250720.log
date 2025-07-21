@@ -1,0 +1,102 @@
+2025-07-20 12:03:49,105 - gemini_service - INFO - __init__:11 - Initializing GeminiAstrologer
+2025-07-20 12:03:49,105 - gemini_service - INFO - __init__:19 - Gemini model initialized: gemini-2.0-flash
+2025-07-20 12:03:49,105 - gemini_service - INFO - __init__:44 - GeminiAstrologer initialized successfully
+2025-07-20 12:03:49,105 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Meri shaadi kab hogi? Birth: 03-06-1989 17:58 Pune...'
+2025-07-20 12:03:49,105 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:03:49,105 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:03:49,105 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:03:56,879 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 7.77 seconds
+2025-07-20 12:03:56,880 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 3680 characters
+2025-07-20 12:08:41,238 - gemini_service - INFO - __init__:11 - Initializing GeminiAstrologer
+2025-07-20 12:08:41,239 - gemini_service - INFO - __init__:19 - Gemini model initialized: gemini-2.0-flash
+2025-07-20 12:08:41,239 - gemini_service - INFO - __init__:44 - GeminiAstrologer initialized successfully
+2025-07-20 12:08:41,239 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Meri shaadi kab hogi? Birth: 03-06-1989 17:58 Pune...'
+2025-07-20 12:08:41,239 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:08:41,239 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:08:41,239 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:08:48,032 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 6.79 seconds
+2025-07-20 12:08:48,033 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 4005 characters
+2025-07-20 12:08:48,033 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Career mein next promotion ka yog kab hai? DOB 14-...'
+2025-07-20 12:08:48,033 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:08:48,033 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:08:48,033 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:08:53,970 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 5.94 seconds
+2025-07-20 12:08:53,970 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 2803 characters
+2025-07-20 12:08:53,971 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Kya mere foreign settlement ke chances hain? DOB 0...'
+2025-07-20 12:08:53,971 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:08:53,971 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:08:53,972 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:09:00,127 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 6.16 seconds
+2025-07-20 12:09:00,127 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 3351 characters
+2025-07-20 12:09:00,127 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Health outlook: koi major surgery dikh rahi hai? D...'
+2025-07-20 12:09:00,127 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:09:00,127 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:09:00,127 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:09:06,463 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 6.34 seconds
+2025-07-20 12:09:06,463 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 3540 characters
+2025-07-20 12:09:06,464 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Financial stability kab tak aayegi? DOB 06-04-1990...'
+2025-07-20 12:09:06,464 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:09:06,464 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:09:06,464 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:09:13,603 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 7.14 seconds
+2025-07-20 12:09:13,604 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 3870 characters
+2025-07-20 12:09:13,604 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Humare bacche kab honge? Husband DOB 12-12-1986, 1...'
+2025-07-20 12:09:13,604 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:09:13,604 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:09:13,604 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:09:20,287 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 6.68 seconds
+2025-07-20 12:09:20,287 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 3810 characters
+2025-07-20 12:09:20,288 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Kya main 2026 mein business start kar sakta hoon? ...'
+2025-07-20 12:09:20,288 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:09:20,288 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:09:20,288 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:09:26,841 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 6.55 seconds
+2025-07-20 12:09:26,841 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 3590 characters
+2025-07-20 12:09:26,842 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Kaunsi field mein padhai best rahegi—engineering y...'
+2025-07-20 12:09:26,842 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:09:26,842 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:09:26,842 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:09:34,091 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 7.25 seconds
+2025-07-20 12:09:34,092 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 4372 characters
+2025-07-20 12:09:34,092 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Upcoming Dasha favourable hai ya challenging? DOB ...'
+2025-07-20 12:09:34,092 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:09:34,092 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:09:34,093 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:09:40,574 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 6.48 seconds
+2025-07-20 12:09:40,575 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 3851 characters
+2025-07-20 12:09:40,575 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Life-partner ki personality kaisi hogi? DOB 18-03-...'
+2025-07-20 12:09:40,576 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:09:40,576 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:09:40,576 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:09:48,146 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 7.57 seconds
+2025-07-20 12:09:48,147 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 4289 characters
+2025-07-20 12:09:48,147 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Job change kab best hoga—2025 ya 2026? DOB 07-07-1...'
+2025-07-20 12:09:48,147 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:09:48,147 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:09:48,147 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:09:55,016 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 6.87 seconds
+2025-07-20 12:09:55,017 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 4006 characters
+2025-07-20 12:09:55,017 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Foreign travel ka yog kis year dikhta hai? DOB 24-...'
+2025-07-20 12:09:55,017 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:09:55,017 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:09:55,017 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:10:01,647 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 6.63 seconds
+2025-07-20 12:10:01,648 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 3307 characters
+2025-07-20 12:10:01,648 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Property purchase ke liye shaubh time? DOB 01-01-1...'
+2025-07-20 12:10:01,649 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:10:01,649 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:10:01,649 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:10:08,620 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 6.97 seconds
+2025-07-20 12:10:08,620 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 3246 characters
+2025-07-20 12:10:08,620 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Court case outcome aur timing batao. DOB 22-06-197...'
+2025-07-20 12:10:08,620 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:10:08,621 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:10:08,621 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:10:15,948 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 7.33 seconds
+2025-07-20 12:10:15,948 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 4074 characters
+2025-07-20 12:10:15,948 - gemini_service - INFO - detect_context_and_respond:48 - Processing user message: 'Spiritual progress ke liye koi upay? DOB 11-11-199...'
+2025-07-20 12:10:15,948 - gemini_service - INFO - detect_context_and_respond:49 - User name: None
+2025-07-20 12:10:15,948 - gemini_service - INFO - detect_context_and_respond:50 - Chart data available: False
+2025-07-20 12:10:15,948 - gemini_service - INFO - detect_context_and_respond:87 - Sending request to Gemini AI
+2025-07-20 12:10:23,178 - gemini_service - INFO - detect_context_and_respond:96 - Gemini response received in 7.23 seconds
+2025-07-20 12:10:23,178 - gemini_service - INFO - detect_context_and_respond:97 - Response length: 4363 characters

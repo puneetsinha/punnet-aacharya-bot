@@ -1,0 +1,18 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250720_121528",
+  "created_at": "2025-07-20T12:15:28.847404",
+  "last_updated": "2025-07-20T12:15:28.847100",
+  "messages": [
+    {
+      "timestamp": "2025-07-20T12:15:28.847100",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "bot",
+      "content": "Namaste! Aapka naam kya hai?",
+      "metadata": {
+        "context": "onboarding",
+        "response_length": 28
+      }
+    }
+  ]
+}

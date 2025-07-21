@@ -1,0 +1,34 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250720_114550",
+  "created_at": "2025-07-20T11:45:50.877028",
+  "last_updated": "2025-07-20T11:45:50.878477",
+  "messages": [
+    {
+      "timestamp": "2025-07-20T11:45:50.876845",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "bot",
+      "content": "🎉 Bahut achha! Main aapka janam kundli calculate kar liya hoon.\n\n📊 Aapki Birth Details:\nNaam: Sonali\nDin: 03/06/1989\nSamay: 05:58 PM\nSthan: Pune, Maharashtra\nLagna: Scorpio\n\nAb aap mujhse koi bhi sawal puch sakte hain:\n💑 Shadi ke bare mein\n💼 Career ke bare mein\n🌙 Dasha periods ke bare mein\n🏥 Health ke bare mein\n📚 Education ke bare mein\n\nKya aap bata sakte hain, aap kya janna chahte hain?",
+      "metadata": {
+        "context": "chart_calculation_success",
+        "response_length": 390
+      }
+    },
+    {
+      "timestamp": "2025-07-20T11:45:50.878477",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "system",
+      "content": "System event: chart_calculation_completed",
+      "metadata": {
+        "event": "chart_calculation_completed",
+        "details": {
+          "chart_data": {
+            "ascendant": "Scorpio",
+            "dasha": "Moon"
+          }
+        }
+      }
+    }
+  ]
+}

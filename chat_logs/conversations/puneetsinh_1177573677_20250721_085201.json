@@ -1,0 +1,47 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250721_085201",
+  "created_at": "2025-07-21T08:52:01.463638",
+  "last_updated": "2025-07-21T08:52:01.832471",
+  "messages": [
+    {
+      "timestamp": "2025-07-21T08:52:01.463444",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "bot",
+      "content": "Namaste Divya! Aapki janm tithi, samay aur sthan ki jaankari mil gayi hai. Kya aap bata sakte hain ki aap kis vishay mein jaankari chahte hain? Jaise ki vivah, career ya koi aur margdarshan?",
+      "metadata": {
+        "context": "onboarding",
+        "response_length": 190
+      }
+    },
+    {
+      "timestamp": "2025-07-21T08:52:01.465133",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "system",
+      "content": "System event: onboarding_complete",
+      "metadata": {
+        "event": "onboarding_complete",
+        "details": {
+          "birth_details": {
+            "name": "divya",
+            "birth_date": "2005-12-12",
+            "birth_time": "17:00",
+            "birth_place": "delhi"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2025-07-21T08:52:01.832471",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "bot",
+      "content": "Dhanyavaad! Aapke janm ki saari jaankari mil gayi hai. Ab aap apna prashna puch sakte hain. (Jaise: career, paisa, shadi, health, education)",
+      "metadata": {
+        "context": "onboarding_prompt",
+        "response_length": 140
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250721_080837",
+  "created_at": "2025-07-21T08:08:37.969880",
+  "last_updated": "2025-07-21T08:08:37.969614",
+  "messages": [
+    {
+      "timestamp": "2025-07-21T08:08:37.969614",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "bot",
+      "content": "Namaste Sapna Ji! Aapka naam toh maine jaan liya hai. Apne janam ki tareekh bhi bata dijiye. YYYY-MM-DD format mein bataiyega, jaise ki 1985-06-15.",
+      "metadata": {
+        "context": "onboarding",
+        "response_length": 147
+      }
+    }
+  ]
+}

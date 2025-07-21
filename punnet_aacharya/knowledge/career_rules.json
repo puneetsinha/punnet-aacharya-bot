@@ -1,0 +1,13 @@
+{
+  "planetary_careers": {
+    "Sun": ["Government", "Administration", "Politics", "Leadership"],
+    "Moon": ["Healthcare", "Hospitality", "Psychology", "Public Service"],
+    "Mars": ["Engineering", "Military", "Sports", "Surgery"],
+    "Mercury": ["Communication", "Writing", "Business", "IT", "Analytics"],
+    "Jupiter": ["Teaching", "Law", "Finance", "Spirituality", "Counseling"],
+    "Venus": ["Arts", "Entertainment", "Fashion", "Beauty", "Luxury"],
+    "Saturn": ["Real Estate", "Mining", "Agriculture", "Manufacturing"],
+    "Rahu": ["Foreign Services", "Technology", "Research", "Aviation"],
+    "Ketu": ["Spirituality", "Occult Sciences", "Research", "Medicine"]
+  }
+} 

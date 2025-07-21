@@ -1,0 +1,36 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250721_074322",
+  "created_at": "2025-07-21T07:43:22.113423",
+  "last_updated": "2025-07-21T07:43:22.115708",
+  "messages": [
+    {
+      "timestamp": "2025-07-21T07:43:22.113209",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "bot",
+      "content": "Namaste Divya! Aapki janam tithi aur samay ke anusar, aap Delhi mein shaam 5 baje, 12 December 2005 ko paida hui hain. Kya aap mujhe batana chahengi ki aap kis vishay mein margdarshan chahti hain? Shadi, career ya anya koi chinta?",
+      "metadata": {
+        "context": "onboarding",
+        "response_length": 230
+      }
+    },
+    {
+      "timestamp": "2025-07-21T07:43:22.115708",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "system",
+      "content": "System event: onboarding_complete",
+      "metadata": {
+        "event": "onboarding_complete",
+        "details": {
+          "birth_details": {
+            "name": "divya",
+            "birth_date": "2005-12-12",
+            "birth_time": "17:00",
+            "birth_place": "delhi"
+          }
+        }
+      }
+    }
+  ]
+}

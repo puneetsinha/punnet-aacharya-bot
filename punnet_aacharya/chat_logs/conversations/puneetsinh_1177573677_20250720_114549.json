@@ -1,0 +1,25 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250720_114549",
+  "created_at": "2025-07-20T11:45:49.611162",
+  "last_updated": "2025-07-20T11:45:49.610961",
+  "messages": [
+    {
+      "timestamp": "2025-07-20T11:45:49.610961",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "system",
+      "content": "System event: chart_calculation_started",
+      "metadata": {
+        "event": "chart_calculation_started",
+        "details": {
+          "birth_details": {
+            "name": "Sonali",
+            "birth_date": "1989-06-03",
+            "birth_time": "17:58",
+            "birth_place": "Pune, Maharashtra"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250721_074342",
+  "created_at": "2025-07-21T07:43:42.182822",
+  "last_updated": "2025-07-21T07:43:42.830145",
+  "messages": [
+    {
+      "timestamp": "2025-07-21T07:43:42.182624",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "user",
+      "content": "meri shaddi kab hogi",
+      "metadata": {
+        "context": "consultation",
+        "message_length": 20
+      }
+    },
+    {
+      "timestamp": "2025-07-21T07:43:42.830145",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "system",
+      "content": "System event: chart_calculation_started",
+      "metadata": {
+        "event": "chart_calculation_started",
+        "details": {
+          "birth_details": {
+            "name": "divya",
+            "birth_date": "2005-12-12",
+            "birth_time": "17:00",
+            "birth_place": "delhi"
+          }
+        }
+      }
+    }
+  ]
+}

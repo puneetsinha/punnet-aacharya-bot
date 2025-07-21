@@ -1,0 +1,18 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250720_114622",
+  "created_at": "2025-07-20T11:46:22.674551",
+  "last_updated": "2025-07-20T11:46:22.674333",
+  "messages": [
+    {
+      "timestamp": "2025-07-20T11:46:22.674333",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "user",
+      "content": "par shaddi hogi kab",
+      "metadata": {
+        "context": "consultation",
+        "message_length": 19
+      }
+    }
+  ]
+}

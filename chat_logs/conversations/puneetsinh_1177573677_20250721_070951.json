@@ -1,0 +1,18 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250721_070951",
+  "created_at": "2025-07-21T07:09:51.516290",
+  "last_updated": "2025-07-21T07:09:51.516069",
+  "messages": [
+    {
+      "timestamp": "2025-07-21T07:09:51.516069",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "bot",
+      "content": "Maaf kijiye, kuch technical problem aa raha hai. Please try again later.",
+      "metadata": {
+        "context": "consultation_error",
+        "response_length": 72
+      }
+    }
+  ]
+}

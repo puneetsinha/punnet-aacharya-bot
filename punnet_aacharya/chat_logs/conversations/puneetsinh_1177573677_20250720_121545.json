@@ -1,0 +1,36 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250720_121545",
+  "created_at": "2025-07-20T12:15:45.238242",
+  "last_updated": "2025-07-20T12:15:45.240162",
+  "messages": [
+    {
+      "timestamp": "2025-07-20T12:15:45.238071",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "bot",
+      "content": "Pranam Puneet Sinha ji! Aapki janm tithi 14 August 1992, janm ka samay 10:30 subah, aur janm sthan Delhi hai. Kya ye sabhi details sahi hain? Agar haan, toh kripya batayein ki aap kis vishay par margdarshan chahte hain? Vivah, career, ya koi anya chinta?",
+      "metadata": {
+        "context": "onboarding",
+        "response_length": 254
+      }
+    },
+    {
+      "timestamp": "2025-07-20T12:15:45.240162",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "system",
+      "content": "System event: onboarding_complete",
+      "metadata": {
+        "event": "onboarding_complete",
+        "details": {
+          "birth_details": {
+            "birth_date": "1992-08-14",
+            "birth_time": "10:30",
+            "birth_place": "Delhi, India",
+            "name": "Puneet Sinha"
+          }
+        }
+      }
+    }
+  ]
+}

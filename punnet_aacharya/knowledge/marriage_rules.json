@@ -1,0 +1,29 @@
+{
+  "rules": [
+    {
+      "condition": "Jupiter transits 7th house",
+      "effect": "High probability of marriage within 1 year",
+      "strength": 0.9
+    },
+    {
+      "condition": "Venus in 7th house in D9",
+      "effect": "Early marriage (before 25)",
+      "strength": 0.8
+    },
+    {
+      "condition": "Saturn aspects 7th house",
+      "effect": "Delayed marriage (after 28)",
+      "strength": 0.85
+    },
+    {
+      "condition": "7th lord in 1st house",
+      "effect": "Love marriage indicated",
+      "strength": 0.7
+    },
+    {
+      "condition": "7th lord in 11th house",
+      "effect": "Marriage through social connections",
+      "strength": 0.75
+    }
+  ]
+} 

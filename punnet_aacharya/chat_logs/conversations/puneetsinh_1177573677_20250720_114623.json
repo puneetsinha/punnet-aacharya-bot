@@ -1,0 +1,35 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250720_114623",
+  "created_at": "2025-07-20T11:46:23.765558",
+  "last_updated": "2025-07-20T11:46:23.766360",
+  "messages": [
+    {
+      "timestamp": "2025-07-20T11:46:23.765462",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "bot",
+      "content": "🙏 नमस्ते! मैं देख रहा हूं कि आपने पहले भी शादी के बारे में पूछा था।\n\n\n📊 आपकी जन्म कुंडली के अनुसार:\n• लग्न: Scorpio\n• सूर्य राशि: Taurus\n• चंद्र राशि: Taurus\n• वर्तमान दशा: Moon\n\n\n🔮 अतिरिक्त ज्योतिषीय मार्गदर्शन:\n• When 7th lord is in favorable dasha/antardasha, marriage is likely\n• When 7th lord is in favorable dasha/antardasha, marriage is likely\n• Venus in 7th house of Navamsa indicates early marriage\n\n💡 क्या आप किसी अन्य क्षेत्र के बारे में जानना चाहते हैं?\n• 💑 शादी और रिश्ते\n• 💼 करियर और व्यवसाय  \n• 🏥 स्वास्थ्य और कल्याण\n• 📚 शिक्षा और ज्ञान\n• 💰 धन और समृद्धि",
+      "metadata": {
+        "context": "consultation",
+        "response_length": 569
+      }
+    },
+    {
+      "timestamp": "2025-07-20T11:46:23.766360",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "system",
+      "content": "System event: conversation_memory_updated",
+      "metadata": {
+        "event": "conversation_memory_updated",
+        "details": {
+          "asked_questions": [
+            "marriage"
+          ],
+          "current_category": "marriage",
+          "is_repeat": true
+        }
+      }
+    }
+  ]
+}

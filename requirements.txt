@@ -1,0 +1,12 @@
+python-telegram-bot>=20.0
+requests>=2.25.0
+python-dotenv>=0.21.0
+sqlalchemy>=1.4.0
+pytz
+fastapi
+uvicorn
+chromadb
+h3
+geopy
+google-generativeai
+# Add any other dependencies as needed 

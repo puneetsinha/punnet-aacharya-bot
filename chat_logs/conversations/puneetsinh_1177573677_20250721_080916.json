@@ -1,0 +1,36 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250721_080916",
+  "created_at": "2025-07-21T08:09:16.152860",
+  "last_updated": "2025-07-21T08:09:16.803841",
+  "messages": [
+    {
+      "timestamp": "2025-07-21T08:09:16.152662",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "user",
+      "content": "Guruji, paisa nahi tikta, kya karun?",
+      "metadata": {
+        "context": "consultation",
+        "message_length": 36
+      }
+    },
+    {
+      "timestamp": "2025-07-21T08:09:16.803841",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "system",
+      "content": "System event: chart_calculation_started",
+      "metadata": {
+        "event": "chart_calculation_started",
+        "details": {
+          "birth_details": {
+            "name": "Sapna Yadav",
+            "birth_date": "2005-12-12",
+            "birth_time": "17:00",
+            "birth_place": "Delhi, Delhi"
+          }
+        }
+      }
+    }
+  ]
+}

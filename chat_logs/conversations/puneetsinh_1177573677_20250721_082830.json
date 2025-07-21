@@ -1,0 +1,25 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250721_082830",
+  "created_at": "2025-07-21T08:28:30.288860",
+  "last_updated": "2025-07-21T08:28:30.288686",
+  "messages": [
+    {
+      "timestamp": "2025-07-21T08:28:30.288686",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "system",
+      "content": "System event: chart_calculation_started",
+      "metadata": {
+        "event": "chart_calculation_started",
+        "details": {
+          "birth_details": {
+            "name": "divya",
+            "birth_date": "2005-12-12",
+            "birth_time": "17:00",
+            "birth_place": "delhi"
+          }
+        }
+      }
+    }
+  ]
+}

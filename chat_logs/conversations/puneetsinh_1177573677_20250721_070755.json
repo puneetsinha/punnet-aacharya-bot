@@ -1,0 +1,18 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250721_070755",
+  "created_at": "2025-07-21T07:07:55.293027",
+  "last_updated": "2025-07-21T07:07:55.292871",
+  "messages": [
+    {
+      "timestamp": "2025-07-21T07:07:55.292871",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "user",
+      "content": "guruji main career ko leke pareshan hun",
+      "metadata": {
+        "context": "onboarding",
+        "message_length": 39
+      }
+    }
+  ]
+}

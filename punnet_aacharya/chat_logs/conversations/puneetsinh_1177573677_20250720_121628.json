@@ -1,0 +1,18 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250720_121628",
+  "created_at": "2025-07-20T12:16:28.745006",
+  "last_updated": "2025-07-20T12:16:28.744806",
+  "messages": [
+    {
+      "timestamp": "2025-07-20T12:16:28.744806",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "user",
+      "content": "promotion",
+      "metadata": {
+        "context": "consultation",
+        "message_length": 9
+      }
+    }
+  ]
+}

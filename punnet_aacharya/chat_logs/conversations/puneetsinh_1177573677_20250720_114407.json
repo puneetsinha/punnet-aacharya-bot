@@ -1,0 +1,29 @@
+{
+  "chat_id": "puneetsinh_1177573677_20250720_114407",
+  "created_at": "2025-07-20T11:44:07.048955",
+  "last_updated": "2025-07-20T11:44:07.437807",
+  "messages": [
+    {
+      "timestamp": "2025-07-20T11:44:07.048473",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "user",
+      "content": "/start",
+      "metadata": {
+        "context": "command",
+        "message_length": 6
+      }
+    },
+    {
+      "timestamp": "2025-07-20T11:44:07.437807",
+      "user_id": 1177573677,
+      "username": "puneetsinh",
+      "message_type": "bot",
+      "content": "🙏 Namaste! \n\nMain hoon Punnet Guruji, aapke personal Vedic astrology guide. \n\nAapko apne janam kundli ke anusar shadi, career, aur life ke har aspect mein guidance dene ke liye mujhe aapki complete birth details chahiye.\n\nKripya apna naam batayein, main aapki help karunga. 📿",
+      "metadata": {
+        "context": "welcome",
+        "response_length": 275
+      }
+    }
+  ]
+}
